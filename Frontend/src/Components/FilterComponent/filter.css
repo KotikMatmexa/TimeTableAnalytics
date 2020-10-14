@@ -1,0 +1,20 @@
+.audience--filter, .teachers--filter, .group-control--filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid;
+    margin-bottom: 10px;
+    padding-top: 6px;
+    padding-bottom: 12px;
+}
+.audience--address, .audience--start-period, .audience--end-period , .teachers--address,
+.teachers--start-period, .teachers--end-period, .group-control--faculty, .group-control--group{
+    width:200px;
+    text-align: center;
+}
+
+.address--selection, .address--selection select, .date--section,
+.teachers--selection, .teachers--selection select, .group-control--selection select{
+    width: inherit;
+}
+

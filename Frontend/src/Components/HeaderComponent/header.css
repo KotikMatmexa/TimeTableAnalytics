@@ -1,0 +1,9 @@
+.header{
+    margin-bottom: 12px;
+    border-bottom: 1px solid black;
+    background: #e95420;
+}
+.header h2 {
+    text-align: center;
+    color: #fff;
+}

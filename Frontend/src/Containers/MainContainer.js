@@ -2,10 +2,24 @@ import React from 'react'
 import MainComponent from "../Components/MainComponent/index";
 import {getLine, getPrevLine} from "../action/menuAction";
 import connect from "react-redux/es/connect/connect";
+import {getFilterType} from "../action/filterAction";
 
 class MainContainer extends React.Component{
 
-
+    changeType = (index) =>{
+        console.log(Number(index));
+        switch (Number(index)) {
+            case 0:
+                this.props.changeFilterType("audience");
+                break;
+            case 1:
+                this.props.changeFilterType("teachers");
+                break;
+            case 2:
+                this.props.changeFilterType("group control");
+                break;
+        }
+    };
 
 
     render(){
@@ -15,6 +29,7 @@ class MainContainer extends React.Component{
                                changeLineIndex={this.props.changeLineIndex}
                                prevSelectedLine = {this.props.prevSelectedLine}
                                getPrevIndex = {this.props.getPrevIndex}
+                               type={this.props.filterType}
                 >
                     {this.props.children}
                 </MainComponent>)
@@ -25,7 +40,8 @@ class MainContainer extends React.Component{
 }
 const mapStateToProps = state => ({
     selectedLine:state.menuIndexReducer,
-    prevSelectedLine: state.menuPrevIndexReducer
+    prevSelectedLine: state.menuPrevIndexReducer,
+    filterType:state.filterTypeReducer
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -35,6 +51,9 @@ const mapDispatchToProps = dispatch => ({
     },
     getPrevIndex:(index) =>{
         dispatch(getPrevLine(index))
+    },
+    changeFilterType:(type)=>{
+        dispatch(getFilterType(type))
     }
 });
 

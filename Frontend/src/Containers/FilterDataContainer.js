@@ -3,6 +3,7 @@ import MainComponent from "../Components/MainComponent/index";
 import {getFilterType} from "../action/filterAction";
 import connect from "react-redux/es/connect/connect";
 import FilterComponent from "../Components/FilterComponent/index";
+import {faculties} from "../testData";
 
 class FilterDataContainer extends React.Component{
 
@@ -24,7 +25,7 @@ class FilterDataContainer extends React.Component{
     render(){
         this.changeType(this.props.selectedLine);
         return(
-            <FilterComponent type={this.props.filterType}/>
+            <FilterComponent type={this.props.filterType} faculties = {faculties}/>
         )
     }
 }

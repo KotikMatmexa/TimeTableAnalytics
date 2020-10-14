@@ -1,0 +1,16 @@
+.table{
+    height: 500px;
+    background-color: antiquewhite;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.table span{
+    margin-left: 10px;
+}
+
+.table--components{
+    display: inline-flex;
+    border-bottom: 1px solid black;
+    margin: 20px;
+}

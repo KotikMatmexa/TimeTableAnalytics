@@ -1,0 +1,19 @@
+.day--component{
+    background-color: aliceblue;
+    margin: 12px;
+    padding: 12px;
+}
+.data--time:after{
+    content: attr(data-title);
+}
+.data--time:hover:before{
+    content: attr(data-title);
+}
+.day--timetable ul li{
+    list-style: none;
+    background-color: #e95420;
+    margin: 4px;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+}

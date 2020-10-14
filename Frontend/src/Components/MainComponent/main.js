@@ -12,17 +12,34 @@ class MainComponent extends React.Component{
     render(){
        // console.log(this.props.selectedLine)
         return(
-           <>
-            <HeaderComponent/>
-            <MenuComponent selectedLine = {this.props.selectedLine}
-                           changeLineIndex={this.props.changeLineIndex}
-                           prevSelectedLine = {this.props.prevSelectedLine}
-                           getPrevIndex = {this.props.getPrevIndex}
-            />
-               <FilterDataContainer selectedLine = {this.props.selectedLine}/>
-                <DataComponent/>
-               <FooterComponent/>
-           </>
+           <div className="container">
+               <div className="row">
+                   <div className="col-sm-12">
+                    <HeaderComponent/>
+                   </div>
+                   <div className="col-sm-3">
+                    <MenuComponent selectedLine = {this.props.selectedLine}
+                                   changeLineIndex={this.props.changeLineIndex}
+                                   prevSelectedLine = {this.props.prevSelectedLine}
+                                   getPrevIndex = {this.props.getPrevIndex}
+                    />
+                   </div>
+                       <div className="col-sm-9">
+                           <div className="row">
+                               <div className="col-sm-12">
+                               <FilterDataContainer selectedLine = {this.props.selectedLine}/>
+                           </div>
+                           <div className="col-sm-12">
+                               <DataComponent type={this.props.type}/>
+                           </div>
+                           </div>
+                           </div>
+
+                               <div className="col-sm-12">
+                       <FooterComponent/>
+                               </div>
+               </div>
+           </div>
         )
     }
 }

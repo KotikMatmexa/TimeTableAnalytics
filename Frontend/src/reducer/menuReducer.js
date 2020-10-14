@@ -8,6 +8,7 @@ export const menuIndexReducer = (state = 0, action) => {
           return state;
   }
 };
+
 export const menuPrevIndexReducer = (state = -1, action) => {
 
     switch (action.type){
