@@ -8,9 +8,11 @@ class GroupControllerContainer extends React.Component{
 
 
     render(){
-        console.log(this.props.table);
+
         return(
-            <GroupTableComponent table = {this.props.table} updateTable = {this.props.updateTable}/>
+            <GroupTableComponent table = {this.props.table} updateTable = {this.props.updateTable}
+                    data = {this.props.data}
+            />
         )
     }
 }

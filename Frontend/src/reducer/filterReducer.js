@@ -7,3 +7,14 @@ export const filterTypeReducer = (state = "audience", action) => {
             return state
     }
 };
+
+export const facultyReducer = (state = [], action) => {
+
+    switch (action.type){
+        case "SET_CURRENT_FACULTY":
+            return action.faculty;
+        default:
+            return state;
+    }
+};
+

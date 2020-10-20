@@ -20,8 +20,10 @@ class GroupTableComponent extends React.Component{
                    </tr>
                    </thead>
                    <tbody>
-                   {Object.values(Object.values(Object.values(this.props.table)[0].groups)[0].data).map(data =>
-                       <tr>
+                   {//Object.values(Object.values(Object.values(this.props.table)[0].groups)[0].data).map(data =>
+                       Object.values(this.props.data).map(data =>
+
+                           <tr>
                            <th scope="row">{data.subject}</th>
                            <td>{data.assignedHours}</td>
                            <td>{data.requiredHours}</td>

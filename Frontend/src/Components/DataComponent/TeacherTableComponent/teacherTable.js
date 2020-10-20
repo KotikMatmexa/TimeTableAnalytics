@@ -19,6 +19,7 @@ class TeacherTableComponent extends React.Component{
     };
 
     render(){
+
         return(
            <div className="teacher-table">
                <table className="table table-bordered">
@@ -31,18 +32,14 @@ class TeacherTableComponent extends React.Component{
                    </tr>
                    </thead>
                    <tbody>
-                   <tr>
-                       <th scope="row">Щербаков</th>
-                       <td>Биологический</td>
-                       <td>доцент</td>
-                       <td><button className="get-table-button" onClick={this.showTeacherInformation}>Посмотреть занятость</button></td>
-                   </tr>
-                   <tr>
-                       <th scope="row">Ильин</th>
-                       <td>Мат-мех</td>
-                       <td>доцент</td>
-                       <td><button className="get-table-button" onClick={this.showTeacherInformation}>Посмотреть занятость</button></td>
-                   </tr>
+                   {this.props.teachers.map(teacher =>
+                       <tr>
+                           <th scope="row">{teacher.firstName} {teacher.patronymic} {teacher.sirName}</th>
+                           <td>{teacher.faculty}</td>
+                           <td>{teacher.level}</td>
+                           <td><button className="get-table-button" onClick={this.showTeacherInformation}>Посмотреть занятость</button></td>
+                       </tr>
+                   )}
 
                    </tbody>
                </table>

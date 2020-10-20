@@ -1,14 +1,33 @@
 import React from 'react'
 import './filter.css'
+import DataComponent from "../DataComponent/data";
 
 class FilterComponent extends React.Component{
 
     loadGroups = (e) =>{
-        console.log(e.target.selectedIndex)
+        let index = e.target.selectedIndex;
+        let faculty = e.target.children[index].text;
+        this.props.setFaculty(faculty);
+        this.props.loadGroups(faculty);
+        document.getElementsByClassName("group-control--selection")[1].children[0].selectedIndex = 0;
+        this.props.loadData(false);
+    };
+
+    loadData = (e) => {
+        let index = e.target.selectedIndex;
+        let group = e.target.children[index].text;
+        this.props.loadData(true);
+        this.props.setActiveGroup(this.props.currentFaculty, group);
+    };
+
+    loadTeachers = (e) => {
+        let index = e.target.selectedIndex;
+        let address = e.target.children[index].text;
+        this.props.loadData(true);
+        this.props.loadTeachersList(address);
     };
 
     render(){
-        console.log(this.props.filterType)
         if(this.props.type === "audience"){
             return(
                 <div className="audience--filter">
@@ -44,9 +63,12 @@ class FilterComponent extends React.Component{
                     <div className="teachers--address">
                         <b>Адрес:</b>
                         <div className="teachers--selection">
-                            <select>
-                                <option selected>1</option>
-                                <option>2</option>
+                            <select onChange={this.loadTeachers}>
+                                <option selected>Выбрать адрес...</option>
+                                {this.props.addresses.map(address =>
+                                    <option>{address}</option>
+                                )}
+
                             </select>
                         </div>
                     </div>
@@ -70,14 +92,16 @@ class FilterComponent extends React.Component{
                     </>
             )
         }
+
         else if (this.props.type === "group control"){
             return (
+                <>
                 <div className="group-control--filter">
                     <div className="group-control--faculty">
                         <b>Факультет:</b>
                         <div className="group-control--selection">
                             <select onChange={this.loadGroups}>
-                                <option selected>Выберете факультет...</option>
+                                <option selected>Выбрать факультет...</option>
                                 {this.props.faculties.map(faculty =>
                                     <option>{faculty}</option>
                                 )}
@@ -88,14 +112,24 @@ class FilterComponent extends React.Component{
                     <div className="group-control--group">
                         <b>Группа:</b>
                         <div className="group-control--selection">
-                            <select>
-                                <option selected>Выберете группу...</option>
-                                <option>первая</option>
-                                <option>вторая</option>
+                            <select onChange={this.loadData}>
+                                <option selected>Выбрать группу...</option>
+                                {this.props.groupsList ? (
+                                    Object.values(this.props.groupsList).map(group =>
+                                        <option>{group.name}</option>
+                                    )
+                                ):
+                                    (
+                                    null
+                                )}
+
                             </select>
                         </div>
                     </div>
                 </div>
+
+
+                    </>
             )
         }
         else return null;

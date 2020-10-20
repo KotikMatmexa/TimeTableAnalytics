@@ -5,3 +5,4 @@ export const getTable = (table) =>{
         type: "GET_CURRENT_TABLE", table
     }
 };
+

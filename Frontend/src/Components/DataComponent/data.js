@@ -45,7 +45,7 @@ class DataComponent extends React.Component{
             return(
                 <div className="data--section">
                     <div className="data--table">
-                        <TeacherTableComponent/>
+                        <TeacherTableComponent teachers = {this.props.teachers}/>
                     </div>
                 </div>
             )
@@ -53,7 +53,7 @@ class DataComponent extends React.Component{
         if(this.props.type === "group control"){
             return(
                 <div className="data--section">
-                        <GroupControllerContainer/>
+                        <GroupControllerContainer data = {this.props.data}/>
                 </div>
             )
         }

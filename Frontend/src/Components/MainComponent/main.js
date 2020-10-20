@@ -19,7 +19,7 @@ class MainComponent extends React.Component{
                    </div>
                    <div className="col-sm-3">
                     <MenuComponent selectedLine = {this.props.selectedLine}
-                                   changeLineIndex={this.props.changeLineIndex}
+                                   changeLineIndex = {this.props.changeLineIndex}
                                    prevSelectedLine = {this.props.prevSelectedLine}
                                    getPrevIndex = {this.props.getPrevIndex}
                     />
@@ -29,9 +29,7 @@ class MainComponent extends React.Component{
                                <div className="col-sm-12">
                                <FilterDataContainer selectedLine = {this.props.selectedLine}/>
                            </div>
-                           <div className="col-sm-12">
-                               <DataComponent type={this.props.type}/>
-                           </div>
+
                            </div>
                            </div>
 
