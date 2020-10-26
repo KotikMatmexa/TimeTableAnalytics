@@ -4,21 +4,26 @@ import TableComponent from "../TableComponent/table";
 
 class TeacherTableComponent extends React.Component{
 
-    showTeacherInformation = (e) =>{
+    teacherTable = (teacherTable) => this._teacherTable = teacherTable;
+
+    showTeacherInformation = (e, teacher) =>{
         let buttons = document.getElementsByClassName("get-table-button");
         for (let button of buttons){
             button.style.backgroundColor = "";
         }
         e.target.style.backgroundColor = "red";
 
-        let table_active = document.getElementsByClassName("teacher--table")[0];
-        if(table_active)
-            document.getElementsByClassName("teacher--table")[0].className = "teacher--table-active"
 
+        if(this._teacherTable.className === "teacher--table")
+            this._teacherTable.className = "teacher--table-active"
+
+
+        this.props.setCurrentTeacher(teacher);
         //this.props.downloadTeacherData(teacher);
     };
 
     render(){
+
 
         return(
            <div className="teacher-table">
@@ -37,14 +42,16 @@ class TeacherTableComponent extends React.Component{
                            <th scope="row">{teacher.firstName} {teacher.patronymic} {teacher.sirName}</th>
                            <td>{teacher.faculty}</td>
                            <td>{teacher.level}</td>
-                           <td><button className="get-table-button" onClick={this.showTeacherInformation}>Посмотреть занятость</button></td>
+                           <td><button className="get-table-button"
+                                       onClick={(e)=>this.showTeacherInformation(e,teacher)}>Посмотреть занятость</button></td>
                        </tr>
                    )}
 
                    </tbody>
                </table>
-              <div className="teacher--table">
-               <TableComponent type="teachers"/>
+
+              <div className="teacher--table" ref={this.teacherTable}>
+               <TableComponent {...this.props}/>
               </div>
            </div>
         )

@@ -18,3 +18,15 @@
     width: inherit;
 }
 
+.date--time{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.audience--start-period input, .teachers--start-period input, .audience--end-period input, .teachers--end-period input{
+    width: 149px;
+}
+
+.teachers--surname--letter{
+    margin: 2px;
+}

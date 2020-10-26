@@ -7,10 +7,13 @@ class TableComponent extends React.Component{
 
 
     render(){
+        console.log(this.props)
+
+
         if(this.props.type === "teachers"){
             return(<div className="table">
                 <div className="table--components">
-                    <label>Фамилия, время</label>
+                    <label>{this.props.teacher.sirName}</label>
                     <DayComponent/>
                     <DayComponent/>
                     <DayComponent/>

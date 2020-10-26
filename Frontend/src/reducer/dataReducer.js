@@ -39,13 +39,48 @@ let getTeachers = (address) => {
     return teachersList;
 };
 
+export const teacherReducer =  (state = [], action) => {
 
+    switch (action.type){
+        case "SET_TEACHER":
+            return action.teacher;
+        default:
+            return state
+    }
+};
 
 export const addressesReducer =  (state = addresses, action) => {
     console.log(action.type)
     switch (action.type){
         case "LOAD_ADDRESSES":
             return action.addresses;
+        default:
+            return state
+    }
+};
+
+
+export const startDateReducer =  (state = new Date(), action) => {
+
+    switch (action.type){
+        case "SET_START_DATE":
+            return action.date;
+        default:
+            return state
+    }
+};
+
+const nextDay = () =>{
+    let today = new Date();
+    let tomorrow = new Date(today.getTime() + (24 * 60 * 60 * 1000));
+    return tomorrow;
+};
+
+export const endDateReducer =  (state = nextDay(), action) => {
+
+    switch (action.type){
+        case "SET_END_DATE":
+            return action.date;
         default:
             return state
     }

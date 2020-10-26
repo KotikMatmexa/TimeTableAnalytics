@@ -11,6 +11,10 @@ class DataComponent extends React.Component{
 
 
     render(){
+
+
+
+
         if(this.props.type === "audience"){
             return(
                 <div className="data--section">
@@ -45,7 +49,7 @@ class DataComponent extends React.Component{
             return(
                 <div className="data--section">
                     <div className="data--table">
-                        <TeacherTableComponent teachers = {this.props.teachers}/>
+                        <TeacherTableComponent  {...this.props} />
                     </div>
                 </div>
             )
@@ -53,7 +57,7 @@ class DataComponent extends React.Component{
         if(this.props.type === "group control"){
             return(
                 <div className="data--section">
-                        <GroupControllerContainer data = {this.props.data}/>
+                        <GroupControllerContainer {...this.props}/>
                 </div>
             )
         }
