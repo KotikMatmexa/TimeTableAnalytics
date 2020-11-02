@@ -1,2 +1,2 @@
-import FilterComponent from './filter.js'
+import FilterComponent from './groupFilter.js'
 export default FilterComponent;

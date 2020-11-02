@@ -23,21 +23,19 @@ class TableComponent extends React.Component{
         }
 
         else if (this.props.type === "audience") {
+            console.log(this.props.endDate)
             return (
                 <div className="table">
                     <span>Номер аудитории, количество мест</span>
                     <div className="table--components">
-                        <DayComponent/>
-                        <DayComponent/>
-                        <DayComponent/>
+                        <DayComponent startDate={this.props.startDate}/>
+                        <DayComponent endDate = {this.props.endDate}/>
 
                     </div>
                     <span>Номер аудитории, количество мест</span>
                     <div className="table--components">
-
-                        <DayComponent/>
-                        <DayComponent/>
-                        <DayComponent/>
+                        <DayComponent startDate = {this.props.startDate}/>
+                        <DayComponent endDate = {this.props.endDate}/>
 
                     </div>
                 </div>

@@ -2,10 +2,16 @@ import React from 'react'
 import {getFilterType, setFaculty} from "../action/filterAction";
 import connect from "react-redux/es/connect/connect";
 import FilterComponent from "../Components/FilterComponent/index";
-import {faculties} from "../testData";
+
 import {loadGroups, setActiveGroup} from "../action/groupAction";
-import {loadData,loadTeachers, setCurrentTeacher, loadAddresses, setEndDate, setStartDate} from "../action/dataAction";
+import {loadData,loadTeachers, setCurrentTeacher, loadAddresses,
+    setActiveAddresses,
+    setEndDate, setStartDate} from "../action/dataAction";
 import DataComponent from "../Components/DataComponent/data";
+import AudienceFilterComponent from "../Components/FilterComponent/audienceFilter";
+import TeachersFilterComponent from "../Components/FilterComponent/teachersFilter";
+import GroupTableComponent from "../Components/DataComponent/TableComponent/GroupTableComponent/groupTable";
+import GroupFilterComponent from "../Components/FilterComponent/groupFilter";
 
 class FilterDataContainer extends React.Component{
 
@@ -28,8 +34,70 @@ class FilterDataContainer extends React.Component{
       }
     };
 
-    render(){
+    render() {
         this.changeType(this.props.selectedLine);
+
+        if (this.props.filterType === "audience") {
+            return (
+                <>
+                    <AudienceFilterComponent {...this.props}/>
+                    {this.props.isLoadData ? (
+                            <DataComponent type={this.props.filterType} data={this.props.activeGroupData}
+                                           teachers={this.props.teachers}
+                                           addresses={this.props.addresses}
+                                           activeAddresses={this.props.activeAddresses}
+                                           teacher={this.props.currentTeacher}
+                                           startDate={this.props.startDate}
+                                           endDate={this.props.endDate}
+                                           setCurrentTeacher={this.props.setCurrentTeacher}
+                            />
+                        ) :
+                        (null)
+                    }
+                </>
+            )
+        }
+        else if (this.props.filterType === "teachers") {
+            return (
+                <>
+                    <TeachersFilterComponent {...this.props}/>
+                    {this.props.isLoadData ? (
+                            <DataComponent type={this.props.filterType} data={this.props.activeGroupData}
+                                           teachers={this.props.teachers}
+                                           addresses={this.props.addresses}
+                                           activeAddresses={this.props.activeAddresses}
+                                           teacher={this.props.currentTeacher}
+                                           startDate={this.props.startDate}
+                                           endDate={this.props.endDate}
+                                           setCurrentTeacher={this.props.setCurrentTeacher}
+                            />
+                        ) :
+                        (null)
+                    }
+                </>
+            )
+        }
+        else if (this.props.filterType === "group control") {
+            return (
+                <>
+                    <GroupFilterComponent {...this.props}/>
+                    {this.props.isLoadData ? (
+                            <DataComponent type={this.props.filterType} data={this.props.activeGroupData}
+                                           teachers={this.props.teachers}
+                                           addresses={this.props.addresses}
+                                           activeAddresses={this.props.activeAddresses}
+                                           teacher={this.props.currentTeacher}
+                                           startDate={this.props.startDate}
+                                           endDate={this.props.endDate}
+                                           setCurrentTeacher={this.props.setCurrentTeacher}
+                            />
+                        ) :
+                        (null)
+                    }
+                </>
+            )
+        }
+        /*
         return(
             <>
             <FilterComponent
@@ -44,15 +112,19 @@ class FilterDataContainer extends React.Component{
                              loadGroups = {this.props.loadGroups}
                              isLoadData = {this.props.isLoadData}
                              loadData = {this.props.loadData}
+                             loadTables = {this.props.loadTables}
                              activeGroupData = {this.props.activeGroupData}
                              setActiveGroup = {this.props.setActiveGroup}
                              setStartDateTime = {this.props.setStartDateTime}
                              setEndDateTime = {this.props.setEndDateTime}
                              setCurrentTeacher = {this.props.setCurrentTeacher}
+                             setActiveAddresses = {this.props.setActiveAddresses}
             />
                 {this.props.isLoadData?(
                         <DataComponent type={this.props.filterType} data={this.props.activeGroupData}
                             teachers = {this.props.teachers}
+                                       addresses = {this.props.addresses}
+                                       activeAddresses = {this.props.activeAddresses}
                                        teacher = {this.props.currentTeacher}
                                        startDate = {this.props.startDate}
                                        endDate = {this.props.endDate}
@@ -63,6 +135,8 @@ class FilterDataContainer extends React.Component{
                 }
             </>
         )
+    }
+    */
     }
 }
 const mapStateToProps = state => ({
@@ -75,7 +149,8 @@ const mapStateToProps = state => ({
     addresses: state.addressesReducer,
     startDate: state.startDateReducer,
     endDate: state.endDateReducer,
-    currentTeacher: state.teacherReducer
+    currentTeacher: state.teacherReducer,
+    activeAddresses: state.activeAddressesReducer
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -118,6 +193,10 @@ const mapDispatchToProps = dispatch => ({
 
     setCurrentTeacher: (teacher) => {
         dispatch(setCurrentTeacher(teacher))
+    },
+
+    setActiveAddresses: (addresses) => {
+        dispatch(setActiveAddresses(addresses))
     }
 });
 

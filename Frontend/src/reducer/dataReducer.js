@@ -60,6 +60,17 @@ export const addressesReducer =  (state = addresses, action) => {
 };
 
 
+export const activeAddressesReducer =  (state = [], action) => {
+
+    switch (action.type){
+        case "SET_ACTIVE_ADDRESSES":
+            return action.addresses;
+        default:
+            return state
+    }
+};
+
+
 export const startDateReducer =  (state = new Date(), action) => {
 
     switch (action.type){

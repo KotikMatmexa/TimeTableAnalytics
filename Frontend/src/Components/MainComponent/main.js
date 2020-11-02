@@ -5,6 +5,7 @@ import FooterComponent from "../FooterComponent/index";
 
 import FilterDataContainer from "../../Containers/FilterDataContainer";
 import DataComponent from "../DataComponent/index";
+import {faculties} from "../../testData";
 
 class MainComponent extends React.Component{
 
@@ -27,7 +28,7 @@ class MainComponent extends React.Component{
                        <div className="col-sm-9">
                            <div className="row">
                                <div className="col-sm-12">
-                               <FilterDataContainer selectedLine = {this.props.selectedLine}/>
+                               <FilterDataContainer selectedLine = {this.props.selectedLine} faculties={faculties}/>
                            </div>
 
                            </div>

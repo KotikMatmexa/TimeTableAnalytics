@@ -122,6 +122,7 @@ export let faculty_data = {
 
 export let teachers = {
   0:{
+      id:1,
       firstName: "Иван",
       patronymic: "Петрович",
       sirName: "Бойко",
@@ -130,6 +131,7 @@ export let teachers = {
 
   },
   1:{
+      id: 2,
       firstName: "Роман",
       patronymic: "Петрович",
       sirName: "Тыгорин",
@@ -138,6 +140,7 @@ export let teachers = {
 
   },
     2:{
+        id: 3,
         firstName: "Ирина",
         patronymic: "Ивановна",
         sirName: "Иванова",
@@ -146,6 +149,7 @@ export let teachers = {
 
     },
     3:{
+        id: 4,
         firstName: "Станислов",
         patronymic: "Петрович",
         sirName: "Ройко",
@@ -154,6 +158,7 @@ export let teachers = {
 
     },
     4:{
+        id: 5,
         firstName: "Никита",
         patronymic: "Евгеньевич",
         sirName: "Липо",
@@ -162,6 +167,7 @@ export let teachers = {
 
     },
     5:{
+        id: 6,
         firstName: "Людмила",
         patronymic: "Ивановна",
         sirName: "Липо",
@@ -170,3 +176,4 @@ export let teachers = {
     },
 
 };
+

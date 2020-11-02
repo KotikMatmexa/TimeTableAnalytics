@@ -23,6 +23,12 @@ export const loadAddresses = (addresses) => {
     }
 };
 
+export const setActiveAddresses = (addresses) => {
+    return {
+        type: "SET_ACTIVE_ADDRESSES", addresses
+    }
+};
+
 export const setStartDate = (date) => {
     return {
         type: "SET_START_DATE", date

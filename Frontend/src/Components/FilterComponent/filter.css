@@ -30,3 +30,32 @@
 .teachers--surname--letter{
     margin: 2px;
 }
+
+.selected--addresses{
+    margin-top: 12px;
+    max-height: 89px;
+    overflow-y: scroll;
+}
+
+.selected-address{
+    display: flex;
+    border-bottom: 1px solid black;
+    margin: 3px;
+    padding: 2px;
+    font-size: 12px;
+}
+
+.selected--addresses button{
+    height: 5%;
+    font-size: small;
+    margin-right:10px;
+}
+
+.filter--action{
+    position: relative;
+}
+.filter--button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

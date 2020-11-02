@@ -1,5 +1,6 @@
 import {combineReducers} from "redux";
-import {loadDataReducer, teachersReducer,teacherReducer, addressesReducer, startDateReducer, endDateReducer} from "./dataReducer";
+import {loadDataReducer, teachersReducer,teacherReducer,activeAddressesReducer,
+    addressesReducer, startDateReducer, endDateReducer} from "./dataReducer";
 import {menuPrevIndexReducer, menuIndexReducer} from "./menuReducer";
 import {groupControlReducer} from "./tableReducer"
 import {filterTypeReducer} from "./filterReducer";
@@ -16,5 +17,5 @@ export const rootReducer = combineReducers({
     addressesReducer,
     startDateReducer,
     endDateReducer,
-
+    activeAddressesReducer
 });

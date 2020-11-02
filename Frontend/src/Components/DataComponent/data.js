@@ -2,45 +2,30 @@ import React from 'react'
 import TableComponent from "./TableComponent/table";
 import './data.css'
 import TeacherTableComponent from "./TeacherTableComponent/teacherTable";
-import GroupTableComponent from "./TableComponent/GroupTableComponent/groupTable";
 import GroupControllerContainer from "../../Containers/GroupControllerContainer";
-
-
 
 class DataComponent extends React.Component{
 
-
     render(){
-
-
-
 
         if(this.props.type === "audience"){
             return(
                 <div className="data--section">
 
-                    <div className="data--table">
-                        <div className="data--header">
-                            <label>Адрес</label>
-                            <select>
-                                <option selected>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
+                    {this.props.activeAddresses.map(address =>
+
+                        <div className="data--table">
+                            <div className="data--header">
+                                <label>{address}</label>
+                                <select>
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <TableComponent {...this.props}/>
                         </div>
-                        <TableComponent type="audience"/>
-                    </div>
-                    <div className="data--table">
-                        <div className="data--header">
-                            <label>Адрес</label>
-                            <select>
-                                <option selected>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-                        <TableComponent type="audience"/>
-                    </div>
+                    )}
 
                 </div>
             )
