@@ -49,8 +49,8 @@ export const teacherReducer =  (state = [], action) => {
     }
 };
 
-export const addressesReducer =  (state = addresses, action) => {
-    console.log(action.type)
+export const addressesReducer =  (state = faculty_data, action) => {
+
     switch (action.type){
         case "LOAD_ADDRESSES":
             return action.addresses;

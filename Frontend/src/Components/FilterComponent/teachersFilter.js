@@ -78,8 +78,9 @@ class TeachersFilterComponent extends React.Component{
                         <div className="teachers--selection">
                             <select ref={this.address}>
                                 <option selected>Выбрать адрес...</option>
-                                {this.props.addresses.map(address =>
-                                    <option>{address}</option>
+                                {Object.values(this.props.addresses).map(faculty =>
+                                    <option value={faculty.address} title={faculty.name}>{faculty.address}</option>
+
                                 )}
 
                             </select>

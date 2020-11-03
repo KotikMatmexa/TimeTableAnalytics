@@ -10,10 +10,28 @@
     content: attr(data-title);
 }
 .day--timetable ul li{
+    position:relative;
     list-style: none;
     background-color: #e95420;
     margin: 4px;
     width: 200px;
+    height: inherit;
     text-align: center;
     padding: 5px;
+}
+
+.lesson--info{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    height: 200px;
+    background:rgba(255,255,255, 0.7);
+    padding:5px;
+    display:none;
+    z-index: 10;
+}
+.day--timetable ul li:hover .lesson--info{
+    display:block;
 }

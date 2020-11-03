@@ -1,6 +1,5 @@
 import React from 'react'
 import './filter.css'
-import DataComponent from "../DataComponent/data";
 
 class AudienceFilterComponent extends React.Component{
 
@@ -127,12 +126,13 @@ class AudienceFilterComponent extends React.Component{
                     <div className="audience--address">
                         <b>Адрес:</b>
                         <div className="address--selection">
-                           <select onChange={this.setAddress} ref={this.selectedAddress}>
+                           <select onChange={this.setAddress} ref={this.selectedAddress} >
                                <option>Выбрать адрес...</option>
-                               {this.props.addresses.map(address =>
-                                   <option value={address}>{address}</option>
+                               {Object.values(this.props.addresses).map(faculty =>
+                                   <option value={faculty.address} title={faculty.name}>{faculty.address}</option>
                                )}
                            </select>
+
                             <div className="selected--addresses" ref={this.selectedAddresses}>
                             </div>
                         </div>
