@@ -3,7 +3,7 @@ import {loadDataReducer, teachersReducer,teacherReducer,activeAddressesReducer,
     addressesReducer, startDateReducer, endDateReducer} from "./dataReducer";
 import {menuPrevIndexReducer, menuIndexReducer} from "./menuReducer";
 import {groupControlReducer} from "./tableReducer"
-import {filterTypeReducer} from "./filterReducer";
+import {filterTypeReducer, teachersListReducer} from "./filterReducer";
 import {facultyReducer} from "./filterReducer";
 import {groupsReducer, groupReducer} from "./groupReducer";
 
@@ -17,5 +17,6 @@ export const rootReducer = combineReducers({
     addressesReducer,
     startDateReducer,
     endDateReducer,
-    activeAddressesReducer
+    activeAddressesReducer,
+    teachersListReducer
 });

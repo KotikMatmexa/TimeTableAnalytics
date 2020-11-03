@@ -1,5 +1,5 @@
 import React from 'react'
-import {getFilterType, setFaculty} from "../action/filterAction";
+import {getFilterType, setFaculty, setFilteredTeachersListByLetter} from "../action/filterAction";
 import connect from "react-redux/es/connect/connect";
 import FilterComponent from "../Components/FilterComponent/index";
 
@@ -69,7 +69,9 @@ class FilterDataContainer extends React.Component{
                                            teacher={this.props.currentTeacher}
                                            startDate={this.props.startDate}
                                            endDate={this.props.endDate}
+                                           filteredTeachersList = {this.props.filteredTeachersList}
                                            setCurrentTeacher={this.props.setCurrentTeacher}
+                                           setFilteredTeachersList = {this.props.setFilteredTeachersList}
                             />
                         ) :
                         (null)
@@ -90,6 +92,7 @@ class FilterDataContainer extends React.Component{
                                            startDate={this.props.startDate}
                                            endDate={this.props.endDate}
                                            setCurrentTeacher={this.props.setCurrentTeacher}
+                                           filteredTeachersList = {this.props.filteredTeachersList}
                             />
                         ) :
                         (null)
@@ -150,7 +153,8 @@ const mapStateToProps = state => ({
     startDate: state.startDateReducer,
     endDate: state.endDateReducer,
     currentTeacher: state.teacherReducer,
-    activeAddresses: state.activeAddressesReducer
+    activeAddresses: state.activeAddressesReducer,
+    filteredTeachersList: state.teachersListReducer
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -197,6 +201,10 @@ const mapDispatchToProps = dispatch => ({
 
     setActiveAddresses: (addresses) => {
         dispatch(setActiveAddresses(addresses))
+    },
+
+    setFilteredTeachersList: (letter, list) => {
+        dispatch(setFilteredTeachersListByLetter(letter, list))
     }
 });
 

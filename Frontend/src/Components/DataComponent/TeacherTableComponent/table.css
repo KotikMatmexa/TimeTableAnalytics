@@ -14,3 +14,7 @@
 .teacher--table-active{
     display: block;
 }
+
+.teachers--surname--letter{
+    margin-bottom: 10px;
+}

@@ -49,7 +49,6 @@ class TeachersFilterComponent extends React.Component{
         this.props.setStartDateTime(date);
         };
 
-
     //end date
     setEndDateTime = () =>{
 
@@ -67,11 +66,10 @@ class TeachersFilterComponent extends React.Component{
 
     };
 
+
+
     render(){
 
-        let arr_RU = ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж',
-            'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф',
-            'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Э', 'Ю', 'Я'];
             return (
                 <>
                 <div className="teachers--filter">
@@ -105,14 +103,7 @@ class TeachersFilterComponent extends React.Component{
                     </div>
                 </div>
                     <button className="get--button" onClick={this.loadTeachers}>Получить</button>
-                    <div className="teachers--surname--filter">
-                        {
-                            arr_RU.map(letter =>
-                            <button className="teachers--surname--letter">{letter}</button>
-                            )
-                           }
 
-                    </div>
 
                     </>
             )

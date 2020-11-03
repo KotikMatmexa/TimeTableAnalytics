@@ -11,3 +11,8 @@ export const setFaculty = (faculty) => {
   }
 };
 
+export const setFilteredTeachersListByLetter = (letter,list) => {
+    return{
+        type: "SET_FILTERED_TEACHERS_LIST_BY_LETTER", letter, list
+    }
+};

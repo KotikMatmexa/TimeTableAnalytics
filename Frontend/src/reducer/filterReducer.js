@@ -18,3 +18,25 @@ export const facultyReducer = (state = [], action) => {
     }
 };
 
+export const teachersListReducer = (state = [], action) => {
+
+    switch (action.type){
+        case "SET_FILTERED_TEACHERS_LIST_BY_LETTER":
+            return getTeachersList(action.letter, action.list);
+        default:
+            return state;
+    }
+};
+
+let getTeachersList = (letter, teachersList) => {
+
+    let final_list = [];
+    for (let teacher of Object.values(teachersList)){
+        if (teacher.sirName.startsWith(letter))
+            final_list.push(teacher)
+
+    }
+    if (final_list.length > 0)
+        return final_list;
+    return "Нет фамилий с такой буквы"
+};
