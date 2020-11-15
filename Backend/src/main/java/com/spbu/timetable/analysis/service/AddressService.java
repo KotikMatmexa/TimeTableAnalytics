@@ -34,9 +34,9 @@ public class AddressService {
         return address;//.orElseThrow(()->new Exception("Entity not found"));
     }
 
-    public List<Address> findAll(int offset, int limit) {
+    public List<Address> findAll(int offset, int limit, String searchText) {
         Pageable pageable = PageRequest.of(offset / limit, limit);
-        List<Address> allByGCRecordIsNotNull = addressRepository.findAllByGCRecordIsNotNull(pageable);
+        List<Address> allByGCRecordIsNotNull = addressRepository.findAllByGCRecordIsNotNullAndStreetLike(pageable, searchText);
         return allByGCRecordIsNotNull;
     }
 

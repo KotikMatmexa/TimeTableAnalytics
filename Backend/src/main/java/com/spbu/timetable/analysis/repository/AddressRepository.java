@@ -3,6 +3,7 @@ package com.spbu.timetable.analysis.repository;
 import com.spbu.timetable.analysis.model.Address;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -14,6 +15,10 @@ public interface AddressRepository extends JpaRepository<Address, UUID> {
 
     Optional<Address> findByOid(String id);
 
-    List<Address> findAllByGCRecordIsNotNull(Pageable pageable);
+    @Query("SELECT adr FROM Address adr " +
+            " WHERE adr.buildingName LIKE CONCAT('%',:search,'%') " +
+            " or adr.street LIKE CONCAT('%',:search,'%')" +
+            " and adr.GCRecord = null")
+    List<Address> findAllByGCRecordIsNotNullAndStreetLike(Pageable pageable, String search);
 
 }

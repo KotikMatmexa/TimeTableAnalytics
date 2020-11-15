@@ -7,6 +7,7 @@ public class RequestInfo {
     public static final String LOCATION = "/location";
     public static final String TIMETABLE = "/timetable";
 
+
     public static final String DEFAULT_OFFSET = "0";
     public static final String DEFAULT_LIMIT = "20";
     public static final String DEFAULT_SEARCH_VALUE = "";
