@@ -1,6 +1,8 @@
 package com.spbu.timetable.analysis.controller;
 
 import com.spbu.timetable.analysis.dto.AddressFullDto;
+import com.spbu.timetable.analysis.dto.AddressWithLocationEventDto;
+import com.spbu.timetable.analysis.dto.ListForDto;
 import com.spbu.timetable.analysis.model.Address;
 import com.spbu.timetable.analysis.service.AddressService;
 import com.spbu.timetable.analysis.utils.DtoMapper;
@@ -30,5 +32,11 @@ public class AddressController {
         return addressService.findAll(offset, limit);
     }
 
+    @GetMapping(RequestInfo.TIMETABLE)
+    public ListForDto<AddressWithLocationEventDto> findAllEventsForLocations(@RequestBody List<String> addressIds,
+                                                                             @RequestParam(required = false) String start,
+                                                                             @RequestParam(required = false) String end) {
+        return addressService.findAllEventsForAddress(addressIds, start, end);
+    }
 
 }

@@ -14,8 +14,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Service
@@ -30,10 +30,15 @@ public class LocationService {
         return locationRepository.findById(id).orElse(null);
     }
 
-    public LocationWithEventsDto getWithEventBetweenDates(String id, LocalDateTime start, LocalDateTime end) {
+    private LocationWithEventsDto getWithEventBetweenDates(String id, LocalDateTime start, LocalDateTime end) {
         LocationDtoShort location = DtoMapper.convertToClass(getById(id), LocationDtoShort.class);
 
         List<Event> eventByLocationIdBetweenDates = eventService.getEventByLocationIdBetweenDates(id, start, end);
+
+        if (eventByLocationIdBetweenDates.isEmpty()) {
+            return null;
+        }
+
         List<EventLocationDto> eventLocationDtos = DtoMapper.convertList(eventByLocationIdBetweenDates, EventLocationDto.class);
 
         return LocationWithEventsDto.builder()
@@ -42,18 +47,25 @@ public class LocationService {
                 .build();
     }
 
+    public ListForDto<LocationWithEventsDto> getAllEventsForLocationsInAddress(String addressId, LocalDateTime start, LocalDateTime end) {
+        List<String> allLocationByAddressId = getAllLocationByAddressId(addressId);
+        return findAllEventsForLocations(allLocationByAddressId, start, end);
+    }
 
-    public ListForDto<LocationWithEventsDto> findAllEventsForLocations(List<String> addressIds, String start, String end) {
-        LocalDateTime from = parseDateTime(start);
-        LocalDateTime to = parseDateTime(end);
+    private List<String> getAllLocationByAddressId(String addressId) {
+        return locationRepository.findAllByAddressOid(addressId)
+                .stream()
+                .map(Location::getOid)
+                .collect(Collectors.toList());
+    }
 
-        List<LocationWithEventsDto> locationWithEventsDtos = addressIds.stream().map(id -> getWithEventBetweenDates(id, from, to))
+    private ListForDto<LocationWithEventsDto> findAllEventsForLocations(List<String> locationIds, LocalDateTime start, LocalDateTime end) {
+        List<LocationWithEventsDto> locationWithEventsDtos = locationIds
+                .stream()
+                .map(id -> getWithEventBetweenDates(id, start, end))
+                .filter(Objects::nonNull)
                 .collect(Collectors.toList());
         return new ListForDto<>(locationWithEventsDtos.size(), locationWithEventsDtos);
     }
 
-    public static LocalDateTime parseDateTime(String dateTime) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-        return LocalDateTime.parse(dateTime, formatter);
-    }
 }

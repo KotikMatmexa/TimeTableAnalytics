@@ -17,8 +17,5 @@ public class LocationController {
 
     private final LocationService locationService;
 
-    @GetMapping(RequestInfo.TIMETABLE)
-    public ListForDto<LocationWithEventsDto> findAllEventsForLocations(@RequestBody List<String> addressIds, @RequestParam(required = false) String start, @RequestParam(required = false) String end) {
-        return locationService.findAllEventsForLocations(addressIds, start, end);
-    }
+
 }

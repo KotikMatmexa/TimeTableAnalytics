@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class AddressDto {
+public class AddressDtoShort {
     private String oid;
 
     @JsonProperty("building_name")
@@ -35,5 +35,4 @@ public class AddressDto {
 
     @JsonProperty("english_building_name")
     private String buildingNameEnglish;
-
 }
