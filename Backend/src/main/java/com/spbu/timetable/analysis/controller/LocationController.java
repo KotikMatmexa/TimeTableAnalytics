@@ -1,14 +1,14 @@
 package com.spbu.timetable.analysis.controller;
 
-import com.spbu.timetable.analysis.model.Location;
+import com.spbu.timetable.analysis.dto.ListForDto;
+import com.spbu.timetable.analysis.dto.LocationWithEventsDto;
 import com.spbu.timetable.analysis.service.LocationService;
 import com.spbu.timetable.analysis.utils.RequestInfo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(RequestInfo.LOCATION)
@@ -17,8 +17,8 @@ public class LocationController {
 
     private final LocationService locationService;
 
-    @GetMapping(RequestInfo.ID)
-    public Location getById(@PathVariable int id){
-        return locationService.getById(id);
+    @GetMapping(RequestInfo.TIMETABLE)
+    public ListForDto<LocationWithEventsDto> findAllEventsForLocations(@RequestBody List<String> addressIds, @RequestParam(required = false) String start, @RequestParam(required = false) String end) {
+        return locationService.findAllEventsForLocations(addressIds, start, end);
     }
 }

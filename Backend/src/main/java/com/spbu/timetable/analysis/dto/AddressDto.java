@@ -5,13 +5,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
-
 @Getter
 @Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class AddressFullDto {
-
+public class AddressDto {
     private String oid;
 
     @JsonProperty("building_name")
@@ -39,5 +36,4 @@ public class AddressFullDto {
     @JsonProperty("english_building_name")
     private String buildingNameEnglish;
 
-    private List<LocationDtoShort> locations;
 }

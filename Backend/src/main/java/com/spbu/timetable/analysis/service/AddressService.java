@@ -18,6 +18,8 @@ public class AddressService {
 
     private final AddressRepository addressRepository;
 
+    private final LocationService locationService;
+
     public Address getById(String id) {
         Address address = addressRepository.findByOid(id)
                 .orElse(null);

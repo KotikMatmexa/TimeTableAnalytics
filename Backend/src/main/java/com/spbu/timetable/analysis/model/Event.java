@@ -23,8 +23,8 @@ public class Event {
 
     private LocalDateTime start;
 
-    @Column(name = "end")
-    private LocalDateTime end_date;
+    @Column(name = "enddate")
+    private LocalDateTime endDate;
 
     @Column(name = "gcrecord")
     private String GCRecord;
