@@ -96,3 +96,26 @@ export const endDateReducer =  (state = nextDay(), action) => {
             return state
     }
 };
+
+export const dateReducer =  (state = [], action) => {
+    switch (action.type){
+        case "SET_DATE_ARRAY":
+            return datesList(action.startDate, action.endDate);
+        default:
+            return state
+    }
+};
+
+const datesList = (startDate, endDate) => {
+    let startDay = new Date(startDate);
+    console.log(startDate)
+    let endDay = new Date(endDate);
+    let days = [];
+    days.push(startDay);
+    for(let day = startDay.getDate() + 1; day < endDay.getDate(); day++){
+        let currentDate = new Date(startDay.getFullYear(), startDay.getMonth(), day);
+        days.push(currentDate);
+    }
+    days.push(endDay);
+    return days;
+};

@@ -57,10 +57,11 @@ class AudienceFilterComponent extends React.Component{
                 addresses.push(data);
             }
 
-            console.log(addresses);
             //загрузка таблиц
             this.props.loadData(true);
-            this.props.setActiveAddresses(addresses);
+            this.props.loadFacultiesList(addresses);
+            this.props.setDateInterval(this.props.startDate, this.props.endDate)
+            //this.props.setActiveAddresses(addresses);
         }
         else {
             alert("Должны быть заполнены все данные");

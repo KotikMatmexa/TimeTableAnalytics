@@ -35,6 +35,12 @@ export const setStartDate = (date) => {
     }
 };
 
+export const setDateInterval = (startDate, endDate) => {
+    return {
+        type: "SET_DATE_ARRAY", startDate, endDate
+    }
+};
+
 
 export const setEndDate = (date) => {
     return {

@@ -1,16 +1,14 @@
 import React from 'react'
 import {getFilterType, setFaculty, setFilteredTeachersListByLetter} from "../action/filterAction";
 import connect from "react-redux/es/connect/connect";
-import FilterComponent from "../Components/FilterComponent/index";
-
 import {loadGroups, setActiveGroup} from "../action/groupAction";
+import {loadFacultiesList, setActiveAudiences} from "../action/tableAction";
 import {loadData,loadTeachers, setCurrentTeacher, loadAddresses,
     setActiveAddresses,
-    setEndDate, setStartDate} from "../action/dataAction";
+    setEndDate, setStartDate, setDateInterval} from "../action/dataAction";
 import DataComponent from "../Components/DataComponent/data";
 import AudienceFilterComponent from "../Components/FilterComponent/audienceFilter";
 import TeachersFilterComponent from "../Components/FilterComponent/teachersFilter";
-import GroupTableComponent from "../Components/DataComponent/TableComponent/GroupTableComponent/groupTable";
 import GroupFilterComponent from "../Components/FilterComponent/groupFilter";
 
 class FilterDataContainer extends React.Component{
@@ -50,6 +48,10 @@ class FilterDataContainer extends React.Component{
                                            startDate={this.props.startDate}
                                            endDate={this.props.endDate}
                                            setCurrentTeacher={this.props.setCurrentTeacher}
+                                           facultiesList = {this.props.facultiesList}
+                                           activeAudiences = {this.props.activeAudiences}
+                                           setActiveAudiences = {this.props.setActiveAudiences}
+                                           dateInterval = {this.props.dateInterval}
                             />
                         ) :
                         (null)
@@ -72,6 +74,7 @@ class FilterDataContainer extends React.Component{
                                            filteredTeachersList = {this.props.filteredTeachersList}
                                            setCurrentTeacher={this.props.setCurrentTeacher}
                                            setFilteredTeachersList = {this.props.setFilteredTeachersList}
+                                           dateInterval = {this.props.dateInterval}
                             />
                         ) :
                         (null)
@@ -154,7 +157,10 @@ const mapStateToProps = state => ({
     endDate: state.endDateReducer,
     currentTeacher: state.teacherReducer,
     activeAddresses: state.activeAddressesReducer,
-    filteredTeachersList: state.teachersListReducer
+    filteredTeachersList: state.teachersListReducer,
+    facultiesList: state.facultiesReducer,
+    activeAudiences: state.audiencesReducer,
+    dateInterval: state.dateReducer
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -205,6 +211,16 @@ const mapDispatchToProps = dispatch => ({
 
     setFilteredTeachersList: (letter, list) => {
         dispatch(setFilteredTeachersListByLetter(letter, list))
+    },
+
+    loadFacultiesList: (addresses) => {
+        dispatch(loadFacultiesList(addresses))
+    },
+    setActiveAudiences:(faculty, audiences)=>{
+        dispatch(setActiveAudiences(faculty, audiences))
+    },
+    setDateInterval: (startDate, endDate) => {
+        dispatch(setDateInterval(startDate, endDate))
     }
 });
 

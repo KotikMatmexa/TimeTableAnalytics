@@ -7,8 +7,7 @@ class TableComponent extends React.Component{
 
 
     render(){
-        console.log(this.props)
-
+        console.log("updated");
 
         if(this.props.type === "teachers"){
             return(<div className="table">
@@ -23,21 +22,18 @@ class TableComponent extends React.Component{
         }
 
         else if (this.props.type === "audience") {
-            console.log(this.props.endDate)
+
             return (
                 <div className="table">
-                    <span>Номер аудитории, количество мест</span>
+                    {this.props.activeAudiences.map(audience => <>
+                    <span>Аудитория № {audience}, Количество мест: 20</span>
                     <div className="table--components">
-                        <DayComponent startDate={this.props.startDate}/>
-                        <DayComponent endDate = {this.props.endDate}/>
-
+                        {this.props.dateInterval.map(date =>
+                            <DayComponent date={date} />
+                        )}
                     </div>
-                    <span>Номер аудитории, количество мест</span>
-                    <div className="table--components">
-                        <DayComponent startDate = {this.props.startDate}/>
-                        <DayComponent endDate = {this.props.endDate}/>
-
-                    </div>
+                            </>
+                        )}
                 </div>
             )
         }

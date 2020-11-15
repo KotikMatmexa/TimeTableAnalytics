@@ -25,8 +25,10 @@ class GroupFilterComponent extends React.Component{
     loadData = () => {
         let index = this._group.selectedIndex;
 
-        if(index === 0)
+        if(index === 0) {
+            alert("Выберите группу!")
             return false;
+        }
 
         let group = this._group.value;
         let faculty = this._faculty.value;
