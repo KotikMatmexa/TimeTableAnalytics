@@ -129,8 +129,8 @@ class AudienceFilterComponent extends React.Component{
                         <div className="address--selection">
                            <select onChange={this.setAddress} ref={this.selectedAddress} >
                                <option>Выбрать адрес...</option>
-                               {Object.values(this.props.addresses).map(faculty =>
-                                   <option value={faculty.address} title={faculty.name}>{faculty.address}</option>
+                               {this.props.addresses.map(faculty =>
+                                   <option value={faculty} title={faculty.name}>{faculty}</option>
                                )}
                            </select>
 

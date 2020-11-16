@@ -12,8 +12,8 @@ export const loadFacultiesList = (addresses) =>{
     }
 };
 
-export const setActiveAudiences = (address, audiences) =>{
+export const setActiveAudience = (address, audience, timeInterval) =>{
     return {
-        type: "SET_ACTIVE_AUDIENCES", address, audiences
+        type: "SET_ACTIVE_AUDIENCES", address, audience, timeInterval
     }
 };

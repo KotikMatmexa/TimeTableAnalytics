@@ -9,6 +9,7 @@ class DataComponent extends React.Component{
     cabinet = () => cabinet => this._cabinet = cabinet;
 
     loadAudiences = (e, faculty) => {
+        console.log(faculty)
         let cabinet = e.target.value;
         this.props.setActiveAudiences(faculty,[cabinet]);
     };

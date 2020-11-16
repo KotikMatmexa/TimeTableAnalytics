@@ -1,0 +1,440 @@
+{
+    "count": 2,
+    "results": [
+        {
+            "address": {
+                "oid": "56E47DA3-BB31-458A-86BE-9FD6F496B037",
+                "city": "Санкт-Петербург",
+                "street": "Биржевой пр-д",
+                "house": "6",
+                "building_name": "Центральный музей почвоведения им. В.В. Докучаева",
+                "postal_code": "199034",
+                "russian_name": "Биржевой пр-д, д. 6",
+                "english_name": "Birzhevoy pr-d 6",
+                "english_building_name": "V.V. Dokuchev Central Museum of Soil"
+            },
+            "locationWithEventsDto": {
+                "count": 0,
+                "results": []
+            }
+        },
+        {
+            "address": {
+                "oid": "DCA80382-540C-4B6F-BEE5-EE62E230C93D",
+                "city": "Санкт-Петербург, город Петергоф",
+                "street": "Ульяновская улица",
+                "korpus": "Л",
+                "house": "1",
+                "letter": "А",
+                "building_name": "НИИ Физики",
+                "postal_code": "198504",
+                "russian_name": "Ульяновская улица, д. 1, корп. Л, лит. А",
+                "english_name": "Uljyanovskaya ulitsa 1, building L, letter A",
+                "english_building_name": "Research Institute of Physics"
+            },
+            "locationWithEventsDto": {
+                "count": 10,
+                "results": [
+                    {
+                        "location": {
+                            "oid": "670A2CB1-71F4-425B-8C39-0789F081DEB0",
+                            "capacity": 12,
+                            "name": "",
+                            "additional_info": "",
+                            "number_actual": "238",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 2,
+                            "display_name_russian": "238",
+                            "display_name_english": "238",
+                            "display_name_russian_2": "ул. Ульяновская, д. 1, корп. Л, 238",
+                            "display_name_english_2": "ul. Uljyanovskaya 1, building L, 238",
+                            "computers_count": 0,
+                            "floor": "2"
+                        },
+                        "events": {
+                            "count": 1,
+                            "results": [
+                                {
+                                    "oid": "E978BB23-39C7-4B95-999D-B2A84BA052D9",
+                                    "eventSubject": "Электив. Молекулярная спектроскопия биополимеров, семинар",
+                                    "start": "2020-11-02T13:25",
+                                    "end": "2020-11-02T15:00",
+                                    "educators_Display_Text": "онкеяиа,м д.лпцчт",
+                                    "internal_description": "Поляничко А. М., доцент\r\n238\r\n",
+                                    "subject_english": "Elective. Molecular Spectroscopy of Biopolymers, seminar",
+                                    "educators_display_text_english": "csfo.i ,pnakrhytel",
+                                    "educators_short_display_text": " лч.яопанким",
+                                    "educators_short_display_text_english": " coanlkhipy."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "8DB7ADC9-1F74-4186-A333-1D8BDBDCE99D",
+                            "capacity": 9,
+                            "name": "",
+                            "additional_info": "Компьютерный класс (4 ПК)",
+                            "number_actual": "406",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 2,
+                            "display_name_russian": "406",
+                            "display_name_english": "406",
+                            "display_name_russian_2": "Ульяновская улица, д. 1, корп. Л, лит. А, 406",
+                            "display_name_english_2": "Uljyanovskaya ulitsa 1, building L, letter A, 406",
+                            "computers_count": 0,
+                            "floor": "4"
+                        },
+                        "events": {
+                            "count": 1,
+                            "results": [
+                                {
+                                    "oid": "DF79323B-DE57-4819-B8E3-5763495EDDA5",
+                                    "eventSubject": "Электив. Электрогидродинамика, практическое занятие",
+                                    "start": "2020-10-30T15:10",
+                                    "end": "2020-10-30T16:45",
+                                    "educators_Display_Text": "оц, вдк.реачинт",
+                                    "internal_description": "Чирков В. А., доцент\r\n406\r\n",
+                                    "subject_english": "Elective. Electrohydrodynamics, practical class",
+                                    "educators_display_text_english": ",vpst.rf hiockae",
+                                    "educators_short_display_text": " вакч.рио",
+                                    "educators_short_display_text_english": "kr cvhoi."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "1B8F8CFE-1DB4-429B-B864-2BCC9CF37B2C",
+                            "capacity": 7,
+                            "name": "",
+                            "additional_info": "",
+                            "number_actual": "442",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 2,
+                            "display_name_russian": "442",
+                            "display_name_english": "442",
+                            "display_name_russian_2": "Ульяновская улица, д. 1, корп. Л, лит. А, 442",
+                            "display_name_english_2": "Uljyanovskaya ulitsa 1, building L, letter A, 442",
+                            "computers_count": 0,
+                            "floor": "4"
+                        },
+                        "events": {
+                            "count": 1,
+                            "results": [
+                                {
+                                    "oid": "418B726A-81D7-4E03-B927-77AC09F5ED5D",
+                                    "eventSubject": "Электив. Компьютерные технологии обработки и представления данных, практическое занятие",
+                                    "start": "2020-11-03T09:25",
+                                    "end": "2020-11-03T11:00",
+                                    "educators_Display_Text": ".ниаьт всл,е",
+                                    "internal_description": "Силантьева И. А., ассистент\r\n442\r\n",
+                                    "subject_english": "Elective. Information Technologies of Data Processing and Presentation, practical class",
+                                    "educators_display_text_english": "trli,as cven.u",
+                                    "educators_short_display_text": "вьие астн.л",
+                                    "educators_short_display_text_english": " nietsavl."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "732FF11F-F64B-45A4-9C62-5179C048E3A7",
+                            "capacity": 10,
+                            "name": "",
+                            "additional_info": "",
+                            "number_actual": "215",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 2,
+                            "display_name_russian": "215",
+                            "display_name_english": "215",
+                            "display_name_russian_2": "Ульяновская улица, д. 1, корп. Л, лит. А, 215",
+                            "display_name_english_2": "Uljyanovskaya ulitsa 1, building L, letter A, 215",
+                            "computers_count": 0,
+                            "floor": "2"
+                        },
+                        "events": {
+                            "count": 1,
+                            "results": [
+                                {
+                                    "oid": "9DA674FD-7F6B-4E45-B197-E8A20A03077D",
+                                    "eventSubject": "Научный семинар, семинар",
+                                    "start": "2020-11-03T15:10",
+                                    "end": "2020-11-03T16:45",
+                                    "educators_Display_Text": "д пайре.сугоштивб,ль",
+                                    "internal_description": "Губарев А. С., старший преподаватель\r\n215\r\n",
+                                    "subject_english": "Scientific Seminar, seminar",
+                                    "educators_display_text_english": "c eu.,arlvgbsnt",
+                                    "educators_short_display_text": ". раубвгес",
+                                    "educators_short_display_text_english": "ae uvgrb."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "896CE879-919C-408A-9F66-569DC6DED323",
+                            "capacity": 0,
+                            "name": "ЯМР лаборатория  \"Эхо-12\"",
+                            "additional_info": "",
+                            "number_actual": "110",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 2,
+                            "display_name_russian": "110",
+                            "display_name_english": "110",
+                            "display_name_russian_2": "ул. Ульяновская, д. 1, корп. Л, 110",
+                            "display_name_english_2": "ul. Uljyanovskaya 1, building L, 110",
+                            "floor": "1(первый)"
+                        },
+                        "events": {
+                            "count": 2,
+                            "results": [
+                                {
+                                    "oid": "C01FA35C-62B5-4F4B-99E3-F58A9B65DF01",
+                                    "eventSubject": "Практикум по магнитному резонансу I, сам. работа в присутствии преподавателя",
+                                    "start": "2020-11-03T10:15",
+                                    "end": "2020-11-03T11:00",
+                                    "educators_Display_Text": "ы,внуад чиср.оетлйк",
+                                    "internal_description": "Иевлев А. В., научный сотрудник\r\n114; 101; 110\r\n",
+                                    "subject_english": "Practice in Magnetic Resonance I, supervised self-study",
+                                    "educators_display_text_english": "s ,e.kiaocrhvlw",
+                                    "educators_short_display_text": " елви.а",
+                                    "educators_short_display_text_english": " aievl."
+                                },
+                                {
+                                    "oid": "9C95C690-F2AA-4335-AD5C-15747ABAB2FB",
+                                    "eventSubject": "Практикум по магнитному резонансу I, лабораторная работа",
+                                    "start": "2020-11-03T09:25",
+                                    "end": "2020-11-03T10:10",
+                                    "educators_Display_Text": "е. чвйтнл,уиыдаорск",
+                                    "internal_description": "Иевлев А. В., научный сотрудник\r\n110; 114; 101\r\n",
+                                    "subject_english": "Practice in Magnetic Resonance I, laboratory work",
+                                    "educators_display_text_english": "ecarl iov,wh.sk",
+                                    "educators_short_display_text": " ваие.л",
+                                    "educators_short_display_text_english": " lveia."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "FC3F2D8D-468E-4F43-8092-66A1A0E70C54",
+                            "capacity": 0,
+                            "name": "Лаборатория МРТ",
+                            "additional_info": "",
+                            "number_actual": "101",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 2,
+                            "display_name_russian": "101",
+                            "display_name_english": "101",
+                            "display_name_russian_2": "ул. Ульяновская, д. 1, корп. Л, 101",
+                            "display_name_english_2": "ul. Uljyanovskaya 1, building L, 101",
+                            "floor": "1(первый)"
+                        },
+                        "events": {
+                            "count": 2,
+                            "results": [
+                                {
+                                    "oid": "9C95C690-F2AA-4335-AD5C-15747ABAB2FB",
+                                    "eventSubject": "Практикум по магнитному резонансу I, лабораторная работа",
+                                    "start": "2020-11-03T09:25",
+                                    "end": "2020-11-03T10:10",
+                                    "educators_Display_Text": "е. чвйтнл,уиыдаорск",
+                                    "internal_description": "Иевлев А. В., научный сотрудник\r\n110; 114; 101\r\n",
+                                    "subject_english": "Practice in Magnetic Resonance I, laboratory work",
+                                    "educators_display_text_english": "ecarl iov,wh.sk",
+                                    "educators_short_display_text": " ваие.л",
+                                    "educators_short_display_text_english": " lveia."
+                                },
+                                {
+                                    "oid": "C01FA35C-62B5-4F4B-99E3-F58A9B65DF01",
+                                    "eventSubject": "Практикум по магнитному резонансу I, сам. работа в присутствии преподавателя",
+                                    "start": "2020-11-03T10:15",
+                                    "end": "2020-11-03T11:00",
+                                    "educators_Display_Text": "ы,внуад чиср.оетлйк",
+                                    "internal_description": "Иевлев А. В., научный сотрудник\r\n114; 101; 110\r\n",
+                                    "subject_english": "Practice in Magnetic Resonance I, supervised self-study",
+                                    "educators_display_text_english": "s ,e.kiaocrhvlw",
+                                    "educators_short_display_text": " елви.а",
+                                    "educators_short_display_text_english": " aievl."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "0A50B525-CD84-4D31-A86E-6C37A2AAC4FD",
+                            "capacity": 0,
+                            "name": "",
+                            "additional_info": "",
+                            "number_actual": "407",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 2,
+                            "display_name_russian": "407",
+                            "display_name_english": "407",
+                            "display_name_russian_2": "ул. Ульяновская, д. 1, корп. Л, 407",
+                            "display_name_english_2": "ul. Uljyanovskaya 1, building L, 407",
+                            "computers_count": 0,
+                            "floor": "4"
+                        },
+                        "events": {
+                            "count": 1,
+                            "results": [
+                                {
+                                    "oid": "C496E879-76D3-4ED7-A3EF-DD0343B5C7D3",
+                                    "eventSubject": "Практикум по волновым процессам II, сам. работа в присутствии преподавателя",
+                                    "start": "2020-10-20T15:10",
+                                    "end": "2020-10-20T15:55",
+                                    "educators_Display_Text": "в онр,е.цэдмгт",
+                                    "internal_description": "Герм В. Э., доцент\r\n407\r\n",
+                                    "subject_english": "Practice on Wave Processes II, supervised self-study",
+                                    "educators_display_text_english": "s. apfevgocimr,t",
+                                    "educators_short_display_text": " эмврег.",
+                                    "educators_short_display_text_english": " grmve."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "49229613-AFBE-499C-A890-6D5224B7DEFF",
+                            "capacity": 30,
+                            "name": "",
+                            "additional_info": "",
+                            "number_actual": "236",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 2,
+                            "display_name_russian": "236",
+                            "display_name_english": "236",
+                            "display_name_russian_2": "ул. Ульяновская, д. 1, корп. Л, 236",
+                            "display_name_english_2": "ul. Uljyanovskaya 1, building L, 236",
+                            "computers_count": 0,
+                            "floor": "2"
+                        },
+                        "events": {
+                            "count": 1,
+                            "results": [
+                                {
+                                    "oid": "15B66345-68EC-4131-9FDD-9736A80C7EE0",
+                                    "eventSubject": "Электив. Введение в генную инженерию, семинар",
+                                    "start": "2020-11-02T11:10",
+                                    "end": "2020-11-02T12:45",
+                                    "educators_Display_Text": ".юв ,артолепйсшидь",
+                                    "internal_description": "Сопова Ю. В., старший преподаватель\r\n236\r\n",
+                                    "subject_english": "Elective. Introduction to Genetic Engineering, seminar",
+                                    "educators_display_text_english": "rv u.plo,tseanyc",
+                                    "educators_short_display_text": ".п юоавс",
+                                    "educators_short_display_text_english": "oayvp s."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "CABB2F0A-AED7-49CB-BCA3-B08D13F950C3",
+                            "capacity": 0,
+                            "name": "ЯМР лаборатория \"Брукер\"",
+                            "additional_info": "",
+                            "number_actual": "114",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 2,
+                            "display_name_russian": "114",
+                            "display_name_english": "114",
+                            "display_name_russian_2": "Ульяновская улица, д. 1, корп. Л, лит. А, 114",
+                            "display_name_english_2": "Uljyanovskaya ulitsa 1, building L, letter A, 114",
+                            "computers_count": 0,
+                            "floor": "1"
+                        },
+                        "events": {
+                            "count": 2,
+                            "results": [
+                                {
+                                    "oid": "9C95C690-F2AA-4335-AD5C-15747ABAB2FB",
+                                    "eventSubject": "Практикум по магнитному резонансу I, лабораторная работа",
+                                    "start": "2020-11-03T09:25",
+                                    "end": "2020-11-03T10:10",
+                                    "educators_Display_Text": "е. чвйтнл,уиыдаорск",
+                                    "internal_description": "Иевлев А. В., научный сотрудник\r\n110; 114; 101\r\n",
+                                    "subject_english": "Practice in Magnetic Resonance I, laboratory work",
+                                    "educators_display_text_english": "ecarl iov,wh.sk",
+                                    "educators_short_display_text": " ваие.л",
+                                    "educators_short_display_text_english": " lveia."
+                                },
+                                {
+                                    "oid": "C01FA35C-62B5-4F4B-99E3-F58A9B65DF01",
+                                    "eventSubject": "Практикум по магнитному резонансу I, сам. работа в присутствии преподавателя",
+                                    "start": "2020-11-03T10:15",
+                                    "end": "2020-11-03T11:00",
+                                    "educators_Display_Text": "ы,внуад чиср.оетлйк",
+                                    "internal_description": "Иевлев А. В., научный сотрудник\r\n114; 101; 110\r\n",
+                                    "subject_english": "Practice in Magnetic Resonance I, supervised self-study",
+                                    "educators_display_text_english": "s ,e.kiaocrhvlw",
+                                    "educators_short_display_text": " елви.а",
+                                    "educators_short_display_text_english": " aievl."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "905D7657-20A5-42B7-AFA7-B52F44F102CA",
+                            "capacity": 9,
+                            "name": "",
+                            "additional_info": "",
+                            "number_actual": "414",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 2,
+                            "display_name_russian": "414",
+                            "display_name_english": "414",
+                            "display_name_russian_2": "ул. Ульяновская, д. 1, корп. Л, 414",
+                            "display_name_english_2": "ul. Uljyanovskaya 1, building L, 414",
+                            "computers_count": 0,
+                            "floor": "4"
+                        },
+                        "events": {
+                            "count": 3,
+                            "results": [
+                                {
+                                    "oid": "A0FC892C-2DAA-456E-A17D-ACE6994085FA",
+                                    "eventSubject": "Радиофизический практикум, сам. работа в присутствии преподавателя",
+                                    "start": "2020-10-26T14:15",
+                                    "end": "2020-10-26T15:00",
+                                    "educators_Display_Text": "кодс чй,атемнву.лрыи",
+                                    "internal_description": "Москалева Е. В., научный сотрудник\r\n414\r\n",
+                                    "subject_english": "Laboratory in Radiophysics, supervised self-study",
+                                    "educators_display_text_english": "kvoa lmes.",
+                                    "educators_short_display_text": ".к сеавмол",
+                                    "educators_short_display_text_english": "ol emkavs."
+                                },
+                                {
+                                    "oid": "813C8722-5B53-4E2D-80E7-400071211529",
+                                    "eventSubject": "Радиофизический практикум, сам. работа в присутствии преподавателя",
+                                    "start": "2020-11-02T15:10",
+                                    "end": "2020-11-02T16:45",
+                                    "educators_Display_Text": "е риаскнтмы.олчву,йд",
+                                    "internal_description": "Москалева Е. В., научный сотрудник\r\n414\r\n",
+                                    "subject_english": "Laboratory in Radiophysics, supervised self-study",
+                                    "educators_display_text_english": "ake ovlsm.",
+                                    "educators_short_display_text": "е.окамл св",
+                                    "educators_short_display_text_english": "alvo smke."
+                                },
+                                {
+                                    "oid": "9B71DC8C-D46D-4CEC-8B10-12389622E499",
+                                    "eventSubject": "Радиофизический практикум, лабораторная работа",
+                                    "start": "2020-10-26T13:25",
+                                    "end": "2020-10-26T14:10",
+                                    "educators_Display_Text": "лайчвсныеиу рот.,дмк",
+                                    "internal_description": "Москалева Е. В., научный сотрудник\r\n414\r\n",
+                                    "subject_english": "Laboratory in Radiophysics, laboratory work",
+                                    "educators_display_text_english": "mas vokel.",
+                                    "educators_short_display_text": "к всаоме.л",
+                                    "educators_short_display_text_english": "avml oeks."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

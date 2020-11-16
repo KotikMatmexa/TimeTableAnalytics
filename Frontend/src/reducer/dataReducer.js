@@ -1,5 +1,7 @@
 import {faculty_data,teachers,addresses} from "../testData";
 
+import {addressesList} from "../dataParser";
+
 
 export const dataReducer = (state = false, action) => {
     switch (action.type){
@@ -29,6 +31,7 @@ export const teachersReducer =  (state = [], action) => {
 };
 
 let getTeachers = (address) => {
+    console.log(address)
     const faculty = Object.values(faculty_data).find(item => item.address == address).name;
     let teachersList = [];
 
@@ -49,8 +52,7 @@ export const teacherReducer =  (state = [], action) => {
     }
 };
 
-export const addressesReducer =  (state = faculty_data, action) => {
-
+export const addressesReducer =  (state = [], action) => {
     switch (action.type){
         case "LOAD_ADDRESSES":
             return action.addresses;

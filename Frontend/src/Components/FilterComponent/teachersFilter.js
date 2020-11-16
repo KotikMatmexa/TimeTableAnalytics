@@ -1,6 +1,7 @@
 import React from 'react'
 import './filter.css'
 import DataComponent from "../DataComponent/data";
+import {faculty_data} from "../../testData";
 
 class TeachersFilterComponent extends React.Component{
 
@@ -78,9 +79,8 @@ class TeachersFilterComponent extends React.Component{
                         <div className="teachers--selection">
                             <select ref={this.address}>
                                 <option selected>Выбрать адрес...</option>
-                                {Object.values(this.props.addresses).map(faculty =>
+                                {Object.values(faculty_data).map(faculty =>
                                     <option value={faculty.address} title={faculty.name}>{faculty.address}</option>
-
                                 )}
 
                             </select>

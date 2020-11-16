@@ -7,15 +7,12 @@ class TableComponent extends React.Component{
 
 
     render(){
-        console.log("updated");
-
+        console.log(this.props)
         if(this.props.type === "teachers"){
             return(<div className="table">
                 <div className="table--components">
                     <label>{this.props.teacher.sirName}</label>
-                    <DayComponent/>
-                    <DayComponent/>
-                    <DayComponent/>
+
 
                 </div>
             </div>)
@@ -25,15 +22,12 @@ class TableComponent extends React.Component{
 
             return (
                 <div className="table">
-                    {this.props.activeAudiences.map(audience => <>
-                    <span>Аудитория № {audience}, Количество мест: 20</span>
+                    <h6>Аудитория № {this.props.facultyData.activeAudience.location.number_actual},</h6>
+                        <h6>Количество мест:
+                        {this.props.facultyData.activeAudience.location.capacity}</h6>
                     <div className="table--components">
-                        {this.props.dateInterval.map(date =>
-                            <DayComponent date={date} />
-                        )}
+                            <DayComponent audienceData={this.props.facultyData.activeAudience} />
                     </div>
-                            </>
-                        )}
                 </div>
             )
         }
