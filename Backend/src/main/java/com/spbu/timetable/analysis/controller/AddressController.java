@@ -33,6 +33,7 @@ public class AddressController {
         return DtoMapper.convertList(addressService.findAll(offset, limit, searchText), AddressIdDto.class);
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping(RequestInfo.TIMETABLE)
     public ListForDto<AddressWithLocationEventDto> findAllEventsForLocations(@RequestBody List<String> addressIds,
                                                                              @RequestParam(required = false) String start,
