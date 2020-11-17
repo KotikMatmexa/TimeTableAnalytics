@@ -15,7 +15,6 @@ import java.util.List;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class EventService {
 
-
     private final EventRepository eventRepository;
 
     public List<Event> getEventByLocationIdBetweenDates(String locationId, LocalDateTime start, LocalDateTime end) {
