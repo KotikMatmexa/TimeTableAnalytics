@@ -28,10 +28,7 @@ export const groupReducer = (state = [], action) => {
 };
 
 let getData = (faculty, group) => {
-   // console.log(faculty)
     let obj = Object.values(table_example).find(item => item.faculty == faculty);
-    //console.log(obj)
     let index = Object.values(obj.groups).findIndex(it => it.name == group);
-    //console.log(index)
     return obj.groups[index].data;
 };

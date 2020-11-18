@@ -1,10 +1,12 @@
 import jsonData1 from './TestData/audience_1'
 import jsonData2 from './TestData/audiences_2'
 import jsonData3 from './TestData/audience_big_data'
+import jsonData4 from './TestData/sorted_data'
 
 const data1 = jsonData1.results;
 const data2 = jsonData2.results;
 const data3 = jsonData3.results;
+const data4 = jsonData4.results;
 
 //получить список всех адресов спбгу
 export const addressesList = () =>{
@@ -16,6 +18,9 @@ export const addressesList = () =>{
         addresses.push(value.address.russian_name)
     }
     for (let value of data3){
+        addresses.push(value.address.russian_name)
+    }
+    for (let value of data4){
         addresses.push(value.address.russian_name)
     }
     return addresses;
@@ -37,7 +42,12 @@ export const getData = (addresses) => {
            continue;
        }
        let v3 = data3.find(item => item.address.russian_name === address);
-       resultSet.push(v3);
+       if(v3){
+           resultSet.push(v3);
+           continue;
+       }
+       let v4 = data4.find(item => item.address.russian_name === address)
+       resultSet.push(v4);
 
    }
    console.log(resultSet);

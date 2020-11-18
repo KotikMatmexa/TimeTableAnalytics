@@ -1,0 +1,2520 @@
+{
+    "count": 1,
+    "results": [
+        {
+            "address": {
+                "oid": "E4DA8B3C-C775-49A1-8772-F158A7076DDF",
+                "city": "г.Санкт-Петербург",
+                "street": "Университетская набережная",
+                "house": "7-9-11",
+                "letter": "А",
+                "building_name": "Здание Двенадцати коллегий",
+                "postal_code": "199034",
+                "russian_name": "Университетская набережная, д. 7-9-11, лит. А",
+                "english_name": "Universitetskaya naberezhnaya 7-9-11, letter A",
+                "english_building_name": "The Twelve Collegia"
+            },
+            "locationWithEventsDto": {
+                "count": 20,
+                "results": [
+                    {
+                        "location": {
+                            "oid": "5007B966-0381-4AC1-BDBD-DB6C68FCBBB5",
+                            "capacity": 0,
+                            "additional_info": "Проектор,  ПК,  звуковая система,  ВКС,  сеть,WiFi,",
+                            "number_actual": "Актовый зал",
+                            "multimedia_equipment": 0,
+                            "labware_equipment": 0,
+                            "display_name_russian": "Актовый зал",
+                            "display_name_english": "Актовый зал",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, Актовый зал",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, Актовый зал",
+                            "computers_count": 0,
+                            "floor": "2(второй)"
+                        },
+                        "events": {
+                            "count": 14,
+                            "results": [
+                                {
+                                    "oid": "3E6746BB-1564-4C35-B37F-C4CC517C5B9D",
+                                    "eventSubject": "Сольное пение, практическое занятие",
+                                    "start": "2020-09-02T14:00",
+                                    "end": "2020-09-02T15:30",
+                                    "educators_Display_Text": "фгоне дпь.а,схря",
+                                    "internal_description": "Подгруппа 1\r\nХанеданьян Г. Г., профессор\r\nАктовый зал; Дистанционная работа с преподавателем\r\n",
+                                    "subject_english": "Solo Singing, practical class",
+                                    "educators_display_text_english": "orfse akgni.d,hp",
+                                    "educators_short_display_text": "нхг. адеья",
+                                    "educators_short_display_text_english": "naidk geh."
+                                },
+                                {
+                                    "oid": "6F2D20F4-DFF5-4540-8350-5317E95F5609",
+                                    "eventSubject": "Сольное пение, практическое занятие",
+                                    "start": "2020-09-02T15:30",
+                                    "end": "2020-09-02T17:00",
+                                    "educators_Display_Text": "ь.ерс афхпнг,дяо",
+                                    "internal_description": "Подгруппа 1\r\nХанеданьян Г. Г., профессор\r\nАктовый зал; Дистанционная работа с преподавателем\r\n",
+                                    "subject_english": "Solo Singing, practical class",
+                                    "educators_display_text_english": "rghnk.o epd,fais",
+                                    "educators_short_display_text": "днх г.еьая",
+                                    "educators_short_display_text_english": "h nkagied."
+                                },
+                                {
+                                    "oid": "5185438B-0AFB-4A15-8663-9BB17FFF685D",
+                                    "eventSubject": "Фортепиано, практическое занятие",
+                                    "start": "2020-09-05T12:30",
+                                    "end": "2020-09-05T14:00",
+                                    "educators_Display_Text": " ,дкоа.вжецгунт",
+                                    "internal_description": "Подгруппа 4\r\nЖукова Г. К., доцент\r\nАктовый зал\r\n",
+                                    "subject_english": "Piano, practical class",
+                                    "educators_display_text_english": "ropatckz hsv.,ugife",
+                                    "educators_short_display_text": "к гвуа.жо",
+                                    "educators_short_display_text_english": "gkovzauh ."
+                                },
+                                {
+                                    "oid": "B51EBC20-55CC-4C2E-AFEE-6CDA85474BE6",
+                                    "eventSubject": "Сольное пение, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-05T13:00",
+                                    "end": "2020-09-05T14:30",
+                                    "educators_Display_Text": "аенхпс.я ргод,ьф",
+                                    "internal_description": "Подгруппа 1\r\nХанеданьян Г. Г., профессор\r\nАктовый зал; Дистанционная работа с преподавателем\r\n",
+                                    "subject_english": "Solo Singing, supervised self-study",
+                                    "educators_display_text_english": "enahp.fkdrgio,s ",
+                                    "educators_short_display_text": "дьг ан.хея",
+                                    "educators_short_display_text_english": "dneakh gi."
+                                },
+                                {
+                                    "oid": "17C03F7C-C1CF-46EA-BE8E-ECA41BE2E197",
+                                    "eventSubject": "Сольное пение, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-05T14:30",
+                                    "end": "2020-09-05T16:00",
+                                    "educators_Display_Text": "ьхсфг п,аен.доря",
+                                    "internal_description": "Подгруппа 1\r\nХанеданьян Г. Г., профессор\r\nДистанционная работа с преподавателем; Актовый зал\r\n",
+                                    "subject_english": "Solo Singing, supervised self-study",
+                                    "educators_display_text_english": "s ife.n,gkoadhrp",
+                                    "educators_short_display_text": "аян ьгдхе.",
+                                    "educators_short_display_text_english": "k ginaedh."
+                                },
+                                {
+                                    "oid": "F4B69285-6109-49D9-B08F-7F8AE7608600",
+                                    "eventSubject": "Сольное пение, практическое занятие",
+                                    "start": "2020-09-05T14:40",
+                                    "end": "2020-09-05T16:10",
+                                    "educators_Display_Text": "яха,гр.фе дспьно",
+                                    "internal_description": "Подгруппа 1\r\nХанеданьян Г. Г., профессор\r\nАктовый зал; Дистанционная работа с преподавателем\r\n",
+                                    "subject_english": "Solo Singing, practical class",
+                                    "educators_display_text_english": "anief,kdo sprgh.",
+                                    "educators_short_display_text": "нагх д.ьея",
+                                    "educators_short_display_text_english": "ka neghdi."
+                                },
+                                {
+                                    "oid": "1EEBD25D-A337-491C-BFFB-083C72770806",
+                                    "eventSubject": "Сольное пение, практическое занятие",
+                                    "start": "2020-09-05T16:50",
+                                    "end": "2020-09-05T18:20",
+                                    "educators_Display_Text": "хсонгае дярп.,ьф",
+                                    "internal_description": "Подгруппа 1\r\nХанеданьян Г. Г., профессор\r\nАктовый зал\r\n",
+                                    "subject_english": "Solo Singing, practical class",
+                                    "educators_display_text_english": "sna pirkge,.odhf",
+                                    "educators_short_display_text": "неьда. хяг",
+                                    "educators_short_display_text_english": "dangi ekh."
+                                },
+                                {
+                                    "oid": "1BB06101-B12D-44EC-9277-EF8BD4F0E155",
+                                    "eventSubject": "Сольное пение, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-05T18:30",
+                                    "end": "2020-09-05T20:00",
+                                    "educators_Display_Text": "г ,хаесопн.дяфрь",
+                                    "internal_description": "Подгруппа 2\r\nХанеданьян Г. Г., профессор\r\nАктовый зал\r\n",
+                                    "subject_english": "Solo Singing, supervised self-study",
+                                    "educators_display_text_english": "eig.fapdsnor kh,",
+                                    "educators_short_display_text": "д.яанеьх г",
+                                    "educators_short_display_text_english": "hkagi nde."
+                                },
+                                {
+                                    "oid": "EF66D672-32B4-4195-9680-7AEAF3F36EE8",
+                                    "eventSubject": "Сольное пение, практическое занятие",
+                                    "start": "2020-09-14T17:00",
+                                    "end": "2020-09-14T18:30",
+                                    "educators_Display_Text": ",е.асфонхя гпьдр",
+                                    "internal_description": "Подгруппа 1\r\nХанеданьян Г. Г., профессор\r\nАктовый зал; Дистанционная работа с преподавателем\r\n",
+                                    "subject_english": "Solo Singing, practical class",
+                                    "educators_display_text_english": ".,enap dgrskhfoi",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "976FCF1E-AD16-4114-8AEA-8D2B014F6249",
+                                    "eventSubject": "Сольное пение, практическое занятие",
+                                    "start": "2020-09-14T18:40",
+                                    "end": "2020-09-14T20:10",
+                                    "educators_Display_Text": ",е.схгпадня оьрф",
+                                    "internal_description": "Подгруппа 1\r\nХанеданьян Г. Г., профессор\r\nАктовый зал; Дистанционная работа с преподавателем\r\n",
+                                    "subject_english": "Solo Singing, practical class",
+                                    "educators_display_text_english": "ni.hsp akodge,fr",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "70C73BE2-3670-4F5E-9F6C-8EBD0BAB3CAE",
+                                    "eventSubject": "Сольное пение, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-15T16:00",
+                                    "end": "2020-09-15T17:30",
+                                    "educators_Display_Text": " ояреганпхфь.сд,",
+                                    "internal_description": "Подгруппа 1\r\nХанеданьян Г. Г., профессор\r\nАктовый зал; Дистанционная работа с преподавателем\r\n",
+                                    "subject_english": "Solo Singing, supervised self-study",
+                                    "educators_display_text_english": "se.ihgpnoadfrk ,",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "1B3BDB7D-D13B-4834-A877-8843073751D4",
+                                    "eventSubject": "Сольное пение, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-15T17:40",
+                                    "end": "2020-09-15T19:10",
+                                    "educators_Display_Text": "оря.д, ахсеньгпф",
+                                    "internal_description": "Подгруппа 1\r\nХанеданьян Г. Г., профессор\r\nДистанционная работа с преподавателем; Актовый зал\r\n",
+                                    "subject_english": "Solo Singing, supervised self-study",
+                                    "educators_display_text_english": "rnfe gaspihdo.k,",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "56D8C8DB-C174-40A5-90FC-6B6734F614D0",
+                                    "eventSubject": "Визит делегации РАН",
+                                    "start": "2020-09-17T00:00",
+                                    "end": "2020-09-19T00:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\nАктовый зал\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": "",
+                                    "description_long": "128-219"
+                                },
+                                {
+                                    "oid": "6B1579CF-5EBE-4D89-91B2-7D90DFFE6855",
+                                    "eventSubject": "Онлайн XXIII конференция «Фундаментальная наука и клиническая медицина. Человек и его здоровье»",
+                                    "start": "2020-09-26T14:30",
+                                    "end": "2020-09-26T15:30",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\nАктовый зал\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": "",
+                                    "description_long": "128-27"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "75741E77-CB1F-433F-8D1A-D61B39DA6420",
+                            "capacity": 0,
+                            "name": "Кафедра Петрографии",
+                            "additional_info": "микроскопы",
+                            "number_actual": "3007",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 1,
+                            "display_name_russian": "3007",
+                            "display_name_english": "3007",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 3007",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 3007",
+                            "computers_count": 0,
+                            "floor": "3(третий)"
+                        },
+                        "events": {
+                            "count": 2,
+                            "results": [
+                                {
+                                    "oid": "1C19D24A-DED2-4B2E-B6DB-92EB8BAAF360",
+                                    "eventSubject": "Стратиграфия с элементами палеонтологии, практическое занятие",
+                                    "start": "2020-09-08T09:00",
+                                    "end": "2020-09-08T10:35",
+                                    "educators_Display_Text": "вга. ри,ндоюецбут",
+                                    "internal_description": "Бугрова И. Ю., доцент\r\n3007\r\n",
+                                    "subject_english": "Stratigraphy with Basics of Paleontology, practical class",
+                                    "educators_display_text_english": "ot, sei.crabvgupf",
+                                    "educators_short_display_text": "рб.аи уогвю",
+                                    "educators_short_display_text_english": " ibagruov."
+                                },
+                                {
+                                    "oid": "A1D2E782-5962-4E91-8A9E-0585ECC8C86B",
+                                    "eventSubject": "Стратиграфия с элементами палеонтологии, практическое занятие",
+                                    "start": "2020-09-08T10:45",
+                                    "end": "2020-09-08T12:45",
+                                    "educators_Display_Text": ".грнц бвюдоуаи,ет",
+                                    "internal_description": "Бугрова И. Ю., доцент\r\n3007\r\n",
+                                    "subject_english": "Stratigraphy with Basics of Paleontology, practical class",
+                                    "educators_display_text_english": ".spga c,urofvebit",
+                                    "educators_short_display_text": "абв. руоигю",
+                                    "educators_short_display_text_english": "uga rbvio."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "68570FFD-36E6-4D92-971F-BDAF19370264",
+                            "capacity": 0,
+                            "name": "143 аудитория",
+                            "additional_info": "Остеологические коллекции, проектор потолочный",
+                            "number_actual": "3055",
+                            "multimedia_equipment": 1,
+                            "labware_equipment": 2,
+                            "display_name_russian": "3055",
+                            "display_name_english": "3055",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 3055",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 3055",
+                            "computers_count": 0,
+                            "floor": "3(третий)"
+                        },
+                        "events": {
+                            "count": 27,
+                            "results": [
+                                {
+                                    "oid": "A5CF48E8-5CB8-4EFC-B143-39230439285E",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, практическое занятие",
+                                    "start": "2020-09-10T15:00",
+                                    "end": "2020-09-10T16:40",
+                                    "educators_Display_Text": "ис.агрнт чо,е",
+                                    "internal_description": "Гончар А. Г., ассистент\r\n3055\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, practical class",
+                                    "educators_display_text_english": " tnrsa.i,oecghlu",
+                                    "educators_short_display_text": ".оатуш вн",
+                                    "educators_short_display_text_english": "avnsh out."
+                                },
+                                {
+                                    "oid": "07EA3100-131B-4626-AEF0-DE4EA358B8A3",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, практическое занятие",
+                                    "start": "2020-09-10T17:00",
+                                    "end": "2020-09-10T18:40",
+                                    "educators_Display_Text": "аесгнч,. трои",
+                                    "internal_description": "Гончар А. Г., ассистент\r\n3055\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, practical class",
+                                    "educators_display_text_english": "in.tsl,hgacoer u",
+                                    "educators_short_display_text": "н ко.те",
+                                    "educators_short_display_text_english": "otn ke."
+                                },
+                                {
+                                    "oid": "76BF1F72-F09C-40EE-AE5D-B2EE46DDEF61",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, практическое занятие",
+                                    "start": "2020-09-11T16:50",
+                                    "end": "2020-09-11T18:30",
+                                    "educators_Display_Text": ".вне тиасркп,",
+                                    "internal_description": "Крапивин В. А., ассистент\r\n3055\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, practical class",
+                                    "educators_display_text_english": " scvprtlia,ne.ku",
+                                    "educators_short_display_text": "ваки н.рп",
+                                    "educators_short_display_text_english": "kvn prai."
+                                },
+                                {
+                                    "oid": "DB9B97DB-308D-425D-ABA2-AA893C48A99E",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, практическое занятие",
+                                    "start": "2020-09-12T13:10",
+                                    "end": "2020-09-12T14:50",
+                                    "educators_Display_Text": "триесч .,нгао",
+                                    "internal_description": "Гончар А. Г., ассистент\r\n3055\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, practical class",
+                                    "educators_display_text_english": "csa groueliht,n.",
+                                    "educators_short_display_text": "нуш авот.",
+                                    "educators_short_display_text_english": "nu svhtao."
+                                },
+                                {
+                                    "oid": "725209CA-4794-4A75-A531-C99F05B83E81",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, практическое занятие",
+                                    "start": "2020-09-12T15:10",
+                                    "end": "2020-09-12T16:50",
+                                    "educators_Display_Text": "с нео.траг,чи",
+                                    "internal_description": "Гончар А. Г., ассистент\r\n3055\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, practical class",
+                                    "educators_display_text_english": "cnstaro hue.,gil",
+                                    "educators_short_display_text": " явнзеока.",
+                                    "educators_short_display_text_english": "kazienov ."
+                                },
+                                {
+                                    "oid": "7BF41E58-EE9D-4A4D-9D0A-29B28E167B44",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-16T15:00",
+                                    "end": "2020-09-16T16:40",
+                                    "educators_Display_Text": "в бан,пе.сроилштдйь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3055\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": ".t,auens rblvc",
+                                    "educators_short_display_text": "нбл аев.",
+                                    "educators_short_display_text_english": "anlev b."
+                                },
+                                {
+                                    "oid": "764C3D5C-4E04-45B2-926D-2819B0F0B5E7",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-16T16:50",
+                                    "end": "2020-09-16T18:30",
+                                    "educators_Display_Text": "вн,и.ед баосршпйтль",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3055\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "l .ravenctsb,u",
+                                    "educators_short_display_text": "вае бл.н",
+                                    "educators_short_display_text_english": "eanv bl."
+                                },
+                                {
+                                    "oid": "EB0AAB49-BD5E-455B-83AE-65D425A4AD69",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-17T10:50",
+                                    "end": "2020-09-17T12:30",
+                                    "educators_Display_Text": " впйдшабе,ос.тнлриь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3055\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "s e.arlvb,tncu",
+                                    "educators_short_display_text": "а. левбн",
+                                    "educators_short_display_text_english": "anv ebl."
+                                },
+                                {
+                                    "oid": "585252C3-5862-402C-98BB-EDFA1F61EB8F",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-17T13:10",
+                                    "end": "2020-09-17T14:50",
+                                    "educators_Display_Text": "атздувэг,смин.о йе",
+                                    "internal_description": "Зайнагутдинова Э. М., ассистент\r\n3055\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "a,.tiesolnu vdzrgc",
+                                    "educators_short_display_text": "азгуд вонэмтйи.",
+                                    "educators_short_display_text_english": "tudea nziogv."
+                                },
+                                {
+                                    "oid": "64D8B8AA-5A6B-49F8-ABB9-688A1A64FBAB",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-19T09:00",
+                                    "end": "2020-09-19T10:40",
+                                    "educators_Display_Text": " ашеи,лнтойвр.пдсбь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3055\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "ua stnlec.,bvr",
+                                    "educators_short_display_text": "ва.ле бн",
+                                    "educators_short_display_text_english": " aelbvn."
+                                },
+                                {
+                                    "oid": "842F86CE-FB89-4E08-AD4D-3DFFBED074D7",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-19T10:50",
+                                    "end": "2020-09-19T12:30",
+                                    "educators_Display_Text": "в.ро пеас,бдилтйншь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3055\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": " anlsbtre.c,vu",
+                                    "educators_short_display_text": ".ен влба",
+                                    "educators_short_display_text_english": "vnbl ae."
+                                },
+                                {
+                                    "oid": "B19D9F66-7B14-4CD9-98BF-2BCFCDFF5E39",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-21T15:00",
+                                    "end": "2020-09-21T16:40",
+                                    "educators_Display_Text": " лиорсдетвапбйш.,нь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3055\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "lsncer. ab,vtu",
+                                    "educators_short_display_text": "б.вена л",
+                                    "educators_short_display_text_english": "aev bln."
+                                },
+                                {
+                                    "oid": "73667BA4-D95A-40D6-B061-5A8423B41499",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-21T16:50",
+                                    "end": "2020-09-21T18:30",
+                                    "educators_Display_Text": "епр тйнас.иволшдб,ь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3055\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "u n.tclesravb,",
+                                    "educators_short_display_text": "игнврою яаб.",
+                                    "educators_short_display_text_english": " iaborvn."
+                                },
+                                {
+                                    "oid": "FA9AA6B6-A306-471D-BAF2-A2A820B0489E",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-22T15:00",
+                                    "end": "2020-09-22T16:40",
+                                    "educators_Display_Text": "срвд пелнаштбо.йи,ь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3055\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "e calrnvb,st.u",
+                                    "educators_short_display_text": "абвне л.",
+                                    "educators_short_display_text_english": "elna vb."
+                                },
+                                {
+                                    "oid": "DC124D62-9176-460D-8FD2-E13BDCB9CBB8",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-22T16:50",
+                                    "end": "2020-09-22T18:30",
+                                    "educators_Display_Text": "пр етйбдалвис.о,шнь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3055\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "t e.vnrblasc,u",
+                                    "educators_short_display_text": "лве бна.",
+                                    "educators_short_display_text_english": "e nlvab."
+                                },
+                                {
+                                    "oid": "4538BE1B-C8B1-476B-B195-BC94823D9091",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-24T15:00",
+                                    "end": "2020-09-24T16:40",
+                                    "educators_Display_Text": " .вшодтнц,ауе",
+                                    "internal_description": "Шунатова Н. Н., доцент\r\n3055\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, supervised self-study",
+                                    "educators_display_text_english": "a.poh senturvci,f",
+                                    "educators_short_display_text": "што н.вуа",
+                                    "educators_short_display_text_english": " atnvusho."
+                                },
+                                {
+                                    "oid": "D4A6107D-B370-4298-B713-419E7EB58263",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-24T15:00",
+                                    "end": "2020-09-24T16:40",
+                                    "educators_Display_Text": "пс аор.елдивунт,шмйь",
+                                    "internal_description": "Туманов Д. В., старший преподаватель\r\n3055\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, supervised self-study",
+                                    "educators_display_text_english": "num vaodt.",
+                                    "educators_short_display_text": "нау мтвд.о",
+                                    "educators_short_display_text_english": "uanvdmo t."
+                                },
+                                {
+                                    "oid": "7D350214-A1DC-46DE-8FAB-C35949E78FBF",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-24T17:00",
+                                    "end": "2020-09-24T18:40",
+                                    "educators_Display_Text": " н,ероигстач.",
+                                    "internal_description": "Гончар А. Г., ассистент\r\n3055\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, supervised self-study",
+                                    "educators_display_text_english": "sucanl.ih, troge",
+                                    "educators_short_display_text": "агор ч.н",
+                                    "educators_short_display_text_english": " hanocgr."
+                                },
+                                {
+                                    "oid": "71D08E0E-BD05-4090-919F-23A0EE1F1B48",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-25T16:50",
+                                    "end": "2020-09-25T18:30",
+                                    "educators_Display_Text": "ас.иек ,втпнр",
+                                    "internal_description": "Крапивин В. А., ассистент\r\n3055\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, supervised self-study",
+                                    "educators_display_text_english": "et, sacuikrnv.pl",
+                                    "educators_short_display_text": "рнк пива.",
+                                    "educators_short_display_text_english": "nkra vip."
+                                },
+                                {
+                                    "oid": "0FBB83F4-147B-495F-B38E-19F4A54A0A81",
+                                    "eventSubject": "Электив. Сравнительная анатомия беспозвоночных. Часть 1, лекция",
+                                    "start": "2020-09-26T09:00",
+                                    "end": "2020-09-26T10:40",
+                                    "educators_Display_Text": " н.о,давуцтше",
+                                    "internal_description": "Шунатова Н. Н., доцент\r\n3055\r\n",
+                                    "subject_english": "Elective. Comparative Anatomy of Invertebrates. Part 1, lecture",
+                                    "educators_display_text_english": "seropatcu v,ni.hf",
+                                    "educators_short_display_text": "а.тв шуон",
+                                    "educators_short_display_text_english": "anohu tsv."
+                                },
+                                {
+                                    "oid": "9CA95E0D-7A54-4B3E-825A-CD4CF49BA83C",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-26T15:00",
+                                    "end": "2020-09-26T16:40",
+                                    "educators_Display_Text": "о ндуша.цтв,е",
+                                    "internal_description": "Шунатова Н. Н., доцент\r\n3055\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, supervised self-study",
+                                    "educators_display_text_english": "nsitua.v cero,hpf",
+                                    "educators_short_display_text": "а шт.ноув",
+                                    "educators_short_display_text_english": "ahvotsnu ."
+                                },
+                                {
+                                    "oid": "12280114-E448-4FEE-948C-63F397C8CB52",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-26T17:00",
+                                    "end": "2020-09-26T18:40",
+                                    "educators_Display_Text": "аскз .вет,няои",
+                                    "internal_description": "Князева О. В., ассистент\r\n3055\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, supervised self-study",
+                                    "educators_display_text_english": "ekzina ov.",
+                                    "educators_short_display_text": "язво .кена",
+                                    "educators_short_display_text_english": "ekioazv n."
+                                },
+                                {
+                                    "oid": "930D670A-0A7B-47C3-B742-850CC7A2E3DD",
+                                    "eventSubject": "Электив. Молекулярные методы в зоологии: теория и практика. Часть 1, лекция",
+                                    "start": "2020-09-28T13:10",
+                                    "end": "2020-09-28T14:50",
+                                    "educators_Display_Text": "айиун дцотр,в.секчяшы",
+                                    "internal_description": "Кудрявцев А. А., старший научный сотрудник\r\n3055\r\n",
+                                    "subject_english": "Elective. Molecular Methods in Zoology: Theory and Practice. Part 1, lecture",
+                                    "educators_display_text_english": "sr.iec h,oawudnvkt",
+                                    "educators_short_display_text": "ядеварк.ц у",
+                                    "educators_short_display_text_english": "edrvsiu tka."
+                                },
+                                {
+                                    "oid": "5FB030B0-3681-49CE-BFBB-032DB9581372",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-29T15:00",
+                                    "end": "2020-09-29T16:40",
+                                    "educators_Display_Text": ".бд,аепт снвшлрийоь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3055\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": ".en ,cltvabsru",
+                                    "educators_short_display_text": "аенл в.б",
+                                    "educators_short_display_text_english": "eav bln."
+                                },
+                                {
+                                    "oid": "D5170AD5-A568-4740-B9FB-2234326DFCFD",
+                                    "eventSubject": "Электив. Методы световой и электронной микроскопии, лекция",
+                                    "start": "2020-09-29T15:00",
+                                    "end": "2020-09-29T16:40",
+                                    "educators_Display_Text": "н .ациремсвод,т",
+                                    "internal_description": "Смирнов А. В., доцент\r\n3055\r\n",
+                                    "subject_english": "Elective. Light and Electron Microscopy Techniques, lecture",
+                                    "educators_display_text_english": "mv tsneco,pra.if",
+                                    "educators_short_display_text": "оир.а внмсд",
+                                    "educators_short_display_text_english": "r eovnimatsl."
+                                },
+                                {
+                                    "oid": "3A80C103-1AFD-4707-9710-528D87AE4B5D",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-29T16:50",
+                                    "end": "2020-09-29T18:30",
+                                    "educators_Display_Text": "ашби,лвес тдпр.нйоь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3055\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "un ,cevlt.asbr",
+                                    "educators_short_display_text": "наб в.ел",
+                                    "educators_short_display_text_english": " anlbve."
+                                },
+                                {
+                                    "oid": "BD7541EF-7DE8-4353-8156-B7F1F1B2DF6A",
+                                    "eventSubject": "Электив. Методы световой и электронной микроскопии, практическое занятие",
+                                    "start": "2020-09-29T16:50",
+                                    "end": "2020-09-29T18:30",
+                                    "educators_Display_Text": "ио емрва.нцдс,т",
+                                    "internal_description": "Смирнов А. В., доцент\r\n3055\r\n",
+                                    "subject_english": "Elective. Light and Electron Microscopy Techniques, practical class",
+                                    "educators_display_text_english": "srife,nom.ac tvp",
+                                    "educators_short_display_text": "м. нвисроа",
+                                    "educators_short_display_text_english": "ovma nisr."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "B53DAA54-28D3-4652-A074-BBD7B9601F0B",
+                            "capacity": 20,
+                            "name": "",
+                            "additional_info": "Проектор, ПК; микроскопы",
+                            "number_actual": "2053А",
+                            "multimedia_equipment": 1,
+                            "labware_equipment": 1,
+                            "display_name_russian": "2053А",
+                            "display_name_english": "2053А",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 2053А",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 2053А",
+                            "computers_count": 0,
+                            "floor": "2(второй)"
+                        },
+                        "events": {
+                            "count": 4,
+                            "results": [
+                                {
+                                    "oid": "D991BB01-5442-4568-AF8D-5DF5F2948EE1",
+                                    "eventSubject": "Гистология, цитология, эмбриология. Гистология органов полости рта, практическое занятие",
+                                    "start": "2020-09-09T10:50",
+                                    "end": "2020-09-09T12:30",
+                                    "educators_Display_Text": "аекшрт по.гйни,свдль",
+                                    "internal_description": "Шапошникова Т. Г., старший преподаватель\r\n2053А\r\n",
+                                    "subject_english": "Microscopic Anatomy, Cytology, Embryology. Oral Microscopic Anatomy, practical class",
+                                    "educators_display_text_english": "teosck,uripa n.hvl",
+                                    "educators_short_display_text": ".вбуо дхк",
+                                    "educators_short_display_text_english": "ok hdbvu."
+                                },
+                                {
+                                    "oid": "235D9731-B784-439A-A360-B3D26DF1A648",
+                                    "eventSubject": "Гистология, цитология, эмбриология. Гистология органов полости рта, практическое занятие",
+                                    "start": "2020-09-15T09:00",
+                                    "end": "2020-09-15T10:50",
+                                    "educators_Display_Text": "роагсейш дв.п,тикнль",
+                                    "internal_description": "Шапошникова Т. Г., старший преподаватель\r\n2053А\r\n",
+                                    "subject_english": "Microscopic Anatomy, Cytology, Embryology. Oral Microscopic Anatomy, practical class",
+                                    "educators_display_text_english": "niaehr s,vtl.ocpku",
+                                    "educators_short_display_text": " шнгова.пкит",
+                                    "educators_short_display_text_english": "v aosnhtkpi."
+                                },
+                                {
+                                    "oid": "71DEE5B1-41F0-4D6B-A753-45AD495631EC",
+                                    "eventSubject": "Гистология, цитология, эмбриология. Гистология органов полости рта, практическое занятие",
+                                    "start": "2020-09-15T09:00",
+                                    "end": "2020-09-15T10:50",
+                                    "educators_Display_Text": "шпети а.двс,нойргкль",
+                                    "internal_description": "Шапошникова Т. Г., старший преподаватель\r\n2053А\r\n",
+                                    "subject_english": "Microscopic Anatomy, Cytology, Embryology. Oral Microscopic Anatomy, practical class",
+                                    "educators_display_text_english": "keh.sniau,vl tropc",
+                                    "educators_short_display_text": "н .апвшотикг",
+                                    "educators_short_display_text_english": "oathv spikn."
+                                },
+                                {
+                                    "oid": "F5620A09-5E47-4B46-B2C9-1148D62D0DB7",
+                                    "eventSubject": "Гистология, цитология, эмбриология. Гистология органов полости рта, практическое занятие",
+                                    "start": "2020-09-16T10:50",
+                                    "end": "2020-09-16T12:30",
+                                    "educators_Display_Text": "пт,ошге исйавдлр.нкь",
+                                    "internal_description": "Шапошникова Т. Г., старший преподаватель\r\n2053А\r\n",
+                                    "subject_english": "Microscopic Anatomy, Cytology, Embryology. Oral Microscopic Anatomy, practical class",
+                                    "educators_display_text_english": " rcp.hoatsnik,elvu",
+                                    "educators_short_display_text": " ош.кпиатвнг",
+                                    "educators_short_display_text_english": "othsa kvinp."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "4E9B3CF8-15E3-4BE7-BAB0-B997A1E9FDF2",
+                            "capacity": 0,
+                            "number_actual": "1043к",
+                            "multimedia_equipment": 0,
+                            "labware_equipment": 0,
+                            "display_name_russian": "1043к",
+                            "display_name_english": "1043к",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 1043к",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 1043к",
+                            "computers_count": 0,
+                            "floor": "1(первый)"
+                        },
+                        "events": {
+                            "count": 9,
+                            "results": [
+                                {
+                                    "oid": "4CDEE584-B60F-41C8-8704-9BF14B6AB017",
+                                    "eventSubject": "Клиническая патология, практическое занятие",
+                                    "start": "2020-09-03T09:00",
+                                    "end": "2020-09-03T12:30",
+                                    "educators_Display_Text": "ео с.вкр,ипанф",
+                                    "internal_description": "Коровин А. Е., профессор\r\n1043к\r\n",
+                                    "subject_english": "Pathology Clinical, practical class",
+                                    "educators_display_text_english": "ioasn,erkp v.f",
+                                    "educators_short_display_text": "р .аоникве",
+                                    "educators_short_display_text_english": "koniav r."
+                                },
+                                {
+                                    "oid": "A33B0FC6-E6BC-4AF2-8252-B18454E49C66",
+                                    "eventSubject": "Клиническая патология, практическое занятие",
+                                    "start": "2020-09-05T09:00",
+                                    "end": "2020-09-05T12:30",
+                                    "educators_Display_Text": "еоа рк.пифн,св",
+                                    "internal_description": "Коровин А. Е., профессор\r\n1043к\r\n",
+                                    "subject_english": "Pathology Clinical, practical class",
+                                    "educators_display_text_english": "osrk fn.piv,ae",
+                                    "educators_short_display_text": "ваои енкр.",
+                                    "educators_short_display_text_english": "n aovrki."
+                                },
+                                {
+                                    "oid": "6186CA96-655F-4E45-B253-244EB708DDB4",
+                                    "eventSubject": "Клиническая патология, практическое занятие",
+                                    "start": "2020-09-08T09:00",
+                                    "end": "2020-09-08T12:30",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n1043к\r\n",
+                                    "subject_english": "Pathology Clinical, practical class",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "EA4FD23F-D5D5-4B7E-81CA-C4F42E18ADED",
+                                    "eventSubject": "Клиническая патология, практическое занятие",
+                                    "start": "2020-09-10T09:00",
+                                    "end": "2020-09-10T12:30",
+                                    "educators_Display_Text": " кнриоеафп.св,",
+                                    "internal_description": "Коровин А. Е., профессор\r\n1043к\r\n",
+                                    "subject_english": "Pathology Clinical, practical class",
+                                    "educators_display_text_english": "sao,v peknif.r",
+                                    "educators_short_display_text": "вк .анроие",
+                                    "educators_short_display_text_english": "i ornavk."
+                                },
+                                {
+                                    "oid": "24205142-1C2C-4348-96B2-A7627A1A0C5D",
+                                    "eventSubject": "Клиническая патология, практическое занятие",
+                                    "start": "2020-09-12T09:00",
+                                    "end": "2020-09-12T12:30",
+                                    "educators_Display_Text": "о,.рпнкиве саф",
+                                    "internal_description": "Коровин А. Е., профессор\r\n1043к\r\n",
+                                    "subject_english": "Pathology Clinical, practical class",
+                                    "educators_display_text_english": "oa vkf,sripn.e",
+                                    "educators_short_display_text": "иак нвеор.",
+                                    "educators_short_display_text_english": "riovna k."
+                                },
+                                {
+                                    "oid": "770708D3-0AED-41F2-B6C2-F79742B7B411",
+                                    "eventSubject": "Клиническая патология, практическое занятие",
+                                    "start": "2020-09-26T09:00",
+                                    "end": "2020-09-26T12:30",
+                                    "educators_Display_Text": " прка,овеси.нф",
+                                    "internal_description": "Коровин А. Е., профессор\r\n1043к\r\n",
+                                    "subject_english": "Pathology Clinical, practical class",
+                                    "educators_display_text_english": "f anriseokv.,p",
+                                    "educators_short_display_text": "аеон ирк.в",
+                                    "educators_short_display_text_english": "kioa nvr."
+                                },
+                                {
+                                    "oid": "AA1FEC30-68F9-41FE-BF52-13C0D9245D90",
+                                    "eventSubject": "Клиническая патология, практическое занятие",
+                                    "start": "2020-09-30T09:00",
+                                    "end": "2020-09-30T12:30",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n1043к\r\n",
+                                    "subject_english": "Pathology Clinical, practical class",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "74699C08-C3F4-4A6B-BC80-6532592CBCA0",
+                                    "eventSubject": "Клиническая патология, практическое занятие",
+                                    "start": "2020-10-01T09:00",
+                                    "end": "2020-10-01T12:30",
+                                    "educators_Display_Text": "осф р.а,икпвен",
+                                    "internal_description": "Коровин А. Е., профессор\r\n1043к\r\n",
+                                    "subject_english": "Pathology Clinical, practical class",
+                                    "educators_display_text_english": "f,opnrs aiv.ke",
+                                    "educators_short_display_text": "ро ваи.кне",
+                                    "educators_short_display_text_english": "oriva nk."
+                                },
+                                {
+                                    "oid": "77876365-35B1-4202-A470-A0C9FE2ADCB4",
+                                    "eventSubject": "Клиническая патология, контрольная работа",
+                                    "start": "2020-10-01T09:00",
+                                    "end": "2020-10-01T12:30",
+                                    "educators_Display_Text": "е, оарвки.фпнс",
+                                    "internal_description": "Коровин А. Е., профессор\r\n1043к\r\n",
+                                    "subject_english": "Pathology Clinical, written paper",
+                                    "educators_display_text_english": "na,frov eis.kp",
+                                    "educators_short_display_text": " накриоев.",
+                                    "educators_short_display_text_english": "v oiankr."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "16E00AE6-CB98-4005-9CA5-B94A6E66D3C9",
+                            "capacity": 8,
+                            "additional_info": "Проектор, экран, ПК, 2 камеры, видеоконференцсвязь",
+                            "number_actual": "70",
+                            "multimedia_equipment": 0,
+                            "labware_equipment": 0,
+                            "display_name_russian": "70",
+                            "display_name_english": "70",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 70",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 70",
+                            "computers_count": 0,
+                            "floor": "2(второй)"
+                        },
+                        "events": {
+                            "count": 15,
+                            "results": [
+                                {
+                                    "oid": "2E8B3682-56AB-43AC-8C0D-617C1C0F68A7",
+                                    "eventSubject": "Совещание День карьеры",
+                                    "start": "2020-09-02T11:00",
+                                    "end": "2020-09-02T13:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "C0E9E22D-AD5B-4882-8D0C-2EB6F221F514",
+                                    "eventSubject": "Презентации ВТБ для сотрудников по текущим банковским вопросам",
+                                    "start": "2020-09-03T15:00",
+                                    "end": "2020-09-03T16:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": "",
+                                    "description_long": "РК 01-116-3032 от 28.02.2020"
+                                },
+                                {
+                                    "oid": "CD5C50D8-5B18-4728-A569-FC8336644682",
+                                    "eventSubject": "Визит делегации РАН",
+                                    "start": "2020-09-17T09:00",
+                                    "end": "2020-09-18T11:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": "",
+                                    "description_long": "128-219"
+                                },
+                                {
+                                    "oid": "F0A6AA52-F736-4E1D-A4BF-21237BC25C3D",
+                                    "eventSubject": "Презентации ВТБ для сотрудников по текущим банковским вопросам",
+                                    "start": "2020-09-17T15:00",
+                                    "end": "2020-09-17T16:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": "",
+                                    "description_long": "РК 01-116-3032 от 28.02.2020"
+                                },
+                                {
+                                    "oid": "E68728C3-92DA-4092-8699-BC8546201CAE",
+                                    "eventSubject": "Студ.Совет",
+                                    "start": "2020-09-18T18:30",
+                                    "end": "2020-09-18T22:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "30CC29E4-24D2-49C9-AEC8-41EE90E42C4D",
+                                    "eventSubject": "Еженедельное совещание первого проректора по экономике",
+                                    "start": "2020-09-21T14:30",
+                                    "end": "2020-09-21T16:30",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "AA445144-DAA7-48C5-A3F5-726B588B2F5D",
+                                    "eventSubject": "Совещание День карьеры",
+                                    "start": "2020-09-22T16:00",
+                                    "end": "2020-09-22T18:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "65D01427-F303-47F6-BC65-27DC337FC944",
+                                    "eventSubject": "Встреча с представителями Посольства Ирана",
+                                    "start": "2020-09-24T12:30",
+                                    "end": "2020-09-24T13:30",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "16E415CC-4A5F-4C87-95B7-168FE10F938E",
+                                    "eventSubject": "Обучение zoom",
+                                    "start": "2020-09-24T14:00",
+                                    "end": "2020-09-24T16:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "C4E9C635-DDA6-4D65-9889-6EE94588F9A3",
+                                    "eventSubject": "Совещание День карьеры",
+                                    "start": "2020-09-25T16:00",
+                                    "end": "2020-09-25T17:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "BF16CE68-7777-4348-87AF-B82F0D152153",
+                                    "eventSubject": "Обучение zoom",
+                                    "start": "2020-09-28T14:00",
+                                    "end": "2020-09-28T16:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "18753220-2BA3-4D17-AB5F-CE3F939FB921",
+                                    "eventSubject": "Еженедельное совещание первого проректора по экономике",
+                                    "start": "2020-09-28T14:30",
+                                    "end": "2020-09-28T16:30",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "B5D14FAD-1322-4B96-9DCE-F92F85015A35",
+                                    "eventSubject": "Онлайн Второй Архивный съезд 2020",
+                                    "start": "2020-09-29T09:00",
+                                    "end": "2020-09-29T18:30",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "6AEE45A8-A902-4EB0-92C0-FEF9B59703D1",
+                                    "eventSubject": "Еженедельное совещание первого проректора по экономике",
+                                    "start": "2020-09-29T14:30",
+                                    "end": "2020-09-29T16:30",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                },
+                                {
+                                    "oid": "3A84B24A-60BF-4BF1-8F5D-141FFDA5D023",
+                                    "eventSubject": "Обучение zoom",
+                                    "start": "2020-09-30T14:00",
+                                    "end": "2020-09-30T16:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\n70\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "BF057782-6E15-4E8A-ADC3-AC5EEB8693FB",
+                            "capacity": 20,
+                            "name": "Каф. Осадочной геологии, ауд. музея",
+                            "additional_info": "",
+                            "number_actual": "Каф. Осадочной геологии, ауд. музея",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 2,
+                            "display_name_russian": "Каф. Осадочной геологии, ауд. музея",
+                            "display_name_english": "Каф. Осадочной геологии, ауд. музея",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9, Каф. Осадочной геологии, ауд. музея",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9, Каф. Осадочной геологии, ауд. музея",
+                            "floor": "3(третий)"
+                        },
+                        "events": {
+                            "count": 2,
+                            "results": [
+                                {
+                                    "oid": "811F1BB7-DBE4-43D3-9BD2-4E6AA6516CDC",
+                                    "eventSubject": "Историческая геология с основами палеонтологии, лекция",
+                                    "start": "2020-09-08T11:30",
+                                    "end": "2020-09-08T13:05",
+                                    "educators_Display_Text": "ефьрва .сп,док",
+                                    "internal_description": "Аркадьев В. В., профессор\r\nКаф. Осадочной геологии, ауд. музея\r\n",
+                                    "subject_english": "Historical Geology and Fundamentals of Paleontology, lecture",
+                                    "educators_display_text_english": "esopfardvk., ",
+                                    "educators_short_display_text": "кдв. арье",
+                                    "educators_short_display_text_english": "dvea rk."
+                                },
+                                {
+                                    "oid": "08728BA3-D071-43DB-B80B-C9628024DE13",
+                                    "eventSubject": "Историческая геология с основами палеонтологии, практическое занятие",
+                                    "start": "2020-09-08T13:15",
+                                    "end": "2020-09-08T14:00",
+                                    "educators_Display_Text": "сф.каре пь,вод",
+                                    "internal_description": "Аркадьев В. В., профессор\r\nКаф. Осадочной геологии, ауд. музея\r\n",
+                                    "subject_english": "Historical Geology and Fundamentals of Paleontology, practical class",
+                                    "educators_display_text_english": "p.revadk so,f",
+                                    "educators_short_display_text": "в ак.ьрде",
+                                    "educators_short_display_text_english": "kv eard."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "0D69A2AA-6BC9-4C8D-ACCF-9487D2A14D13",
+                            "capacity": 16,
+                            "name": "",
+                            "additional_info": "",
+                            "number_actual": "1087",
+                            "multimedia_equipment": 1,
+                            "labware_equipment": 2,
+                            "display_name_russian": "1087",
+                            "display_name_english": "1087",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 1087",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 1087",
+                            "computers_count": 0,
+                            "floor": "1(первый)"
+                        },
+                        "events": {
+                            "count": 2,
+                            "results": [
+                                {
+                                    "oid": "9654D3C4-3220-4C20-BC55-CFA50DEEF035",
+                                    "eventSubject": "Генетика растений, лекция",
+                                    "start": "2020-09-21T10:50",
+                                    "end": "2020-09-21T12:30",
+                                    "educators_Display_Text": "в цдо.хтеин,",
+                                    "internal_description": "Тиходеев О. Н., доцент\r\n1087\r\n",
+                                    "subject_english": "Genetics of Plants, lecture",
+                                    "educators_display_text_english": "c.kdoi hftpaesrv,",
+                                    "educators_short_display_text": "д хтиовн.е",
+                                    "educators_short_display_text_english": "okehdti v."
+                                },
+                                {
+                                    "oid": "F826B5F0-FD75-4E0C-91FF-F6FD1E31A8A7",
+                                    "eventSubject": "Биохимия агрокультур, лекция",
+                                    "start": "2020-09-21T13:10",
+                                    "end": "2020-09-21T14:50",
+                                    "educators_Display_Text": "дов ашре,н.цит",
+                                    "internal_description": "Шарова Е. И., доцент\r\n1087\r\n",
+                                    "subject_english": "Agricultural Biochemistry, lecture",
+                                    "educators_display_text_english": "asctpeo.f, rhvi",
+                                    "educators_short_display_text": ". аевшрои",
+                                    "educators_short_display_text_english": "vsaeohr ."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "74CBC422-E245-4BD1-BB66-83ADF7B28C84",
+                            "capacity": 12,
+                            "name": "Ауд.6",
+                            "additional_info": "МФУ",
+                            "number_actual": "1098А",
+                            "multimedia_equipment": 1,
+                            "labware_equipment": 2,
+                            "display_name_russian": "1098А",
+                            "display_name_english": "1098А",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 1098А",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 1098А",
+                            "computers_count": 0,
+                            "floor": "1(первый)"
+                        },
+                        "events": {
+                            "count": 14,
+                            "results": [
+                                {
+                                    "oid": "1C56C655-A0AE-4D2A-9D98-0ED6E60069D1",
+                                    "eventSubject": "Большой практикум по физиологии растений. Часть 2, лекция",
+                                    "start": "2020-09-17T09:00",
+                                    "end": "2020-09-17T10:40",
+                                    "educators_Display_Text": "нлосе, гдм.аквцит",
+                                    "internal_description": "Смоликова Г. Н., доцент\r\n1098А\r\n",
+                                    "subject_english": "Comprehensive Workshop in Plant Physiology. Part 2, lecture",
+                                    "educators_display_text_english": ",aeisf pvlot.cmgkr",
+                                    "educators_short_display_text": ".г лкмиосван",
+                                    "educators_short_display_text_english": " lvigkomsa."
+                                },
+                                {
+                                    "oid": "DBDDD39F-2F86-4E22-ACD5-D1B561DB082E",
+                                    "eventSubject": "Большой практикум по физиологии растений. Часть 2, семинар",
+                                    "start": "2020-09-17T11:00",
+                                    "end": "2020-09-17T12:30",
+                                    "educators_Display_Text": "оклц.е,мдагсвин т",
+                                    "internal_description": "Смоликова Г. Н., доцент\r\n1098А\r\n",
+                                    "subject_english": "Comprehensive Workshop in Plant Physiology. Part 2, seminar",
+                                    "educators_display_text_english": "taf okslcimp,revg.",
+                                    "educators_short_display_text": "а иолв.гксмн",
+                                    "educators_short_display_text_english": "oivgs mkla."
+                                },
+                                {
+                                    "oid": "86ED162D-D47C-4650-9438-626355272C60",
+                                    "eventSubject": "Большой практикум по физиологии растений. Часть 2, практическое занятие",
+                                    "start": "2020-09-17T13:10",
+                                    "end": "2020-09-17T14:50",
+                                    "educators_Display_Text": "о .дникацсвлм,гет",
+                                    "internal_description": "Смоликова Г. Н., доцент\r\n1098А\r\n",
+                                    "subject_english": "Comprehensive Workshop in Plant Physiology. Part 2, practical class",
+                                    "educators_display_text_english": "osgm ieatcrkp.vl,f",
+                                    "educators_short_display_text": "кинс алмв.ог",
+                                    "educators_short_display_text_english": "smkg oialv."
+                                },
+                                {
+                                    "oid": "2EE9DDA9-9095-4C24-9EF5-2643B0D24C4D",
+                                    "eventSubject": "Большой практикум по физиологии растений. Часть 2, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-17T15:00",
+                                    "end": "2020-09-17T16:40",
+                                    "educators_Display_Text": ",мн восц.икделагт",
+                                    "internal_description": "Смоликова Г. Н., доцент\r\n1098А\r\n",
+                                    "subject_english": "Comprehensive Workshop in Plant Physiology. Part 2, supervised self-study",
+                                    "educators_display_text_english": "g vosefaltk.cpmir,",
+                                    "educators_short_display_text": "кснлг иво.ма",
+                                    "educators_short_display_text_english": "slvgmo aki."
+                                },
+                                {
+                                    "oid": "FFDFA9F3-D489-4ED6-91E0-6D5DB379A102",
+                                    "eventSubject": "Электив. Сигнальные системы растений, экзамен (пересдача)",
+                                    "start": "2020-09-21T14:00",
+                                    "end": "2020-09-21T15:00",
+                                    "educators_Display_Text": "ешс. риавпомф,",
+                                    "internal_description": "Шишова М. Ф., профессор\r\n1098А\r\n",
+                                    "subject_english": "Elective. Plant Cell Signalling, examination (re-sitting)",
+                                    "educators_display_text_english": "msar.vhf po,ie",
+                                    "educators_short_display_text": "аши .вмоф",
+                                    "educators_short_display_text_english": "a imhvos."
+                                },
+                                {
+                                    "oid": "7753CFF9-0E2E-43C8-A06D-F1C87EDEAE70",
+                                    "eventSubject": "Электив. Продуктивность растений и фотосинтез, лекция",
+                                    "start": "2020-09-21T15:00",
+                                    "end": "2020-09-21T16:40",
+                                    "educators_Display_Text": "ф ео.мшсвраи,п",
+                                    "internal_description": "Шишова М. Ф., профессор\r\n1098А\r\n",
+                                    "subject_english": "Elective. Plant Productivity and Photosynthesis, lecture",
+                                    "educators_display_text_english": "phs. eomvr,iaf",
+                                    "educators_short_display_text": " фшомваи.",
+                                    "educators_short_display_text_english": "hmias vo."
+                                },
+                                {
+                                    "oid": "75642F85-3D08-4DBF-802F-2EB29A47C06B",
+                                    "eventSubject": "Электив. Продуктивность растений и фотосинтез, семинар",
+                                    "start": "2020-09-21T16:50",
+                                    "end": "2020-09-21T18:30",
+                                    "educators_Display_Text": "фрм сеш,.оваип",
+                                    "internal_description": "Шишова М. Ф., профессор\r\n1098А\r\n",
+                                    "subject_english": "Elective. Plant Productivity and Photosynthesis, seminar",
+                                    "educators_display_text_english": ".s, hoapfvierm",
+                                    "educators_short_display_text": "а .моишвф",
+                                    "educators_short_display_text_english": "ovhmsa i."
+                                },
+                                {
+                                    "oid": "12931913-51E0-4AFE-9639-6E8C2AC9E8BC",
+                                    "eventSubject": "Биохимия растений: белки, ферменты, лекция",
+                                    "start": "2020-09-23T13:10",
+                                    "end": "2020-09-23T14:50",
+                                    "educators_Display_Text": "ц дшиов,анр.ет",
+                                    "internal_description": "Шарова Е. И., доцент\r\n1098А\r\n",
+                                    "subject_english": "Plant Biochemistry: Proteins, Enzymes, lecture",
+                                    "educators_display_text_english": "s v.a,foretichp",
+                                    "educators_short_display_text": "е оашви.р",
+                                    "educators_short_display_text_english": "ohvera s."
+                                },
+                                {
+                                    "oid": "63604F3A-004B-464C-9694-09C0B68D44FB",
+                                    "eventSubject": "Биохимия растений: белки, ферменты, семинар",
+                                    "start": "2020-09-23T15:00",
+                                    "end": "2020-09-23T16:40",
+                                    "educators_Display_Text": "о,ве шр.цдниат",
+                                    "internal_description": "Шарова Е. И., доцент\r\n1098А\r\n",
+                                    "subject_english": "Plant Biochemistry: Proteins, Enzymes, seminar",
+                                    "educators_display_text_english": "o,rtahevs pic.f",
+                                    "educators_short_display_text": "и о.шврае",
+                                    "educators_short_display_text_english": " varhseo."
+                                },
+                                {
+                                    "oid": "B6F838AF-802F-4BEF-869A-BE7C4FB30C79",
+                                    "eventSubject": "Большой практикум по физиологии растений. Часть 2, практическое занятие",
+                                    "start": "2020-09-24T09:00",
+                                    "end": "2020-09-24T10:40",
+                                    "educators_Display_Text": ".есатои, вблн",
+                                    "internal_description": "Билова Т. Е., ассистент\r\n1098А\r\n",
+                                    "subject_english": "Comprehensive Workshop in Plant Physiology. Part 2, practical class",
+                                    "educators_display_text_english": "l,itacsre bno.vu",
+                                    "educators_short_display_text": "атвбе .лио",
+                                    "educators_short_display_text_english": "bt loaiv."
+                                },
+                                {
+                                    "oid": "A2571DFE-647C-403E-B977-B7170F2A1D63",
+                                    "eventSubject": "Большой практикум по физиологии растений. Часть 2, семинар",
+                                    "start": "2020-09-24T11:00",
+                                    "end": "2020-09-24T12:30",
+                                    "educators_Display_Text": "сн.ти аеоблв,",
+                                    "internal_description": "Билова Т. Е., ассистент\r\n1098А\r\n",
+                                    "subject_english": "Comprehensive Workshop in Plant Physiology. Part 2, seminar",
+                                    "educators_display_text_english": " sebl.cturiavo,n",
+                                    "educators_short_display_text": " твлобаи.е",
+                                    "educators_short_display_text_english": " iobltav."
+                                },
+                                {
+                                    "oid": "30BBDAE0-92C6-464D-B139-89E2734ED8ED",
+                                    "eventSubject": "Большой практикум по физиологии растений. Часть 2, практическое занятие",
+                                    "start": "2020-09-24T13:10",
+                                    "end": "2020-09-24T14:50",
+                                    "educators_Display_Text": ".мвоалеи днкц,гст",
+                                    "internal_description": "Смоликова Г. Н., доцент\r\n1098А\r\n",
+                                    "subject_english": "Comprehensive Workshop in Plant Physiology. Part 2, practical class",
+                                    "educators_display_text_english": "o.s raei,pmgtlkcvf",
+                                    "educators_short_display_text": "иаокс.лг мвн",
+                                    "educators_short_display_text_english": "gavlkosim ."
+                                },
+                                {
+                                    "oid": "FFB2DB7B-D093-4D1F-AEB3-A2F39E285DCF",
+                                    "eventSubject": "Электив. Клеточная биология растений с практикумом по визуализации клеточных процессов, экзамен (пересдача)",
+                                    "start": "2020-09-28T14:00",
+                                    "end": "2020-09-28T15:00",
+                                    "educators_Display_Text": "и,вр сшм.офпае",
+                                    "internal_description": "Шишова М. Ф., профессор\r\n1098А\r\n",
+                                    "subject_english": "Elective. Plant Cell Biology with Practicum in Imaging of Cellular Processes, examination (re-sitting)",
+                                    "educators_display_text_english": "os rif,pah.mve",
+                                    "educators_short_display_text": ".шим аовф",
+                                    "educators_short_display_text_english": "asov mhi."
+                                },
+                                {
+                                    "oid": "EAF428E1-AEB2-41D2-B719-FAB47BF78B30",
+                                    "eventSubject": "Большой практикум по физиологии растений. Часть 2, практическое занятие",
+                                    "start": "2020-10-01T11:00",
+                                    "end": "2020-10-01T12:30",
+                                    "educators_Display_Text": ".есвн таилбо,",
+                                    "internal_description": "Билова Т. Е., ассистент\r\n1098А\r\n",
+                                    "subject_english": "Comprehensive Workshop in Plant Physiology. Part 2, practical class",
+                                    "educators_display_text_english": "s.at,eirnbc lvou",
+                                    "educators_short_display_text": "о мсл.гвкаин",
+                                    "educators_short_display_text_english": "vmgil skoa."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "4F7BF145-D9DE-45D2-A461-79DA7AA43A20",
+                            "capacity": 110,
+                            "name": "",
+                            "additional_info": "Видеоконференцсвязь",
+                            "number_actual": "3011",
+                            "multimedia_equipment": 1,
+                            "labware_equipment": 2,
+                            "display_name_russian": "3011",
+                            "display_name_english": "3011",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 3011",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 3011",
+                            "computers_count": 0,
+                            "floor": "3(третий)"
+                        },
+                        "events": {
+                            "count": 4,
+                            "results": [
+                                {
+                                    "oid": "E5F87CD0-6445-4AF2-B556-2A7AEB9D980D",
+                                    "eventSubject": "Органическая химия, экзамен (пересдача)",
+                                    "start": "2020-09-14T17:00",
+                                    "end": "2020-09-14T18:30",
+                                    "educators_Display_Text": "коевсмнд ,р.цут",
+                                    "internal_description": "Сорокоумов В. Н., доцент\r\n3011\r\n",
+                                    "subject_english": "Organic Chemistry, examination (re-sitting)",
+                                    "educators_display_text_english": "ouresp kvam,t.icf",
+                                    "educators_short_display_text": "мвок с.рун",
+                                    "educators_short_display_text_english": "osrvmk u."
+                                },
+                                {
+                                    "oid": "C4F5BF3D-CD82-4FAB-964A-A6FBA8A9DEE6",
+                                    "eventSubject": "Органическая химия, экзамен (пересдача)",
+                                    "start": "2020-09-14T17:00",
+                                    "end": "2020-09-14T18:30",
+                                    "educators_Display_Text": ".нвуом рдеск,цт",
+                                    "internal_description": "Сорокоумов В. Н., доцент\r\n3011\r\n",
+                                    "subject_english": "Organic Chemistry, examination (re-sitting)",
+                                    "educators_display_text_english": "pctmoe irsva,.ukf",
+                                    "educators_short_display_text": "ноум в.срк",
+                                    "educators_short_display_text_english": " rokmuvs."
+                                },
+                                {
+                                    "oid": "85433670-4040-4DCA-983B-AD29505D0DA0",
+                                    "eventSubject": "Органическая химия, экзамен (пересдача)",
+                                    "start": "2020-09-14T17:00",
+                                    "end": "2020-09-14T18:30",
+                                    "educators_Display_Text": " овдср.е,цнукмт",
+                                    "internal_description": "Сорокоумов В. Н., доцент\r\n3011\r\n",
+                                    "subject_english": "Organic Chemistry, examination (re-sitting)",
+                                    "educators_display_text_english": "sotfarvem.ki, ucp",
+                                    "educators_short_display_text": "в. сукомрн",
+                                    "educators_short_display_text_english": "vsuo mrk."
+                                },
+                                {
+                                    "oid": "17BD6042-70E7-431F-8DDD-9E98684CAF0C",
+                                    "eventSubject": "Органическая химия, экзамен (пересдача)",
+                                    "start": "2020-09-14T17:00",
+                                    "end": "2020-09-14T18:30",
+                                    "educators_Display_Text": "дно у.еврскц,мт",
+                                    "internal_description": "Сорокоумов В. Н., доцент\r\n3011\r\n",
+                                    "subject_english": "Organic Chemistry, examination (re-sitting)",
+                                    "educators_display_text_english": "svo,er.a ipukcmtf",
+                                    "educators_short_display_text": ".вмрко сун",
+                                    "educators_short_display_text_english": "v uosrmk."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "624B5BE2-E5F5-4810-8D1E-6ED64A76EA36",
+                            "capacity": 12,
+                            "name": "",
+                            "additional_info": "Проектор потолочный",
+                            "number_actual": "3049",
+                            "multimedia_equipment": 1,
+                            "labware_equipment": 2,
+                            "display_name_russian": "3049",
+                            "display_name_english": "3049",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 3049",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 3049",
+                            "computers_count": 0,
+                            "floor": "3(третий)"
+                        },
+                        "events": {
+                            "count": 2,
+                            "results": [
+                                {
+                                    "oid": "6B801DD9-8FB2-4265-B836-334501B99C27",
+                                    "eventSubject": "Электив. Большой практикум по психофизиологии. Часть 2, лабораторная работа",
+                                    "start": "2020-09-17T13:10",
+                                    "end": "2020-09-17T14:50",
+                                    "educators_Display_Text": " ерьгсдоцнв.и,ат",
+                                    "internal_description": "Григорьев А. С., доцент\r\n3049\r\n",
+                                    "subject_english": "Elective. Comprehensive Practicum in Psychophysiology. Part 2, laboratory work",
+                                    "educators_display_text_english": "e.roagcpi,s vtf",
+                                    "educators_short_display_text": ". овригеаьс",
+                                    "educators_short_display_text_english": "iogvrea ."
+                                },
+                                {
+                                    "oid": "A8D6572A-2DCD-48D0-9D6B-164AA8020DEF",
+                                    "eventSubject": "Электив. Большой практикум по психофизиологии. Часть 2, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-17T15:00",
+                                    "end": "2020-09-17T16:40",
+                                    "educators_Display_Text": "вгс .реион,цьдат",
+                                    "internal_description": "Григорьев А. С., доцент\r\n3049\r\n",
+                                    "subject_english": "Elective. Comprehensive Practicum in Psychophysiology. Part 2, supervised self-study",
+                                    "educators_display_text_english": "ivoapesc,g .rtf",
+                                    "educators_short_display_text": "огвирсе.а ь",
+                                    "educators_short_display_text_english": "ga roiev."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "7C86FA7B-6869-4BD3-9377-694E9F3F45E4",
+                            "capacity": 0,
+                            "name": "Кафедра Минералогии",
+                            "additional_info": "ПК и проектор",
+                            "number_actual": "2004",
+                            "multimedia_equipment": 1,
+                            "labware_equipment": 2,
+                            "display_name_russian": "2004",
+                            "display_name_english": "2004",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 2004",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 2004",
+                            "computers_count": 0,
+                            "floor": "2(второй)"
+                        },
+                        "events": {
+                            "count": 1,
+                            "results": [
+                                {
+                                    "oid": "842B2D02-4D6D-4A74-B850-9AC1F8034AC1",
+                                    "eventSubject": "Электив. Природный камень в истории культуры, лекция",
+                                    "start": "2020-09-28T10:30",
+                                    "end": "2020-09-28T12:00",
+                                    "educators_Display_Text": " свптеа,лмдрои.нйшь",
+                                    "internal_description": "Ветрова М. Н., старший преподаватель\r\n2004\r\n",
+                                    "subject_english": "Elective. Natural Stone in History of Culture, lecture",
+                                    "educators_display_text_english": "csnm ev.ortal,u",
+                                    "educators_short_display_text": "мвеар т.он",
+                                    "educators_short_display_text_english": "mav etro."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "ADC58AAD-E822-4E52-8321-56C1DEF4E14C",
+                            "capacity": 70,
+                            "name": "",
+                            "additional_info": "Наличие оборудования уточняется",
+                            "number_actual": "3058",
+                            "multimedia_equipment": 1,
+                            "labware_equipment": 2,
+                            "display_name_russian": "3058",
+                            "display_name_english": "3058",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 3058",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 3058",
+                            "computers_count": 0,
+                            "floor": "3(третий)"
+                        },
+                        "events": {
+                            "count": 14,
+                            "results": [
+                                {
+                                    "oid": "9D14DF57-CCA0-456B-8582-59F9D1A4D637",
+                                    "eventSubject": "Биология почв, лекция",
+                                    "start": "2020-09-02T09:00",
+                                    "end": "2020-09-02T10:35",
+                                    "educators_Display_Text": "кянэ .е,оившадцт",
+                                    "internal_description": "Вишняков А. Э., доцент\r\n3058\r\n",
+                                    "subject_english": "Soil Biology, lecture",
+                                    "educators_display_text_english": "savc ofekt.i,hrnp",
+                                    "educators_short_display_text": "эков .шяина",
+                                    "educators_short_display_text_english": "kvoina hs."
+                                },
+                                {
+                                    "oid": "71974DD6-3F38-4A81-A5BB-006870FE2AAE",
+                                    "eventSubject": "Биология почв, лекция",
+                                    "start": "2020-09-03T09:00",
+                                    "end": "2020-09-03T10:35",
+                                    "educators_Display_Text": "он.ц,ви еэшдякат",
+                                    "internal_description": "Вишняков А. Э., доцент\r\n3058\r\n",
+                                    "subject_english": "Soil Biology, lecture",
+                                    "educators_display_text_english": "h iasnp.vetcr,kof",
+                                    "educators_short_display_text": "оав шнэя.ик",
+                                    "educators_short_display_text_english": "sh onviak."
+                                },
+                                {
+                                    "oid": "FA1E0612-0E20-43F4-B6CF-81CA66DF5092",
+                                    "eventSubject": "Основы биологии, лекция",
+                                    "start": "2020-09-03T10:50",
+                                    "end": "2020-09-03T12:30",
+                                    "educators_Display_Text": ",о вешнакя.эдцит",
+                                    "internal_description": "Вишняков А. Э., доцент\r\n3058\r\n",
+                                    "subject_english": "Basics of Biology, lecture",
+                                    "educators_display_text_english": " sifh,oarkenv.tcp",
+                                    "educators_short_display_text": " эя.новишка",
+                                    "educators_short_display_text_english": "nhis ovka."
+                                },
+                                {
+                                    "oid": "C99D25E6-1879-4A00-B9B3-9BDDF7406CE3",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 2: Metazoa, экзамен (пересдача)",
+                                    "start": "2020-09-08T17:00",
+                                    "end": "2020-09-08T18:30",
+                                    "educators_Display_Text": "аи.не дцковш,грт",
+                                    "internal_description": "Гришанков А. В., доцент\r\n3058\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 2: Metazoa, examination (re-sitting)",
+                                    "educators_display_text_english": " n,.eaisrpfhvogkct",
+                                    "educators_short_display_text": ".рвнга шкио",
+                                    "educators_short_display_text_english": "hva ronsgik."
+                                },
+                                {
+                                    "oid": "E0347454-C6D7-4FA4-842D-E2CBA29863B6",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 2: Metazoa, экзамен (пересдача)",
+                                    "start": "2020-09-08T17:00",
+                                    "end": "2020-09-08T18:30",
+                                    "educators_Display_Text": "н .квциордаге,шт",
+                                    "internal_description": "Гришанков А. В., доцент\r\n3058\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 2: Metazoa, examination (re-sitting)",
+                                    "educators_display_text_english": "hr.oinpe vgsat,ckf",
+                                    "educators_short_display_text": "о крвг.ишан",
+                                    "educators_short_display_text_english": "aogrksn vhi."
+                                },
+                                {
+                                    "oid": "29F2D57B-C340-4CC8-A479-E8F0DF97F19D",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 2: Metazoa, экзамен (пересдача)",
+                                    "start": "2020-09-08T17:00",
+                                    "end": "2020-09-08T18:30",
+                                    "educators_Display_Text": " .оеацднвикгрш,т",
+                                    "internal_description": "Гришанков А. В., доцент\r\n3058\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 2: Metazoa, examination (re-sitting)",
+                                    "educators_display_text_english": "ohesca it.rkvng,pf",
+                                    "educators_short_display_text": "ношаквиг .р",
+                                    "educators_short_display_text_english": "rkvsh ognai."
+                                },
+                                {
+                                    "oid": "E1BB1D11-948C-4CFB-8EE6-7923EA33C16E",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 2: Metazoa, экзамен (пересдача)",
+                                    "start": "2020-09-08T17:00",
+                                    "end": "2020-09-08T18:30",
+                                    "educators_Display_Text": "о.а,вишдг цкнерт",
+                                    "internal_description": "Гришанков А. В., доцент\r\n3058\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 2: Metazoa, examination (re-sitting)",
+                                    "educators_display_text_english": "a,tgr.son vekcpihf",
+                                    "educators_short_display_text": "а новкгшр.и",
+                                    "educators_short_display_text_english": "skar vnhgoi."
+                                },
+                                {
+                                    "oid": "5C7D395C-34EA-4AEE-BC47-1168420ECCB2",
+                                    "eventSubject": "Зоология с основами паразитологии, лекция",
+                                    "start": "2020-09-18T09:00",
+                                    "end": "2020-09-18T10:40",
+                                    "educators_Display_Text": "сп .гаеврлюо,ф",
+                                    "internal_description": "Слюсарев Г. С., профессор\r\n3058\r\n",
+                                    "subject_english": "Zoology and Basic Parasitology, lecture",
+                                    "educators_display_text_english": " upvo,saigf.rle",
+                                    "educators_short_display_text": "е.лгю всар",
+                                    "educators_short_display_text_english": "lveasugir ."
+                                },
+                                {
+                                    "oid": "6DB07705-01A4-405E-8025-781C2B106AC9",
+                                    "eventSubject": "Зоология с основами паразитологии, лекция",
+                                    "start": "2020-09-18T09:00",
+                                    "end": "2020-09-18T10:40",
+                                    "educators_Display_Text": "оавф,псе.р юлг",
+                                    "internal_description": "Слюсарев Г. С., профессор\r\n3058\r\n",
+                                    "subject_english": "Zoology and Basic Parasitology, lecture",
+                                    "educators_display_text_english": "vla,rups .fegoi",
+                                    "educators_short_display_text": "с. люраевг",
+                                    "educators_short_display_text_english": "avlesiru g."
+                                },
+                                {
+                                    "oid": "D7679145-0CE4-47B9-A1B1-95D714AE40D5",
+                                    "eventSubject": "Электив. Сравнительная иммунология: общность иммунных и онтогенетических механизмов, лекция",
+                                    "start": "2020-09-24T16:50",
+                                    "end": "2020-09-24T18:30",
+                                    "educators_Display_Text": "ае рвдйсьт.плц,ишмо",
+                                    "internal_description": "Мальцева А. Л., старший преподаватель\r\n3058\r\n",
+                                    "subject_english": "Elective. Comparative Immunology: Common Immune and Ontogenetic Mechanisms, lecture",
+                                    "educators_display_text_english": "resn ml.tvc,au",
+                                    "educators_short_display_text": "ем.ца вль",
+                                    "educators_short_display_text_english": "atmlsev ."
+                                },
+                                {
+                                    "oid": "12FB5C7E-07E3-4563-839A-71BA8C472C7E",
+                                    "eventSubject": "Электив. Сравнительная анатомия беспозвоночных. Часть 1, семинар",
+                                    "start": "2020-09-26T10:50",
+                                    "end": "2020-09-26T12:30",
+                                    "educators_Display_Text": "у,д шоан.етвц",
+                                    "internal_description": "Шунатова Н. Н., доцент\r\n3058\r\n",
+                                    "subject_english": "Elective. Comparative Anatomy of Invertebrates. Part 1, seminar",
+                                    "educators_display_text_english": "aoesfp ct.nirvhu,",
+                                    "educators_short_display_text": " .шавутон",
+                                    "educators_short_display_text_english": "stunvho a."
+                                },
+                                {
+                                    "oid": "51871ECA-839E-4AF2-A160-32122AAC0174",
+                                    "eventSubject": "Основы биологии, семинар",
+                                    "start": "2020-09-28T13:10",
+                                    "end": "2020-09-28T14:40",
+                                    "educators_Display_Text": ".ноакцдиэш,яв ет",
+                                    "internal_description": "Вишняков А. Э., доцент\r\n3058\r\n",
+                                    "subject_english": "Basics of Biology, seminar",
+                                    "educators_display_text_english": "oiskearv. hp,tncf",
+                                    "educators_short_display_text": "ин авэошя.к",
+                                    "educators_short_display_text_english": "sanv kioh."
+                                },
+                                {
+                                    "oid": "B6550AB7-5907-4901-9300-3DEC33D91CAD",
+                                    "eventSubject": "Основы биологии, семинар",
+                                    "start": "2020-09-28T13:10",
+                                    "end": "2020-09-28T14:40",
+                                    "educators_Display_Text": "ядишн.,оевц экат",
+                                    "internal_description": "Вишняков А. Э., доцент\r\n3058\r\n",
+                                    "subject_english": "Basics of Biology, seminar",
+                                    "educators_display_text_english": "shrcnokafi pte.v,",
+                                    "educators_short_display_text": "о внкши.яаэ",
+                                    "educators_short_display_text_english": "khos ivan."
+                                },
+                                {
+                                    "oid": "29219CDA-52F3-4854-B258-C85E84348BE7",
+                                    "eventSubject": "Электив. Интегративная зоология. Спецсеминар. Часть 1, семинар",
+                                    "start": "2020-09-30T13:10",
+                                    "end": "2020-09-30T14:50",
+                                    "educators_Display_Text": "срт аег.чо,ин",
+                                    "internal_description": "Гончар А. Г., ассистент\r\n3058\r\n",
+                                    "subject_english": "Elective. Integrative Zoology. Special Seminar. Part 1, seminar",
+                                    "educators_display_text_english": "iloguascht r,ne.",
+                                    "educators_short_display_text": "ч.агно р",
+                                    "educators_short_display_text_english": "raoh gnc."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "BEE4AF62-11B6-4BB6-B202-508F3B56D5AE",
+                            "capacity": 60,
+                            "name": "",
+                            "additional_info": "Проектор, ПК, видеоконференцсвязь",
+                            "number_actual": "2053",
+                            "multimedia_equipment": 1,
+                            "labware_equipment": 1,
+                            "display_name_russian": "2053",
+                            "display_name_english": "2053",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 2053",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 2053",
+                            "computers_count": 0,
+                            "floor": "2(второй)"
+                        },
+                        "events": {
+                            "count": 18,
+                            "results": [
+                                {
+                                    "oid": "483FEBC8-223C-4F6F-9EE0-8CC0F8B84B99",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, практическое занятие",
+                                    "start": "2020-09-07T09:00",
+                                    "end": "2020-09-07T10:40",
+                                    "educators_Display_Text": "с,е .оабвнцдт",
+                                    "internal_description": "Сабанеева Е. В., доцент\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, practical class",
+                                    "educators_display_text_english": "poasnr ,ce.bvtif",
+                                    "educators_short_display_text": "аесв нб.",
+                                    "educators_short_display_text_english": "neas vb."
+                                },
+                                {
+                                    "oid": "636F7186-C469-4A45-9FC6-716A949A605E",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, практическое занятие",
+                                    "start": "2020-09-07T09:00",
+                                    "end": "2020-09-07T10:40",
+                                    "educators_Display_Text": " цанев,с.бдот",
+                                    "internal_description": "Сабанеева Е. В., доцент\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, practical class",
+                                    "educators_display_text_english": "osernva ib.,tcpf",
+                                    "educators_short_display_text": "веа.нсб ",
+                                    "educators_short_display_text_english": "easv bn."
+                                },
+                                {
+                                    "oid": "A3A90825-279E-46F5-B41F-951A97A19118",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, практическое занятие",
+                                    "start": "2020-09-07T11:00",
+                                    "end": "2020-09-07T12:40",
+                                    "educators_Display_Text": "вне ац.о,дсбт",
+                                    "internal_description": "Сабанеева Е. В., доцент\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, practical class",
+                                    "educators_display_text_english": "tes paicv,n.ofbr",
+                                    "educators_short_display_text": "а н.вбес",
+                                    "educators_short_display_text_english": "easnvb ."
+                                },
+                                {
+                                    "oid": "23E336E3-6731-4F9C-893A-03FBC99868F6",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, практическое занятие",
+                                    "start": "2020-09-07T11:00",
+                                    "end": "2020-09-07T12:40",
+                                    "educators_Display_Text": ", .беднавсцот",
+                                    "internal_description": "Сабанеева Е. В., доцент\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, practical class",
+                                    "educators_display_text_english": ",sirn fvpaoecb.t",
+                                    "educators_short_display_text": "ебнав .с",
+                                    "educators_short_display_text_english": "n aevbs."
+                                },
+                                {
+                                    "oid": "5D6FAD8A-242D-49B8-A4F5-BDB090469E81",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, практическое занятие",
+                                    "start": "2020-09-12T13:10",
+                                    "end": "2020-09-12T14:50",
+                                    "educators_Display_Text": "лан .вешпкиодрт,сйгь",
+                                    "internal_description": "Шапошникова Т. Г., старший преподаватель\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, practical class",
+                                    "educators_display_text_english": "c hsanoet.r,pkvliu",
+                                    "educators_short_display_text": "киа .втпшног",
+                                    "educators_short_display_text_english": "s htonaikpv."
+                                },
+                                {
+                                    "oid": "32C36947-8910-4E05-8420-E7DEED62E2DC",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, практическое занятие",
+                                    "start": "2020-09-12T13:10",
+                                    "end": "2020-09-12T14:50",
+                                    "educators_Display_Text": "р. йаогкптнесшв,лдиь",
+                                    "internal_description": "Шапошникова Т. Г., старший преподаватель\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, practical class",
+                                    "educators_display_text_english": "etsi.cha vr,nopklu",
+                                    "educators_short_display_text": "отк.аипв шнг",
+                                    "educators_short_display_text_english": "hs knaoivtp."
+                                },
+                                {
+                                    "oid": "C3B8C686-A5F3-4AAD-AB41-CD41B03C7F62",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, практическое занятие",
+                                    "start": "2020-09-12T15:10",
+                                    "end": "2020-09-12T16:50",
+                                    "educators_Display_Text": "оетсидагршп, .вклйнь",
+                                    "internal_description": "Шапошникова Т. Г., старший преподаватель\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, practical class",
+                                    "educators_display_text_english": "leotcrs.iakp vhn,u",
+                                    "educators_short_display_text": "шатк .ивнопг",
+                                    "educators_short_display_text_english": "hpsaovtkin ."
+                                },
+                                {
+                                    "oid": "C99908C4-D712-4F0E-91BC-288EC5E873D0",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, практическое занятие",
+                                    "start": "2020-09-12T15:10",
+                                    "end": "2020-09-12T16:50",
+                                    "educators_Display_Text": "и пшл.трдаео,вгскнйь",
+                                    "internal_description": "Шапошникова Т. Г., старший преподаватель\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, practical class",
+                                    "educators_display_text_english": "h,tn kcpirsv.aolue",
+                                    "educators_short_display_text": "н оашгпвти.к",
+                                    "educators_short_display_text_english": "s ihpvaonkt."
+                                },
+                                {
+                                    "oid": "B9E6F23E-2B5F-49B9-B4FE-A963226701D9",
+                                    "eventSubject": "Электив. Стволовые клетки, лекция",
+                                    "start": "2020-09-23T10:50",
+                                    "end": "2020-09-23T12:30",
+                                    "educators_Display_Text": "падр, твлоеь",
+                                    "internal_description": ", преподаватель\r\n2053\r\n",
+                                    "subject_english": "Elective. Stem Cells, lecture",
+                                    "educators_display_text_english": "5t0ecu1gl 74-,№kr",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": "5 74-e№g0k1"
+                                },
+                                {
+                                    "oid": "376980DA-AE55-4E6E-9503-FF972798DBEF",
+                                    "eventSubject": "Электив. Основы медицинской иммунологии. Часть 1. Инфекционный иммунитет, аллергология, аутоиммунные реакции, лекция",
+                                    "start": "2020-09-23T13:10",
+                                    "end": "2020-09-23T14:50",
+                                    "educators_Display_Text": "плод,ар евть",
+                                    "internal_description": ", преподаватель\r\n2053\r\n",
+                                    "subject_english": "Elective. Fundamentals of Medical Immunology. Part 1. Infectional Immunity, Allergology, Autoimmune Reactions, lecture",
+                                    "educators_display_text_english": "ec -50t1ukl,74g№r",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": "№04k 7-eg51"
+                                },
+                                {
+                                    "oid": "897C9945-52DF-49CA-B26E-567D108CD767",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, практическое занятие",
+                                    "start": "2020-09-26T15:00",
+                                    "end": "2020-09-26T16:40",
+                                    "educators_Display_Text": "йгве.илопшратс ,кндь",
+                                    "internal_description": "Шапошникова Т. Г., старший преподаватель\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, practical class",
+                                    "educators_display_text_english": "nsor.,k pulahteivc",
+                                    "educators_short_display_text": "иопнаш кг.вт",
+                                    "educators_short_display_text_english": "khnpvoi sat."
+                                },
+                                {
+                                    "oid": "E1CF4415-403D-4C7E-A35B-470C586F704F",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, практическое занятие",
+                                    "start": "2020-09-26T15:00",
+                                    "end": "2020-09-26T16:40",
+                                    "educators_Display_Text": "а йпишосвг,трледк.нь",
+                                    "internal_description": "Шапошникова Т. Г., старший преподаватель\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, practical class",
+                                    "educators_display_text_english": ".aisovneu hkpc,trl",
+                                    "educators_short_display_text": "тконаи шгвп.",
+                                    "educators_short_display_text_english": "shopanv itk."
+                                },
+                                {
+                                    "oid": "915BD228-B869-4398-85E4-27D364059B03",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, практическое занятие",
+                                    "start": "2020-09-26T17:00",
+                                    "end": "2020-09-26T18:40",
+                                    "educators_Display_Text": "ш аредвтиг.пйол,кснь",
+                                    "internal_description": "Шапошникова Т. Г., старший преподаватель\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, practical class",
+                                    "educators_display_text_english": "n. kcasleotrhi,vpu",
+                                    "educators_short_display_text": "кпв шгоант.и",
+                                    "educators_short_display_text_english": "i nspvaohtk."
+                                },
+                                {
+                                    "oid": "7E61884A-B65D-4EC8-97C5-D5337F3B3E67",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, практическое занятие",
+                                    "start": "2020-09-26T17:00",
+                                    "end": "2020-09-26T18:40",
+                                    "educators_Display_Text": "йад.к тволшиерпнсг,ь",
+                                    "internal_description": "Шапошникова Т. Г., старший преподаватель\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, practical class",
+                                    "educators_display_text_english": "s. tevhnikurlo,apc",
+                                    "educators_short_display_text": "вкт ш.пноаиг",
+                                    "educators_short_display_text_english": "skvha otipn."
+                                },
+                                {
+                                    "oid": "FCBE2232-E553-4718-AA7C-A6DE960B2C67",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-28T09:00",
+                                    "end": "2020-09-28T10:40",
+                                    "educators_Display_Text": "воц аен.,дбст",
+                                    "internal_description": "Сабанеева Е. В., доцент\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, supervised self-study",
+                                    "educators_display_text_english": "soaefb tc,np.ivr",
+                                    "educators_short_display_text": "сбеав .н",
+                                    "educators_short_display_text_english": "an ebvs."
+                                },
+                                {
+                                    "oid": "67B059E8-77DE-49AF-A72F-3C8D58E97541",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-28T09:00",
+                                    "end": "2020-09-28T10:40",
+                                    "educators_Display_Text": "едс ,бонав.цт",
+                                    "internal_description": "Сабанеева Е. В., доцент\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, supervised self-study",
+                                    "educators_display_text_english": "sea,. ocrpbvtnif",
+                                    "educators_short_display_text": "е авнс.б",
+                                    "educators_short_display_text_english": "se avbn."
+                                },
+                                {
+                                    "oid": "845D5C31-F4F6-49A6-9E31-601B59A0857B",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-28T10:50",
+                                    "end": "2020-09-28T12:30",
+                                    "educators_Display_Text": " ае.двсбн,цот",
+                                    "internal_description": "Сабанеева Е. В., доцент\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, supervised self-study",
+                                    "educators_display_text_english": "oat ensrp,ib.cvf",
+                                    "educators_short_display_text": "авнеб с.",
+                                    "educators_short_display_text_english": "sanbev ."
+                                },
+                                {
+                                    "oid": "7688BC90-F93C-4731-9678-383EF6BAC3FA",
+                                    "eventSubject": "Анатомия человека с основами антропогенеза, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-28T10:50",
+                                    "end": "2020-09-28T12:30",
+                                    "educators_Display_Text": "нсдав ц.ебо,т",
+                                    "internal_description": "Сабанеева Е. В., доцент\r\n2053\r\n",
+                                    "subject_english": "Human Anatomy with Fundamentals of Anthropogenesis, supervised self-study",
+                                    "educators_display_text_english": "is.,arnt pecvobf",
+                                    "educators_short_display_text": "ае н.бвс",
+                                    "educators_short_display_text_english": "eanbv s."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "F0A5BBD6-1637-4D3F-86AC-4B81E8030EFF",
+                            "capacity": 5,
+                            "name": "",
+                            "additional_info": "Измерительное оборудование",
+                            "number_actual": "3034",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 1,
+                            "display_name_russian": "3034",
+                            "display_name_english": "3034",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 3034",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 3034",
+                            "computers_count": 0,
+                            "floor": "3(третий)"
+                        },
+                        "events": {
+                            "count": 2,
+                            "results": [
+                                {
+                                    "oid": "DE902702-A498-49AD-8CAE-7A3AC6EABFAD",
+                                    "eventSubject": "Электив. Внутриклеточная регистрация биоэлектрических сигналов. Спецпрактикум, лабораторная работа",
+                                    "start": "2020-09-22T15:00",
+                                    "end": "2020-09-22T16:40",
+                                    "educators_Display_Text": "вердак. оц,нт",
+                                    "internal_description": "Кравцова В. В., доцент\r\n3034\r\n",
+                                    "subject_english": "Elective. Intracellular Registration of Bioelectric Signals. Special Practicum, laboratory work",
+                                    "educators_display_text_english": ",iostkrcvf.ae p",
+                                    "educators_short_display_text": "ва цор.к",
+                                    "educators_short_display_text_english": " vksroat."
+                                },
+                                {
+                                    "oid": "58B38392-5861-48BC-88A5-A7A2E9F56D59",
+                                    "eventSubject": "Электив. Внутриклеточная регистрация биоэлектрических сигналов. Спецпрактикум, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-22T17:00",
+                                    "end": "2020-09-22T18:40",
+                                    "educators_Display_Text": "овднр еа.цк,т",
+                                    "internal_description": "Кравцова В. В., доцент\r\n3034\r\n",
+                                    "subject_english": "Elective. Intracellular Registration of Bioelectric Signals. Special Practicum, supervised self-study",
+                                    "educators_display_text_english": "soeatvp i,fkr.c",
+                                    "educators_short_display_text": "в аок.рц",
+                                    "educators_short_display_text_english": "ovkst ra."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "ED2FDCB5-4A7B-4DB2-B4ED-2FC19395F69C",
+                            "capacity": 10,
+                            "number_actual": "3070",
+                            "multimedia_equipment": 0,
+                            "labware_equipment": 0,
+                            "display_name_russian": "3070",
+                            "display_name_english": "3070",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 3070",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 3070",
+                            "computers_count": 0,
+                            "floor": "3(третий)"
+                        },
+                        "events": {
+                            "count": 17,
+                            "results": [
+                                {
+                                    "oid": "942D603F-132E-4D17-88B8-74A2F2A1A2BA",
+                                    "eventSubject": "Математические методы в зоологии, лекция",
+                                    "start": "2020-09-19T09:00",
+                                    "end": "2020-09-19T10:40",
+                                    "educators_Display_Text": "алвмеошстрдфп ,ий.ь",
+                                    "internal_description": "Варфоломеева М. А., старший преподаватель\r\n3070\r\n",
+                                    "subject_english": "Mathematical Methods in Zoology, lecture",
+                                    "educators_display_text_english": "orfem val.",
+                                    "educators_short_display_text": "м а.фвлоер",
+                                    "educators_short_display_text_english": "lefmov ar."
+                                },
+                                {
+                                    "oid": "BEE26941-8E63-4588-982B-19FF36D9178E",
+                                    "eventSubject": "Основы зоологии: Articulata, семинар",
+                                    "start": "2020-09-19T13:10",
+                                    "end": "2020-09-19T14:50",
+                                    "educators_Display_Text": "йсвнорт .ауич,ышдк",
+                                    "internal_description": "Старунов В. В., старший научный сотрудник\r\n3070\r\n",
+                                    "subject_english": "Fundamentals of Zoology: Articulata, seminar",
+                                    "educators_display_text_english": "vetrhcau s,no.wik",
+                                    "educators_short_display_text": "е вслаг.юр",
+                                    "educators_short_display_text_english": "gevlu sira."
+                                },
+                                {
+                                    "oid": "20F18924-BA88-4B70-BA5F-33BACC7BABF9",
+                                    "eventSubject": "Основы зоологии: Articulata, семинар",
+                                    "start": "2020-09-19T15:00",
+                                    "end": "2020-09-19T16:40",
+                                    "educators_Display_Text": "оср а.гювп,лфе",
+                                    "internal_description": "Слюсарев Г. С., профессор\r\n3070\r\n",
+                                    "subject_english": "Fundamentals of Zoology: Articulata, seminar",
+                                    "educators_display_text_english": "fe,sruv .lpaoig",
+                                    "educators_short_display_text": "рвесгла.ю ",
+                                    "educators_short_display_text_english": "sgau eivlr."
+                                },
+                                {
+                                    "oid": "82F3A620-A7C8-488E-9CF7-250095F32FC3",
+                                    "eventSubject": "Основы зоологии: первичнополостные животные, лекция",
+                                    "start": "2020-09-22T13:20",
+                                    "end": "2020-09-22T15:00",
+                                    "educators_Display_Text": "а .вки,прснет",
+                                    "internal_description": "Крапивин В. А., ассистент\r\n3070\r\n",
+                                    "subject_english": "Fundamentals of Zoology: Aschelminthes, lecture",
+                                    "educators_display_text_english": "avln, rpstueik.c",
+                                    "educators_short_display_text": "ра.вкпни ",
+                                    "educators_short_display_text_english": "irn pkav."
+                                },
+                                {
+                                    "oid": "095B0F99-D2FB-4B67-9A9B-8F3CD0AD68FF",
+                                    "eventSubject": "Основы зоологии: Articulata, лекция",
+                                    "start": "2020-09-22T15:00",
+                                    "end": "2020-09-22T16:40",
+                                    "educators_Display_Text": "., егироацкнвдшт",
+                                    "internal_description": "Гришанков А. В., доцент\r\n3070\r\n",
+                                    "subject_english": "Fundamentals of Zoology: Articulata, lecture",
+                                    "educators_display_text_english": "o,sevrgn kiapch.tf",
+                                    "educators_short_display_text": "ш ао.нвгирк",
+                                    "educators_short_display_text_english": "graivns okh."
+                                },
+                                {
+                                    "oid": "2FF7848F-960A-468F-82DD-7004E99E4626",
+                                    "eventSubject": "Основы зоологии: низшие многоклеточные, зачёт (пересдача)",
+                                    "start": "2020-09-22T17:00",
+                                    "end": "2020-09-22T18:30",
+                                    "educators_Display_Text": "оевн шт.у,дац",
+                                    "internal_description": "Шунатова Н. Н., доцент\r\n3070\r\n",
+                                    "subject_english": "Fundamentals of Zoology: Lower Metazoa, final test (re-sitting)",
+                                    "educators_display_text_english": ",pvtuoesr ahni.cf",
+                                    "educators_short_display_text": ".аоштвн у",
+                                    "educators_short_display_text_english": " hnsvtauo."
+                                },
+                                {
+                                    "oid": "BF16285F-D1EA-46D3-A0B6-32EBE967343B",
+                                    "eventSubject": "Электив. Паразиты и системы паразит-хозяин, лекция",
+                                    "start": "2020-09-23T10:50",
+                                    "end": "2020-09-23T12:20",
+                                    "educators_Display_Text": " лашинст.о,фкегврьдйп;",
+                                    "internal_description": "Галактионов Н. К., старший преподаватель; Галактионов К. В., профессор\r\n3070\r\n",
+                                    "subject_english": "Elective. Parasites and Host–Parasite Systems, lecture",
+                                    "educators_display_text_english": "lo.seki g;atncvr,upf",
+                                    "educators_short_display_text": "оалкн .тгив",
+                                    "educators_short_display_text_english": "ganoitk vl."
+                                },
+                                {
+                                    "oid": "17BC70DF-286A-410C-AFCE-E24BA494AB08",
+                                    "eventSubject": "Основы протистологии, лекция",
+                                    "start": "2020-09-24T09:00",
+                                    "end": "2020-09-24T10:40",
+                                    "educators_Display_Text": ". онседкц,раут",
+                                    "internal_description": "Корсун С. А., доцент\r\n3070\r\n",
+                                    "subject_english": "Fundamentals of Protistology, lecture",
+                                    "educators_display_text_english": "rts.anoke c,ipuf",
+                                    "educators_short_display_text": "с уонр.ка",
+                                    "educators_short_display_text_english": "okru sn."
+                                },
+                                {
+                                    "oid": "89366846-3992-4168-80EA-4F9F05FB787A",
+                                    "eventSubject": "Основы протистологии, практическое занятие",
+                                    "start": "2020-09-24T11:00",
+                                    "end": "2020-09-24T12:40",
+                                    "educators_Display_Text": " уцкнеас.р,одт",
+                                    "internal_description": "Корсун С. А., доцент\r\n3070\r\n",
+                                    "subject_english": "Fundamentals of Protistology, practical class",
+                                    "educators_display_text_english": "s inuotaefrk.c,p",
+                                    "educators_short_display_text": ". роскнуа",
+                                    "educators_short_display_text_english": "srnou k."
+                                },
+                                {
+                                    "oid": "295C7501-B66F-419E-B09F-539F8601EDF5",
+                                    "eventSubject": "Электив. Основы зоологии и паразитологии, семинар",
+                                    "start": "2020-09-24T13:10",
+                                    "end": "2020-09-24T14:50",
+                                    "educators_Display_Text": ".го, рфчивпсане",
+                                    "internal_description": "Гранович А. И., профессор\r\n3070\r\n",
+                                    "subject_english": "Elective. Fundamentals of Zoology and Parasitology, seminar",
+                                    "educators_display_text_english": "aiehgros p,ncv.f",
+                                    "educators_short_display_text": "г орвна.ич",
+                                    "educators_short_display_text_english": "vri oanghc."
+                                },
+                                {
+                                    "oid": "04602842-936A-48D5-8984-E88393F4193A",
+                                    "eventSubject": "Электив. Паразитические протисты, лекция",
+                                    "start": "2020-09-25T15:00",
+                                    "end": "2020-09-25T16:40",
+                                    "educators_Display_Text": "кт. дшреапйогв,илсь",
+                                    "internal_description": "Паскерова Г. Г., старший преподаватель\r\n3070\r\n",
+                                    "subject_english": "Elective. Parasitic Protists, lecture",
+                                    "educators_display_text_english": "as.p,rtglu enkovc",
+                                    "educators_short_display_text": " гав.ркпесо",
+                                    "educators_short_display_text_english": "ea gpovkrs."
+                                },
+                                {
+                                    "oid": "E82DFC4B-6451-4C06-9E5D-417EFAC87355",
+                                    "eventSubject": "Электив. Паразитические протисты, практическое занятие",
+                                    "start": "2020-09-25T16:50",
+                                    "end": "2020-09-25T18:30",
+                                    "educators_Display_Text": ".с вкаейшгортпл,диь",
+                                    "internal_description": "Паскерова Г. Г., старший преподаватель\r\n3070\r\n",
+                                    "subject_english": "Elective. Parasitic Protists, practical class",
+                                    "educators_display_text_english": "g kv.tloaurenp,sc",
+                                    "educators_short_display_text": "гкр оапесв.",
+                                    "educators_short_display_text_english": "resg paokv."
+                                },
+                                {
+                                    "oid": "5E5A9589-13CA-4D26-A14E-77C87F6E3A78",
+                                    "eventSubject": "Математические методы в зоологии, практическое занятие",
+                                    "start": "2020-09-26T09:00",
+                                    "end": "2020-09-26T10:40",
+                                    "educators_Display_Text": "а млоп.рсфед,вшйтиь",
+                                    "internal_description": "Варфоломеева М. А., старший преподаватель\r\n3070\r\n",
+                                    "subject_english": "Mathematical Methods in Zoology, practical class",
+                                    "educators_display_text_english": "o rfvealm.",
+                                    "educators_short_display_text": ".ам фвоерл",
+                                    "educators_short_display_text_english": "lfamv eor."
+                                },
+                                {
+                                    "oid": "9E124DBB-E1B6-4D64-86FB-5D2CC8B30736",
+                                    "eventSubject": "Основы зоологии: первичнополостные животные, практическое занятие",
+                                    "start": "2020-09-29T13:20",
+                                    "end": "2020-09-29T15:00",
+                                    "educators_Display_Text": " п,наск.етври",
+                                    "internal_description": "Крапивин В. А., ассистент\r\n3070\r\n",
+                                    "subject_english": "Fundamentals of Zoology: Aschelminthes, practical class",
+                                    "educators_display_text_english": "eksvtapi c,nrl.u",
+                                    "educators_short_display_text": "р панкив.",
+                                    "educators_short_display_text_english": "ipn vkra."
+                                },
+                                {
+                                    "oid": "97341E02-8042-4FAD-B35F-9DA6A08E90D1",
+                                    "eventSubject": "Электив. Частная протистология. Амебоидные и инфузории, лекция",
+                                    "start": "2020-09-29T15:00",
+                                    "end": "2020-09-29T16:40",
+                                    "educators_Display_Text": " мсенавдор.,цит",
+                                    "internal_description": "Смирнов А. В., доцент\r\n3070\r\n",
+                                    "subject_english": "Elective. Special Protistology. Amoeboid Protists and Ciliates, lecture",
+                                    "educators_display_text_english": "asr im.n,coevtpf",
+                                    "educators_short_display_text": "вм.асион р",
+                                    "educators_short_display_text_english": "osmriva n."
+                                },
+                                {
+                                    "oid": "20F7BE57-FF64-43C3-B06B-5AD1ED46B2C0",
+                                    "eventSubject": "Основы зоологии: Articulata, семинар",
+                                    "start": "2020-09-29T15:20",
+                                    "end": "2020-09-29T17:00",
+                                    "educators_Display_Text": "аш,дрокц г.внеит",
+                                    "internal_description": "Гришанков А. В., доцент\r\n3070\r\n",
+                                    "subject_english": "Fundamentals of Zoology: Articulata, seminar",
+                                    "educators_display_text_english": "fro ia.tcshgekvn,p",
+                                    "educators_short_display_text": " нви.кгашро",
+                                    "educators_short_display_text_english": "ahnr vskigo."
+                                },
+                                {
+                                    "oid": "00616C5C-A63C-439B-8FF2-E17062F30552",
+                                    "eventSubject": "Основы протистологии, семинар",
+                                    "start": "2020-10-01T09:00",
+                                    "end": "2020-10-01T10:40",
+                                    "educators_Display_Text": ".дасур цкоен,т",
+                                    "internal_description": "Корсун С. А., доцент\r\n3070\r\n",
+                                    "subject_english": "Fundamentals of Protistology, seminar",
+                                    "educators_display_text_english": "ufae rois,.ctknp",
+                                    "educators_short_display_text": "ра с.куон",
+                                    "educators_short_display_text_english": "rskonu ."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "7540AC83-584F-46E2-8849-2310B76C543F",
+                            "capacity": 16,
+                            "name": "зал",
+                            "additional_info": "Проектор потолочный",
+                            "number_actual": "3075",
+                            "multimedia_equipment": 1,
+                            "labware_equipment": 2,
+                            "display_name_russian": "3075",
+                            "display_name_english": "3075",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 3075",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 3075",
+                            "computers_count": 0,
+                            "floor": "3(третий)"
+                        },
+                        "events": {
+                            "count": 13,
+                            "results": [
+                                {
+                                    "oid": "95DCF644-710F-4430-A133-4D0AB89AEA22",
+                                    "eventSubject": "Электив. Палеозоология, лекция",
+                                    "start": "2020-09-07T10:40",
+                                    "end": "2020-09-07T12:10",
+                                    "educators_Display_Text": "ефагрв пс.н,оч",
+                                    "internal_description": "Черепанов Г. О., профессор\r\n3075\r\n",
+                                    "subject_english": "Elective. Paleozoology, lecture",
+                                    "educators_display_text_english": " es.ro,agnpvchf",
+                                    "educators_short_display_text": "о.анеп чврг",
+                                    "educators_short_display_text_english": "gnaorpv ehc."
+                                },
+                                {
+                                    "oid": "4F6C721B-D742-44F0-834A-39936A405FFD",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-16T15:00",
+                                    "end": "2020-09-16T16:40",
+                                    "educators_Display_Text": "дгр е.вион,ьцт",
+                                    "internal_description": "Григорьев Д. В., доцент\r\n3075\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "rdgeoi v.",
+                                    "educators_short_display_text": " веоргдь.и",
+                                    "educators_short_display_text_english": "gdvorei ."
+                                },
+                                {
+                                    "oid": "CCC3BFDA-FF15-4E13-BAED-8765734681DE",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-16T16:50",
+                                    "end": "2020-09-16T18:30",
+                                    "educators_Display_Text": "а е.нйыдусркч,тио",
+                                    "internal_description": "Каренина К. А., научный сотрудник\r\n3075\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "re,ak hinws.co",
+                                    "educators_short_display_text": ".ра кине",
+                                    "educators_short_display_text_english": " kanrei."
+                                },
+                                {
+                                    "oid": "32CB61AF-D904-4E13-82F1-9AF529475194",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-19T09:00",
+                                    "end": "2020-09-19T10:40",
+                                    "educators_Display_Text": ".д герновьиц,т",
+                                    "internal_description": "Григорьев Д. В., доцент\r\n3075\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "o gredvi.",
+                                    "educators_short_display_text": "д .геьовир",
+                                    "educators_short_display_text_english": "ri evogd."
+                                },
+                                {
+                                    "oid": "9DCDE482-9D46-41BE-9CB2-5606F0CBE343",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-19T10:50",
+                                    "end": "2020-09-19T12:30",
+                                    "educators_Display_Text": "тзсеанвгдй., эмиуо",
+                                    "internal_description": "Зайнагутдинова Э. М., ассистент\r\n3075\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "rac nlveotsiz,udg.",
+                                    "educators_short_display_text": "нзмгаутэ ойид.в",
+                                    "educators_short_display_text_english": "toaiedg unzv."
+                                },
+                                {
+                                    "oid": "AC3C77AB-5C14-4F3F-8B00-FEA2AF254188",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-19T13:10",
+                                    "end": "2020-09-19T14:50",
+                                    "educators_Display_Text": "ша тлнебвий.осдрп,ь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3075\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "vl.bte r,acsnu",
+                                    "educators_short_display_text": "в а.еблн",
+                                    "educators_short_display_text_english": "ev abln."
+                                },
+                                {
+                                    "oid": "0FB2DC5B-2366-4D38-A281-710243C681F9",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-19T15:00",
+                                    "end": "2020-09-19T16:40",
+                                    "educators_Display_Text": " вшна,.лптеробсидйь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3075\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "eauvr. bsnl,ct",
+                                    "educators_short_display_text": "еба.нлв ",
+                                    "educators_short_display_text_english": "bvn ela."
+                                },
+                                {
+                                    "oid": "E0B05E49-82D2-4D56-A4B0-8DEE89D53AC8",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-21T13:10",
+                                    "end": "2020-09-21T14:50",
+                                    "educators_Display_Text": "ер,аш.лв птоинсдбйь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3075\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": " latsn.erb,vcu",
+                                    "educators_short_display_text": "еав лн.б",
+                                    "educators_short_display_text_english": "lbave n."
+                                },
+                                {
+                                    "oid": "FBE49F3E-A09B-4EC8-B8EC-98C8747BEC28",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-21T15:00",
+                                    "end": "2020-09-21T16:40",
+                                    "educators_Display_Text": " р.нчаеи,ыукойтсд",
+                                    "internal_description": "Каренина К. А., научный сотрудник\r\n3075\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "iw,nera ocsk.h",
+                                    "educators_short_display_text": ".кнеар и",
+                                    "educators_short_display_text_english": "eakn ri."
+                                },
+                                {
+                                    "oid": "D4E44610-F042-488F-A359-E292C470010D",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-24T13:10",
+                                    "end": "2020-09-24T14:50",
+                                    "educators_Display_Text": "во.ь гре,ндицт",
+                                    "internal_description": "Григорьев Д. В., доцент\r\n3075\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "drie vog.",
+                                    "educators_short_display_text": "дрг.оь еив",
+                                    "educators_short_display_text_english": "gvordi e."
+                                },
+                                {
+                                    "oid": "579340BB-6AB1-4260-A46E-FBDDCCAE956F",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-24T15:00",
+                                    "end": "2020-09-24T16:40",
+                                    "educators_Display_Text": " гнамйст.эозуивд,е",
+                                    "internal_description": "Зайнагутдинова Э. М., ассистент\r\n3075\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "sigvnat.u, lezrdoc",
+                                    "educators_short_display_text": "гун одамэт.ийзв",
+                                    "educators_short_display_text_english": "naditgzeuvo ."
+                                },
+                                {
+                                    "oid": "3D5CE27A-2877-4946-A2E5-B7A91DA4DACE",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-09-26T16:50",
+                                    "end": "2020-09-26T18:30",
+                                    "educators_Display_Text": "влпнбйеатр сд,о.шиь",
+                                    "internal_description": "Балеева Н. В., старший преподаватель\r\n3075\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "na.tucb e,lrvs",
+                                    "educators_short_display_text": "веа. лбн",
+                                    "educators_short_display_text_english": "lvbe na."
+                                },
+                                {
+                                    "oid": "2D7CE74F-FE2A-489C-9B6D-910E57C655D5",
+                                    "eventSubject": "Зоология позвоночных, практическое занятие",
+                                    "start": "2020-10-01T13:10",
+                                    "end": "2020-10-01T14:50",
+                                    "educators_Display_Text": "двцгр.ье они,т",
+                                    "internal_description": "Григорьев Д. В., доцент\r\n3075\r\n",
+                                    "subject_english": "Vertebrate Zoology, practical class",
+                                    "educators_display_text_english": "rdi gvoe.",
+                                    "educators_short_display_text": "рвеьи.о гд",
+                                    "educators_short_display_text_english": "vrgeo di."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "9F6690AD-A74D-452F-AA00-22D18F3D50AC",
+                            "capacity": 8,
+                            "name": "",
+                            "additional_info": "Измерительное оборудование",
+                            "number_actual": "3015",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 1,
+                            "display_name_russian": "3015",
+                            "display_name_english": "3015",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 3015",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 3015",
+                            "computers_count": 0,
+                            "floor": "3(третий)"
+                        },
+                        "events": {
+                            "count": 4,
+                            "results": [
+                                {
+                                    "oid": "ADE8FB3B-6C6A-455C-B434-EC320D810534",
+                                    "eventSubject": "Физиология центральной нервной системы, лекция",
+                                    "start": "2020-09-08T15:00",
+                                    "end": "2020-09-08T16:40",
+                                    "educators_Display_Text": "рйаслу д.вин,тшыбоьчк",
+                                    "internal_description": "Вольнова А. Б., старший научный сотрудник\r\n3015\r\n",
+                                    "subject_english": "Physiology of Central Nervous System, lecture",
+                                    "educators_display_text_english": " wecorhvna,s.ilk",
+                                    "educators_short_display_text": "об н.альв",
+                                    "educators_short_display_text_english": "alvo n."
+                                },
+                                {
+                                    "oid": "68579454-389A-4986-8BEC-57533B353E10",
+                                    "eventSubject": "Физиология центральной нервной системы, семинар",
+                                    "start": "2020-09-15T13:10",
+                                    "end": "2020-09-15T14:50",
+                                    "educators_Display_Text": "си ойавн.лдуьтчш,рбык",
+                                    "internal_description": "Вольнова А. Б., старший научный сотрудник\r\n3015\r\n",
+                                    "subject_english": "Physiology of Central Nervous System, seminar",
+                                    "educators_display_text_english": "ihnleksac wrov.,",
+                                    "educators_short_display_text": "бнвл аоь.",
+                                    "educators_short_display_text_english": "alonv ."
+                                },
+                                {
+                                    "oid": "98A96741-8DEF-4AAE-BA78-C5F55CD9B25D",
+                                    "eventSubject": "Физиология человека и животных, экзамен (пересдача)",
+                                    "start": "2020-09-21T17:00",
+                                    "end": "2020-09-21T18:30",
+                                    "educators_Display_Text": "енку.в сдоб,ацт",
+                                    "internal_description": "Бекусова В. В., доцент\r\n3015\r\n",
+                                    "subject_english": "Human and Animal Physiology, examination (re-sitting)",
+                                    "educators_display_text_english": "iu baoe,.pskvtrcf",
+                                    "educators_short_display_text": "мкав рог.",
+                                    "educators_short_display_text_english": " avmokr."
+                                },
+                                {
+                                    "oid": "34C2D564-DD71-438D-B809-BA235FDFCD46",
+                                    "eventSubject": "Физиология центральной нервной системы, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-29T15:00",
+                                    "end": "2020-09-29T16:40",
+                                    "educators_Display_Text": " атолшндсйвиыбу,ьр.чк",
+                                    "internal_description": "Вольнова А. Б., старший научный сотрудник\r\n3015\r\n",
+                                    "subject_english": "Physiology of Central Nervous System, supervised self-study",
+                                    "educators_display_text_english": "enor vsa.cw,hlik",
+                                    "educators_short_display_text": " абонвь.л",
+                                    "educators_short_display_text_english": "ov nla."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "E550A115-33F5-4406-90A6-13E44C940C4A",
+                            "capacity": 12,
+                            "name": "",
+                            "additional_info": "",
+                            "number_actual": "1098",
+                            "multimedia_equipment": 2,
+                            "labware_equipment": 2,
+                            "display_name_russian": "1098",
+                            "display_name_english": "1098",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, 1098",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, 1098",
+                            "computers_count": 0,
+                            "floor": "1(первый)"
+                        },
+                        "events": {
+                            "count": 7,
+                            "results": [
+                                {
+                                    "oid": "88D88EAE-4D0C-40CD-A1AA-521BE0C1F2D1",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, практическое занятие",
+                                    "start": "2020-09-10T15:00",
+                                    "end": "2020-09-10T16:40",
+                                    "educators_Display_Text": "ваеми. тпрлойдсун,шь",
+                                    "internal_description": "Туманов Д. В., старший преподаватель\r\n1098\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, practical class",
+                                    "educators_display_text_english": "umt dnoav.",
+                                    "educators_short_display_text": ".тв наумод",
+                                    "educators_short_display_text_english": " tduoavmn."
+                                },
+                                {
+                                    "oid": "1E06B4B7-CD9E-4485-BD35-0029EDAC8B5B",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, практическое занятие",
+                                    "start": "2020-09-10T17:00",
+                                    "end": "2020-09-10T18:40",
+                                    "educators_Display_Text": "вйтндула,с пеи.рмшоь",
+                                    "internal_description": "Туманов Д. В., старший преподаватель\r\n1098\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, practical class",
+                                    "educators_display_text_english": "tanmdvu o.",
+                                    "educators_short_display_text": "дуа. омнвт",
+                                    "educators_short_display_text_english": "dtnouam v."
+                                },
+                                {
+                                    "oid": "C299CB30-F2FF-4C43-BE52-8A2034456386",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, практическое занятие",
+                                    "start": "2020-09-12T13:10",
+                                    "end": "2020-09-12T14:50",
+                                    "educators_Display_Text": " швитпдолрейамсу.,нь",
+                                    "internal_description": "Туманов Д. В., старший преподаватель\r\n1098\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, practical class",
+                                    "educators_display_text_english": "md aovunt.",
+                                    "educators_short_display_text": "тву.аномд ",
+                                    "educators_short_display_text_english": "n tdaumvo."
+                                },
+                                {
+                                    "oid": "A1715AFF-D966-4768-A02B-73330187C85F",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, практическое занятие",
+                                    "start": "2020-09-12T15:10",
+                                    "end": "2020-09-12T16:50",
+                                    "educators_Display_Text": "айг.стикр, лвеозун",
+                                    "internal_description": "Златогурский В. В., ассистент\r\n1098\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, practical class",
+                                    "educators_display_text_english": "urtais ,vz.gelkyonc",
+                                    "educators_short_display_text": "к йазиврт.уголс",
+                                    "educators_short_display_text_english": "yrisktgzova lu."
+                                },
+                                {
+                                    "oid": "209F0E45-1BEB-412D-A942-A483350291A4",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-24T17:00",
+                                    "end": "2020-09-24T18:40",
+                                    "educators_Display_Text": "сокн.тае ,и",
+                                    "internal_description": "Котенко О. Н., ассистент\r\n1098\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, supervised self-study",
+                                    "educators_display_text_english": " tnsrklo,ec.aiu",
+                                    "educators_short_display_text": "к.он те",
+                                    "educators_short_display_text_english": "oentk ."
+                                },
+                                {
+                                    "oid": "62AD3405-8175-47BD-B341-AE34CF44D358",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-26T15:00",
+                                    "end": "2020-09-26T16:40",
+                                    "educators_Display_Text": "вт.а рипеодсл,мнушйь",
+                                    "internal_description": "Туманов Д. В., старший преподаватель\r\n1098\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, supervised self-study",
+                                    "educators_display_text_english": "otaudm vn.",
+                                    "educators_short_display_text": "адву мт.но",
+                                    "educators_short_display_text_english": "mod vatnu."
+                                },
+                                {
+                                    "oid": "DB173431-826E-4E31-9621-84BE87C2AC44",
+                                    "eventSubject": "Зоология беспозвоночных. Часть 1: Protists, сам. работа в присутствии преподавателя",
+                                    "start": "2020-09-26T17:00",
+                                    "end": "2020-09-26T18:40",
+                                    "educators_Display_Text": "ислург ктоав.,зйен",
+                                    "internal_description": "Златогурский В. В., ассистент\r\n1098\r\n",
+                                    "subject_english": "Invertebrate Zoology. Part 1: Protists, supervised self-study",
+                                    "educators_display_text_english": "trzsgin kulv,aeo.c",
+                                    "educators_short_display_text": "тсаои гзврлйу.к",
+                                    "educators_short_display_text_english": "girtv klouazs."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "location": {
+                            "oid": "5E08C246-6492-4751-9455-0031DAA422CB",
+                            "capacity": 80,
+                            "name": "Петровский зал",
+                            "additional_info": "Проектор, экран, ПК, микрофоны, камера, видеоконференцсвязь",
+                            "number_actual": "Петровский зал",
+                            "multimedia_equipment": 0,
+                            "labware_equipment": 0,
+                            "display_name_russian": "Петровский зал",
+                            "display_name_english": "Петровский зал",
+                            "display_name_russian_2": "В.О., Университетская наб., д. 7-9-11, лит. А, Петровский зал",
+                            "display_name_english_2": "V.O., Universitetskaya nab. 7-9-11, letter A, Петровский зал",
+                            "computers_count": 0,
+                            "floor": "2(второй)"
+                        },
+                        "events": {
+                            "count": 2,
+                            "results": [
+                                {
+                                    "oid": "259E4A1E-F9DB-471F-A64A-9C9E4F5F6BE0",
+                                    "eventSubject": "Подписание соглашения о сотрудничестве между СПбГУ и Правительством Ленинградской области",
+                                    "start": "2020-09-03T00:00",
+                                    "end": "2020-09-05T00:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\nПетровский зал\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": "",
+                                    "description_long": "01-116-20445 от 20.12.2019 г."
+                                },
+                                {
+                                    "oid": "476F39E0-7282-4624-B270-915061C74495",
+                                    "eventSubject": "Интервью УСО",
+                                    "start": "2020-09-22T10:00",
+                                    "end": "2020-09-22T13:00",
+                                    "educators_Display_Text": "",
+                                    "internal_description": "\r\nПетровский зал\r\n",
+                                    "educators_display_text_english": "",
+                                    "educators_short_display_text": "",
+                                    "educators_short_display_text_english": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

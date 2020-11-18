@@ -14,7 +14,7 @@ class FacultyDataComponent extends React.Component{
     };
 
     render(){
-
+    console.log(this.props)
             return(
                 <div className="data--section">
                     <div className="data--table">
@@ -26,7 +26,7 @@ class FacultyDataComponent extends React.Component{
                                 )}
                             </select>
                         </div>
-                            {this.props.facultyData.activeAudience ?
+                            {this.props.faculty.activeAudience ?
                                 (<TableComponent {...this.props} />):
                                 (null)}
 

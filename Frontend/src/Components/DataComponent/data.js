@@ -8,15 +8,14 @@ class DataComponent extends React.Component{
 
     cabinet = () => cabinet => this._cabinet = cabinet;
 
-    loadAudiences = (e, faculty) => {
-        console.log(faculty)
+    loadAudience = (e, faculty) => {
+
         let cabinet = e.target.value;
-        this.props.setActiveAudiences(faculty,[cabinet]);
+        this.props.setActiveAudience(faculty,[cabinet]);
     };
 
     render(){
 
-        console.log(this.props)
         if(this.props.type === "audience"){
             return(
                 <div className="data--section">
@@ -26,14 +25,16 @@ class DataComponent extends React.Component{
                         <div className="data--table">
                             <div className="data--header">
                                 <label>{faculty.address}</label>
-                                <select onChange={(e)=>this.loadAudiences(e,faculty)}>
+                                <select onChange={(e)=>this.loadAudience(e,faculty)}>
                                     {faculty.cabinets.map((cabinet) =>
                                         <option>{cabinet}</option>
                                     )}
                                 </select>
                             </div>
                             {faculty.activeAudiences ?
-                                (<TableComponent dateInterval = {this.props.dateInterval} type={this.props.type} activeAudiences = {faculty.activeAudiences}    />):
+                                (<TableComponent dateInterval = {this.props.dateInterval}
+                                                 type={this.props.type}
+                                                 activeAudiences = {faculty.activeAudiences}/>):
                                 (null)}
 
                         </div>

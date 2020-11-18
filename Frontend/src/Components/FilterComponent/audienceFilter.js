@@ -23,11 +23,14 @@ class AudienceFilterComponent extends React.Component{
     };
 
     setDateFormat = (date, time) => {
+        console.log(date+" "+ time);
         let current_time = time.split(":");
+       // let final_date = date + time;
         let final_date = new Date(date);
         final_date.setHours(current_time[0]);
         final_date.setMinutes(current_time[1]);
-        return final_date
+        return final_date;
+  //      return date+" "+ time;
     };
 
     //start date
@@ -40,7 +43,6 @@ class AudienceFilterComponent extends React.Component{
         }
         let date = this.setDateFormat(startDay, startTime);
 
-        console.log(date);
         this.props.setStartDateTime(date);
         };
 
@@ -60,6 +62,7 @@ class AudienceFilterComponent extends React.Component{
             //загрузка таблиц
             this.props.loadData(true);
             this.props.loadFacultiesList(addresses);
+
             this.props.setDateInterval(this.props.startDate, this.props.endDate)
             //this.props.setActiveAddresses(addresses);
         }
@@ -81,7 +84,6 @@ class AudienceFilterComponent extends React.Component{
 
         let dateEnd = this.setDateFormat(endDay, endTime);
 
-        console.log(dateEnd);
         this.props.setEndDateTime(dateEnd);
 
     };

@@ -23,6 +23,22 @@ export const loadAddresses = (addresses) => {
     }
 };
 
+//загрузка адресов в фильтр с сервера
+export const getAddresses = () => dispatch => {
+    const link = 'http://localhost:8080/address';
+    fetch(link, {
+        method: "get",
+        headers: { "Content-Type": "application/json" }
+    })
+        .then(data =>
+            data.json())
+        .then(addresses => {
+            dispatch(loadAddresses(addresses))
+        })
+        .catch(e => console.log(e));
+};
+
+
 export const setActiveAddresses = (addresses) => {
     return {
         type: "SET_ACTIVE_ADDRESSES", addresses

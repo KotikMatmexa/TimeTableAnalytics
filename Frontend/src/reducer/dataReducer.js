@@ -31,7 +31,6 @@ export const teachersReducer =  (state = [], action) => {
 };
 
 let getTeachers = (address) => {
-    console.log(address)
     const faculty = Object.values(faculty_data).find(item => item.address == address).name;
     let teachersList = [];
 
@@ -109,15 +108,28 @@ export const dateReducer =  (state = [], action) => {
 };
 
 const datesList = (startDate, endDate) => {
-    let startDay = new Date(startDate);
-    console.log(startDate)
+
     let endDay = new Date(endDate);
     let days = [];
-    days.push(startDay);
-    for(let day = startDay.getDate() + 1; day < endDay.getDate(); day++){
-        let currentDate = new Date(startDay.getFullYear(), startDay.getMonth(), day);
-        days.push(currentDate);
+
+    let currentDate = new Date(startDate);
+
+    while(currentDate <= new Date(endDate)){
+        let newDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
+
+        days.push(newDay);
+        currentDate = new Date(newDay);
+        currentDate.setDate(newDay.getDate()+1);
     }
-    days.push(endDay);
+
     return days;
+};
+
+export const daysReducer =  (state = [], action) => {
+    switch (action.type){
+        case "SET_DAYS_LIST":
+            return action.daysList;
+        default:
+            return state
+    }
 };

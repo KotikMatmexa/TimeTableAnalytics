@@ -8,6 +8,7 @@ class GroupTableComponent extends React.Component{
 
     render(){
         return(
+           this.props.data ? (
            <div className="teacher-table">
                <table className="table table-bordered">
                    <thead className="thead-dark">
@@ -34,7 +35,7 @@ class GroupTableComponent extends React.Component{
                    </tbody>
                </table>
 
-           </div>
+           </div>):(null)
         )
     }
 }

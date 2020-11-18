@@ -48,11 +48,10 @@ class FilterDataContainer extends React.Component{
                             this.props.facultiesList.map(faculty =>
                                 <FacultyDataContainer
                                     type={this.props.filterType}
-                                                      data={this.props.activeGroupData}
                                                startDate={this.props.startDate}
                                                endDate={this.props.endDate}
                                                faculty = {faculty}
-                                               setActiveAudience = {this.props.setActiveAudience}
+
                                                dateInterval = {this.props.dateInterval}
                                 />
 
@@ -93,14 +92,6 @@ class FilterDataContainer extends React.Component{
                     <GroupFilterComponent {...this.props}/>
                     {this.props.isLoadData ? (
                             <DataComponent type={this.props.filterType} data={this.props.activeGroupData}
-                                           teachers={this.props.teachers}
-                                           addresses={this.props.addresses}
-                                           activeAddresses={this.props.activeAddresses}
-                                           teacher={this.props.currentTeacher}
-                                           startDate={this.props.startDate}
-                                           endDate={this.props.endDate}
-                                           setCurrentTeacher={this.props.setCurrentTeacher}
-                                           filteredTeachersList = {this.props.filteredTeachersList}
                             />
                         ) :
                         (null)

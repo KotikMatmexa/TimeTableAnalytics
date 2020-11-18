@@ -1,6 +1,6 @@
 
 export const menuIndexReducer = (state = 0, action) => {
-    //console.log(state)
+
   switch (action.type){
       case "CHANGE_MENU_INDEX":
           return action.index;
