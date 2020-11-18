@@ -4,6 +4,7 @@ import com.sun.istack.NotNull;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "educatoremployment")
@@ -41,8 +42,8 @@ public class EducatorEmployment {
     )
     private Position position;
 
-
-//            ,[Position]
+    @OneToMany(mappedBy = "educatorEmployment", fetch = FetchType.LAZY)
+    private List<LocationEducator> locationEducator;
 //
 //            ,[SapDepartment]
 //            ,[SapDivision]

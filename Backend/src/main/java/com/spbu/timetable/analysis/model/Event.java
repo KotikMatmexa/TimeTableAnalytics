@@ -20,7 +20,6 @@ public class Event {
     @Column(name = "oid")
     private String oid;
 
-
     private LocalDateTime start;
 
     @Column(name = "enddate")

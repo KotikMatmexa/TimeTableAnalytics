@@ -6,7 +6,7 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Locationeducator")
+@Table(name = "locationeducator")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -18,13 +18,23 @@ public class LocationEducator {
     @Column(name = "oid")
     private String oid;
 
-    @OneToMany
-    private EducatorEmployment locationKindCode;
+    @ManyToOne(cascade = javax.persistence.CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(
+            name = "educatoremployment",
+            referencedColumnName = "oid",
+            insertable = false, updatable = false
+    )
+    private EducatorEmployment educatorEmployment;
 
     @Column(name = "gcrecord")
     private String GCRecord;
 
-    @OneToMany
+    @ManyToOne(cascade = javax.persistence.CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(
+            name = "eventlocation",
+            referencedColumnName = "oid",
+            insertable = false, updatable = false
+    )
     private EventLocation eventLocation;
 
 //

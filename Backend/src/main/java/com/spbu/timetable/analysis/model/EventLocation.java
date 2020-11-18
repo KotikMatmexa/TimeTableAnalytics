@@ -4,6 +4,7 @@ import com.sun.istack.NotNull;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "eventlocation")
@@ -35,4 +36,6 @@ public class EventLocation {
     )
     private Event event;
 
+    @OneToMany(mappedBy = "eventLocation", fetch = FetchType.LAZY)
+    private List<LocationEducator> locationEducator;
 }
