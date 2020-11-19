@@ -25,7 +25,7 @@ public class Position {
     @Column(name = "nameEnglish")
     private String NameEnglish;
 
-    @OneToMany(mappedBy = "position", fetch = FetchType.LAZY)
-    List<EducatorEmployment> educatorEmployments;
+//    @OneToMany(mappedBy = "position", fetch = FetchType.LAZY)
+//    List<EducatorEmployment> educatorEmployments;
 
 }

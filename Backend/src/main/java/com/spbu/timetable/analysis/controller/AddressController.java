@@ -1,9 +1,6 @@
 package com.spbu.timetable.analysis.controller;
 
-import com.spbu.timetable.analysis.dto.AddressFullDto;
-import com.spbu.timetable.analysis.dto.AddressIdDto;
-import com.spbu.timetable.analysis.dto.AddressWithLocationEventDto;
-import com.spbu.timetable.analysis.dto.ListForDto;
+import com.spbu.timetable.analysis.dto.*;
 import com.spbu.timetable.analysis.service.AddressService;
 import com.spbu.timetable.analysis.utils.DtoMapper;
 import com.spbu.timetable.analysis.utils.RequestInfo;
@@ -33,12 +30,19 @@ public class AddressController {
         return DtoMapper.convertList(addressService.findAll(offset, limit, searchText), AddressIdDto.class);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    //@CrossOrigin(origins = "http://localhost:3000")
     @GetMapping(RequestInfo.TIMETABLE)
     public ListForDto<AddressWithLocationEventDto> findAllEventsForLocations(@RequestBody List<String> addressIds,
                                                                              @RequestParam(required = false) String start,
                                                                              @RequestParam(required = false) String end) {
         return addressService.findAllEventsForAddress(addressIds, start, end);
+    }
+
+    @GetMapping(RequestInfo.EDUCATORS+ RequestInfo.ADDRESS_ID )
+    public ListForDto<EducatorsDto> getAllEducatorsByAddress(@RequestParam(defaultValue = RequestInfo.DEFAULT_OFFSET) int offset,
+                                                             @RequestParam(defaultValue = RequestInfo.DEFAULT_LIMIT) int limit,
+                                                             @PathVariable String addressId){
+        return addressService.getAllEducatorsByAddress(offset, limit, addressId);
     }
 
 }

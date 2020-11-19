@@ -22,7 +22,7 @@ public class DtoMapper {
                 .collect(Collectors.toList());
     }
 
-    public static <T, E> ListForDto<T> convertList(ListForDto<E> list, Class<T> type) {
+    public static <T, E> ListForDto<T> convertListForDto(ListForDto<E> list, Class<T> type) {
         return new ListForDto<>(list.getCount(), list.getResults()
                 .stream()
                 .map(entity -> modelMapper.map(entity, type))

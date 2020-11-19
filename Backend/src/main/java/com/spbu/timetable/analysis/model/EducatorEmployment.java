@@ -34,13 +34,13 @@ public class EducatorEmployment {
     @Column(name = "gcrecord")
     private String GCRecord;
 
-    @ManyToOne(cascade = javax.persistence.CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(
-            name = "position",
-            referencedColumnName = "oid",
-            insertable = false, updatable = false
-    )
-    private Position position;
+//    @ManyToOne(cascade = javax.persistence.CascadeType.ALL, fetch = FetchType.LAZY)
+//    @JoinColumn(
+//            name = "position",
+//            referencedColumnName = "oid",
+//            insertable = false, updatable = false
+//    )
+//    private Position position;
 
     @OneToMany(mappedBy = "educatorEmployment", fetch = FetchType.LAZY)
     private List<LocationEducator> locationEducator;
