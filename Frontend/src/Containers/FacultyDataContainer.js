@@ -1,73 +1,57 @@
 import React from 'react'
-import {getFilterType, setFaculty, setFilteredTeachersListByLetter} from "../action/filterAction";
-import connect from "react-redux/es/connect/connect";
-import {loadFacultiesList, setActiveAudience} from "../action/tableAction";
-import {loadData,
-    setEndDate, setStartDate, setDateInterval} from "../action/dataAction";
 import FacultyDataComponent from "../Components/DataComponent/facultydata";
+import {setAudiences} from "../reducer/tableReducer";
+import ErrorComponent from "../Components/ErrorComponent/error";
 
 
 class FacultyDataContainer extends React.Component {
 
 
-    componentWillMount(){
-        this.props.setActiveAudience(this.props.faculty,
-            this.props.faculty.locationWithEventsDto.results[0].location.name,
-            this.props.dateInterval
-            )
+    constructor(props){
+        super(props);
+        this.state = {
+            facultyData: this.props.faculty,
+            loadData:false
+        }
+
     }
 
+    componentDidMount(){
+        if(this.props.faculty.locationWithEventsDto.count > 0) {
+            this.setThisAudience(
+                this.props.faculty,
+                this.props.faculty.locationWithEventsDto.results[0].location.number_actual,
+                this.props.dateInterval)
+        }
+
+    }
+
+    setThisAudience = (address, audience, date) =>{
+        this.setState({
+            facultyData: setAudiences(address, audience, date),
+            loadData: true
+        })
+    };
+
     render() {
-        console.log(this.props)
+
         return (
-            <>
-               <FacultyDataComponent
+            this.state.loadData ?(
+
+                <FacultyDataComponent
                     type={this.props.type}
                     startDate={this.props.startDate}
                     endDate={this.props.endDate}
-                    facultyData={this.props.faculty}
-                    faculty={this.props.facultyData}
+                    facultyData={this.state.facultyData}
                     dateInterval={this.props.dateInterval}
-                    setActiveAudience={this.props.setActiveAudience}
+                    activeAudience = {this.props.activeAudience}
+                    setThisAudience={this.setThisAudience}
                 />
+                ):( <ErrorComponent
+                    data={"Нет данных о факультете по адресу " + this.props.faculty.address.russian_name }/>))
 
-            </>)
+
     }
 }
 
-
-const mapStateToProps = state => ({
-    addresses: state.addressesReducer,
-    startDate: state.startDateReducer,
-    endDate: state.endDateReducer,
-    facultyData: state.audiencesReducer,
-    dateInterval: state.dateReducer
-});
-
-const mapDispatchToProps = dispatch => ({
-
-    changeFilterType: (type) => {
-        dispatch(getFilterType(type))
-    },
-
-    loadData:(flag) =>{
-        dispatch(loadData(flag))
-    },
-
-    setStartDateTime: (startDate) => {
-        dispatch(setStartDate(startDate));
-    },
-
-    setEndDateTime: (endDate) => {
-        dispatch(setEndDate(endDate));
-    },
-
-    setActiveAudience:(faculty, audience, timeInterval)=>{
-        dispatch(setActiveAudience(faculty, audience, timeInterval))
-    },
-    setDateInterval: (startDate, endDate) => {
-        dispatch(setDateInterval(startDate, endDate))
-    }
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(FacultyDataContainer);
+export default FacultyDataContainer;

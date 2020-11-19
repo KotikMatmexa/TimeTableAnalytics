@@ -1,6 +1,15 @@
 .footer{
     position: fixed;
     bottom: 0;
+    right: 0;
     text-align: center;
-    width: inherit;
+
+    overflow-x: hidden;
+    margin-bottom: 12px;
+    border-bottom: 1px solid black;
+    background: #e95420;
+}
+.footer h6 {
+    text-align: center;
+    color: #fff;
 }

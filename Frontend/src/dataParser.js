@@ -50,6 +50,6 @@ export const getData = (addresses) => {
        resultSet.push(v4);
 
    }
-   console.log(resultSet);
+
    return resultSet;
 };

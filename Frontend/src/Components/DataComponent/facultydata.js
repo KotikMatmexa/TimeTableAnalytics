@@ -10,29 +10,28 @@ class FacultyDataComponent extends React.Component{
 
     loadAudiences = (e, faculty) => {
         let cabinet = e.target.value;
-        this.props.setActiveAudience(faculty,cabinet,this.props.dateInterval);
+        this.props.setThisAudience(faculty,cabinet,this.props.dateInterval);
     };
 
     render(){
-    console.log(this.props)
             return(
-                <div className="data--section">
+             <div className="data--section">
                     <div className="data--table">
                         <div className="data--header">
                             <label>{this.props.facultyData.address.russian_name}</label>
                             <select onChange={(e)=>this.loadAudiences(e,this.props.facultyData)}>
                                 {Object.values(this.props.facultyData.locationWithEventsDto.results).map((cabinet) =>
-                                    <option>{cabinet.location.number_actual}</option>
+                                    <option key={cabinet.location.oid}>{cabinet.location.number_actual}</option>
                                 )}
                             </select>
                         </div>
-                            {this.props.faculty.activeAudience ?
-                                (<TableComponent {...this.props} />):
-                                (null)}
+                        {this.props.facultyData.activeAudience ?
+                            (<TableComponent {...this.props} />):
+                            (null)}
 
-                        </div>
-                </div>
+                    </div></div>
             )
+
 
     }
 }

@@ -72,7 +72,7 @@ export const activeAddressesReducer =  (state = [], action) => {
 };
 
 
-export const startDateReducer =  (state = new Date(), action) => {
+export const startDateReducer =  (state = null, action) => {
 
     switch (action.type){
         case "SET_START_DATE":
@@ -88,7 +88,7 @@ const nextDay = () =>{
     return tomorrow;
 };
 
-export const endDateReducer =  (state = nextDay(), action) => {
+export const endDateReducer =  (state = null, action) => {
 
     switch (action.type){
         case "SET_END_DATE":

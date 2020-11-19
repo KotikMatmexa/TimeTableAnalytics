@@ -11,6 +11,18 @@ class AudienceFilterComponent extends React.Component{
     selectedAddresses = (selectedAddresses) => {this._selectedAddresses = selectedAddresses};
 
 
+    componentWillMount(){
+        this.props.setDateInterval(null, null);
+    }
+
+    startTimeFocus = () => {
+      this._startTime.focus();
+    };
+
+    endTimeFocus = () => {
+        this._endTime.focus();
+    };
+
     loadData = (e) => {
         let index = e.target.selectedIndex;
 
@@ -41,6 +53,17 @@ class AudienceFilterComponent extends React.Component{
             alert("Выберите дату и время начала!");
             return false
         }
+
+        if(startTime.length > 5) {
+            alert("Неверный формат времени начала");
+            return false;
+        }
+        if(startTime.indexOf(":") === -1){
+            alert("Неверный формат времени начала");
+            return false;
+        }
+
+
         let date = this.setDateFormat(startDay, startTime);
 
         this.props.setStartDateTime(date);
@@ -49,9 +72,11 @@ class AudienceFilterComponent extends React.Component{
 
     loadTables = () => {
 
-        if ((this._startDate.value)&&
-            (this._startTime.value)&&(this._endDate.value)&&
-            (this._endTime.value)&&(this._selectedAddresses.children.length >0)){
+        if ((this.props.startDate)&&
+            (this.props.endDate)&&
+            //&&(this._endDate.value)&&
+            //(this._endTime.value)&&
+        (this._selectedAddresses.children.length >0)){
             let addresses = [] ;
             let divs = this._selectedAddresses.children;
             for (let div of divs) {
@@ -59,15 +84,22 @@ class AudienceFilterComponent extends React.Component{
                 addresses.push(data);
             }
 
+            if(this.props.startDate > this.props.endDate){
+                alert("Дата начала должна быть раньше, чем дата конца");
+                return false;
+            }
+
             //загрузка таблиц
             this.props.loadData(true);
+
+            this.props.setDateInterval(this.props.startDate, this.props.endDate);
             this.props.loadFacultiesList(addresses);
 
-            this.props.setDateInterval(this.props.startDate, this.props.endDate)
-            //this.props.setActiveAddresses(addresses);
+            //this.props.loadFacultiesList(addresses,this.props.startDate, this.props.endDate);
+
         }
         else {
-            alert("Должны быть заполнены все данные");
+            alert("Проверьте, что все данные заполнены корректно!");
             return false;
         }
     };
@@ -82,6 +114,14 @@ class AudienceFilterComponent extends React.Component{
             return false
         }
 
+        if(endTime.length > 5) {
+            alert("Неверный формат времени конца");
+            return false;
+        }
+        if(endTime.indexOf(":") === -1){
+            alert("Неверный формат времени конца");
+            return false;
+        }
         let dateEnd = this.setDateFormat(endDay, endTime);
 
         this.props.setEndDateTime(dateEnd);
@@ -132,7 +172,7 @@ class AudienceFilterComponent extends React.Component{
                            <select onChange={this.setAddress} ref={this.selectedAddress} >
                                <option>Выбрать адрес...</option>
                                {this.props.addresses.map(faculty =>
-                                   <option value={faculty} title={faculty.name}>{faculty}</option>
+                                   <option key={faculty.oid} value={faculty}  title={faculty}>{faculty}</option>
                                )}
                            </select>
 
@@ -142,7 +182,7 @@ class AudienceFilterComponent extends React.Component{
                     </div>
                     <div className="audience--start-period">
                         <b>Начало периода:</b>
-                        <input type="date" ref={this.startDate}/>
+                        <input type="date" ref={this.startDate} onSelect={this.startTimeFocus}/>
                         <input className="date--time"
                                type="text" placeholder="9:00"
                                ref={this.startTime}
@@ -150,7 +190,7 @@ class AudienceFilterComponent extends React.Component{
                     </div>
                     <div className="audience--end-period">
                         <b>Конец периода:</b>
-                        <input type="date" ref={this.endDate}/>
+                        <input type="date" ref={this.endDate} onSelect={this.endTimeFocus}/>
                         <input className="date--time"
                                type="text" placeholder="12:00"
                                ref={this.endTime}

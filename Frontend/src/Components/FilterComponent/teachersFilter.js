@@ -11,6 +11,18 @@ class TeachersFilterComponent extends React.Component{
     endTime = (endTime) => {this._endTime = endTime};
     address = (address) => {this._address = address};
 
+
+    componentWillMount(){
+        this.props.setDateInterval(null, null);
+    }
+    startTimeFocus = () => {
+        this._startTime.focus();
+    };
+
+    endTimeFocus = () => {
+        this._endTime.focus();
+    };
+
     loadTeachers = () => {
         let index = this._address.selectedIndex;
 
@@ -18,14 +30,18 @@ class TeachersFilterComponent extends React.Component{
             (this._startTime.value)&&(this._endDate.value)&&
             (this._endTime.value)&&(index >0)) {
 
+            if(this.props.startDate > this.props.endDate){
+                alert("Дата начала должна быть раньше, чем дата конца");
+                return false;
+            }
+
 
             let address = this._address.value;
-            console.log(address);
-
+            this.props.setDateInterval(this.props.startDate, this.props.endDate);
             this.props.loadData(true);
             this.props.loadTeachersList(address);
         }
-        else alert("Заполните все данные")
+        else alert("Проверьте, что все данные заполнены корректно!");
     };
 
     setDateFormat = (date, time) => {
@@ -44,9 +60,16 @@ class TeachersFilterComponent extends React.Component{
             alert("Выберите дату и время начала!");
             return false
         }
+        if(startTime.length > 5) {
+            alert("Неверный формат времени начала");
+            return false;
+        }
+        if(startTime.indexOf(":") === -1){
+            alert("Неверный формат времени начала");
+            return false;
+        }
         let date = this.setDateFormat(startDay, startTime);
 
-        console.log(date);
         this.props.setStartDateTime(date);
         };
 
@@ -59,10 +82,16 @@ class TeachersFilterComponent extends React.Component{
             alert("Выберите дату и время окончания!");
             return false
         }
-
+        if(endTime.length > 5) {
+            alert("Неверный формат времени конца");
+            return false;
+        }
+        if(endTime.indexOf(":") === -1){
+            alert("Неверный формат времени конца");
+            return false;
+        }
         let dateEnd = this.setDateFormat(endDay, endTime);
 
-        console.log(dateEnd);
         this.props.setEndDateTime(dateEnd);
 
     };
@@ -70,7 +99,6 @@ class TeachersFilterComponent extends React.Component{
 
 
     render(){
-
             return (
                 <>
                 <div className="teachers--filter">
@@ -78,7 +106,7 @@ class TeachersFilterComponent extends React.Component{
                         <b>Адрес:</b>
                         <div className="teachers--selection">
                             <select ref={this.address}>
-                                <option selected>Выбрать адрес...</option>
+                                <option defaultValue>Выбрать адрес...</option>
                                 {Object.values(faculty_data).map(faculty =>
                                     <option value={faculty.address} title={faculty.name}>{faculty.address}</option>
                                 )}
@@ -88,7 +116,7 @@ class TeachersFilterComponent extends React.Component{
                     </div>
                     <div className="teachers--start-period">
                         <b>Начало периода:</b>
-                        <input type="date" ref={this.startDate}/>
+                        <input type="date" ref={this.startDate} onSelect={this.startTimeFocus}/>
                         <input className="date--time"
                                type="text" placeholder="9:00"
                                ref={this.startTime}
@@ -96,7 +124,7 @@ class TeachersFilterComponent extends React.Component{
                     </div>
                     <div className="teachers--end-period">
                         <b>Конец периода:</b>
-                        <input type="date" ref={this.endDate}/>
+                        <input type="date" ref={this.endDate} onSelect={this.endTimeFocus}/>
                         <input className="date--time"
                                type="text" placeholder="12:00"
                                ref={this.endTime}

@@ -19,7 +19,7 @@ class DayComponent extends React.Component{
                         {this.props.day.data.length == 0? (<span>Кабинет полностью
                             свободен на выбранный промежуток времени</span>):( <ul>
                             {this.props.day.data.map(event =>
-                                <li>
+                                <li key={event.oid}>
                                     <span>{event.start.split("T")[1]}- {event.end.split("T")[1]}</span>
                                     <div className="lesson--info">
                                         <span><b>Дисциплина:</b></span>

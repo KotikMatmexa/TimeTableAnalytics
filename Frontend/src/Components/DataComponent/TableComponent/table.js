@@ -12,8 +12,6 @@ class TableComponent extends React.Component{
             return(<div className="table">
                 <div className="table--components">
                     <label>{this.props.teacher.sirName}</label>
-
-
                 </div>
             </div>)
         }
@@ -22,14 +20,14 @@ class TableComponent extends React.Component{
 
             return (
                 <div className="table">
-                    <h6>Аудитория № {this.props.faculty.activeAudience.location.number_actual},</h6>
+                    <h6>Аудитория № {this.props.facultyData.activeAudience.location.number_actual},</h6>
                         <h6>Количество мест:
-                        {this.props.faculty.activeAudience.location.capacity}</h6>
+                        {this.props.facultyData.activeAudience.location.capacity}</h6>
                     <div className="table--components">
                         <div className="row">
-                        {this.props.faculty.activeAudience.events.results.map( day =>
+                        {this.props.facultyData.activeAudience.events.results.map( day =>
                             new Date(day.day).getDay() != 0 ? (
-                                <div className="col-sm-6">
+                                <div className="col-sm-6" key={day.oid}>
                                     <DayComponent day = {day} />
                                 </div>):(null)
                         )}

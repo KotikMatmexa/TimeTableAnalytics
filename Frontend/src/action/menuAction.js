@@ -1,6 +1,5 @@
 
 export const getLine = (index) =>{
-    console.log("current index:",index);
   return {
       type: "CHANGE_MENU_INDEX", index
   }

@@ -7,6 +7,10 @@
     padding-top: 6px;
     padding-bottom: 12px;
 }
+.audience--filter, .teachers--filter{
+    overflow-x: auto;
+    overflow-y: auto;
+}
 .audience--address, .audience--start-period, .audience--end-period , .teachers--address,
 .teachers--start-period, .teachers--end-period, .group-control--faculty, .group-control--group{
     width:200px;
@@ -78,4 +82,8 @@
 }
 .holder:hover .block{
     display:block;
+}
+.get--button{
+    position: absolute;
+    right: 1em;
 }

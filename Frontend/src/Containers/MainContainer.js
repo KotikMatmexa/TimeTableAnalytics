@@ -7,7 +7,6 @@ import {getFilterType} from "../action/filterAction";
 class MainContainer extends React.Component{
 
     changeType = (index) =>{
-        console.log(Number(index));
         switch (Number(index)) {
             case 0:
                 this.props.changeFilterType("audience");

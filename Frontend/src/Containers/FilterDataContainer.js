@@ -2,7 +2,7 @@ import React from 'react'
 import {getFilterType, setFaculty, setFilteredTeachersListByLetter} from "../action/filterAction";
 import connect from "react-redux/es/connect/connect";
 import {loadGroups, setActiveGroup} from "../action/groupAction";
-import {loadFacultiesList, setActiveAudience} from "../action/tableAction";
+import {loadFacultiesList, setActiveAudience, getFacultiesData} from "../action/tableAction";
 import {loadData,loadTeachers, setCurrentTeacher, loadAddresses,
     setActiveAddresses,
     setEndDate, setStartDate, setDateInterval} from "../action/dataAction";
@@ -19,6 +19,9 @@ class FilterDataContainer extends React.Component{
     componentWillMount(){
         let addresses = addressesList();
         this.props.loadAddresses(addresses);
+
+        //запрос к бэку
+        // this.props.getAddresses();
     }
 
     changeType = (index) =>{
@@ -39,19 +42,17 @@ class FilterDataContainer extends React.Component{
     render() {
         this.changeType(this.props.selectedLine);
 
-        console.log(this.props)
         if (this.props.filterType === "audience") {
             return (
                 <>
                     <AudienceFilterComponent {...this.props}/>
                     {this.props.isLoadData ? (
                             this.props.facultiesList.map(faculty =>
-                                <FacultyDataContainer
+                                <FacultyDataContainer key={faculty.address.oid}
                                     type={this.props.filterType}
                                                startDate={this.props.startDate}
                                                endDate={this.props.endDate}
                                                faculty = {faculty}
-
                                                dateInterval = {this.props.dateInterval}
                                 />
 
@@ -167,10 +168,12 @@ const mapDispatchToProps = dispatch => ({
     setFilteredTeachersList: (letter, list) => {
         dispatch(setFilteredTeachersListByLetter(letter, list))
     },
-
     loadFacultiesList: (addresses) => {
         dispatch(loadFacultiesList(addresses))
     },
+   /// loadFacultiesList: (addresses,startDate, endDate) => {
+      //  dispatch(getFacultiesData(addresses,startDate, endDate))
+    //},
     setActiveAudience:(faculty, audience)=>{
         dispatch(setActiveAudience(faculty, audience))
     },

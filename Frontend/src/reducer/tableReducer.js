@@ -38,7 +38,7 @@ const getFaculties = (addresses) => {
 };
 
 
-export const audiencesReducer = (state = [], action) => {
+export const audiencesReducer = (state = null, action) => {
     switch (action.type){
         case "SET_ACTIVE_AUDIENCES":
             return setAudiences(action.address, action.audience, action.timeInterval);
@@ -47,10 +47,29 @@ export const audiencesReducer = (state = [], action) => {
     }
 };
 
-const setAudiences = (address, audience, dates) => {
+export const facultyyReducer = (state = null, action) => {
+    switch (action.type){
+        case "SET_THIS_FACULTY":
+            return action.FACULTY;
+        default:
+            return state;
+    }
+};
+
+
+export const audienceReducer = (state = null, action) => {
+    switch (action.type){
+        case "SET_THIS_AUDIENCE":
+            return setAudiences(action.address, action.audience, action.timeInterval);
+        default:
+            return state;
+    }
+};
+
+export const setAudiences = (address, audience, dates) => {
     let finalData;
     finalData = JSON.parse(JSON.stringify(address));
-  //  finalData = address;
+
     const index = Object.values(address.locationWithEventsDto.results)
         .findIndex(item => item.location.number_actual === audience);
 
@@ -70,6 +89,10 @@ const setAudiences = (address, audience, dates) => {
         };
         days.push(data);
     }
+  ///  let res = {
+    //    audience_data: address.locationWithEventsDto.results[index],
+      //  days:days
+    //};
     finalData.activeAudience.events.results = days;
     return finalData;
 };
