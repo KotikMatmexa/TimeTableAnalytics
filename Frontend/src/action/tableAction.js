@@ -33,13 +33,14 @@ export const getFacultiesData = (addresses,startDate,endDate) => dispatch => {
 
     const link = `http://localhost:8080/address/timetable?start=${formattedDates[0]}&end=${formattedDates[1]}`;
     fetch(link, {
-        method: "get",
+        method: "POST",
         body: JSON.stringify(addresses),
         headers: { "Content-Type": "application/json" }
     })
         .then(data =>
             data.json())
         .then(addresses => {
+            console.log(addresses);
             dispatch(loadFacultiesList(addresses))
         })
         .catch(e => console.log(e));

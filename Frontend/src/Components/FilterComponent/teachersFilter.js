@@ -36,10 +36,11 @@ class TeachersFilterComponent extends React.Component{
             }
 
 
-            let address = this._address.value;
+            let addressId = this._address.value;
+
             this.props.setDateInterval(this.props.startDate, this.props.endDate);
             this.props.loadData(true);
-            this.props.loadTeachersList(address);
+            this.props.loadTeachersList(addressId);
         }
         else alert("Проверьте, что все данные заполнены корректно!");
     };
@@ -100,15 +101,18 @@ class TeachersFilterComponent extends React.Component{
 
     render(){
             return (
-                <>
+                <div className="filter--menu">
                 <div className="teachers--filter">
                     <div className="teachers--address">
                         <b>Адрес:</b>
                         <div className="teachers--selection">
                             <select ref={this.address}>
                                 <option defaultValue>Выбрать адрес...</option>
-                                {Object.values(faculty_data).map(faculty =>
-                                    <option value={faculty.address} title={faculty.name}>{faculty.address}</option>
+                                {this.props.addresses.map(faculty =>
+                                    <option key={faculty.oid} value={faculty.oid}  title={faculty.building_name}>
+                                        {faculty.street}, {faculty.house}
+                                        {faculty.korpus?(", "+faculty.korpus):(null)}
+                                        </option>
                                 )}
 
                             </select>
@@ -116,7 +120,7 @@ class TeachersFilterComponent extends React.Component{
                     </div>
                     <div className="teachers--start-period">
                         <b>Начало периода:</b>
-                        <input type="date" ref={this.startDate} onSelect={this.startTimeFocus}/>
+                        <input type="date" ref={this.startDate} onChange={this.startTimeFocus}/>
                         <input className="date--time"
                                type="text" placeholder="9:00"
                                ref={this.startTime}
@@ -124,7 +128,7 @@ class TeachersFilterComponent extends React.Component{
                     </div>
                     <div className="teachers--end-period">
                         <b>Конец периода:</b>
-                        <input type="date" ref={this.endDate} onSelect={this.endTimeFocus}/>
+                        <input type="date" ref={this.endDate} onChange={this.endTimeFocus}/>
                         <input className="date--time"
                                type="text" placeholder="12:00"
                                ref={this.endTime}
@@ -134,7 +138,7 @@ class TeachersFilterComponent extends React.Component{
                     <button className="get--button" onClick={this.loadTeachers}>Получить</button>
 
 
-                    </>
+                </div>
             )
 
     }

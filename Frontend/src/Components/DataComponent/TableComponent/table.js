@@ -9,11 +9,13 @@ class TableComponent extends React.Component{
     render(){
 
         if(this.props.type === "teachers"){
-            return(<div className="table">
-                <div className="table--components">
-                    <label>{this.props.teacher.sirName}</label>
-                </div>
-            </div>)
+            return(
+                this.props.teacher?( <div className="table">
+                    <div className="table--components">
+                        <label title="имя преподавателя">{this.props.teacher.name}</label>
+                    </div>
+                </div>):(null)
+               )
         }
 
         else if (this.props.type === "audience") {

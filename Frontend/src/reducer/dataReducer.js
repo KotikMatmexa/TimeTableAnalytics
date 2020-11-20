@@ -21,10 +21,10 @@ export const loadDataReducer = (state = false, action) => {
     }
 };
 
-export const teachersReducer =  (state = [], action) => {
+export const teachersReducer =  (state = null, action) => {
     switch (action.type){
         case "LOAD_TEACHERS":
-            return getTeachers(action.address);
+            return action.teachers;
         default:
             return state
     }
@@ -41,7 +41,7 @@ let getTeachers = (address) => {
     return teachersList;
 };
 
-export const teacherReducer =  (state = [], action) => {
+export const teacherReducer =  (state = null, action) => {
 
     switch (action.type){
         case "SET_TEACHER":

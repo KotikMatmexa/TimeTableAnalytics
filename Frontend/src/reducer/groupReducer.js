@@ -1,6 +1,6 @@
 import {table_example} from "../testData";
 
-export const groupsReducer = (state = [], action) => {
+export const groupsReducer = (state = null, action) => {
 
     switch (action.type){
         case "LOAD_GROUPS_LIST":
@@ -17,7 +17,7 @@ let getGroups = (faculty) => {
 };
 
 
-export const groupReducer = (state = [], action) => {
+export const groupReducer = (state = null, action) => {
 
     switch (action.type){
         case "LOAD_GROUP_DATA":

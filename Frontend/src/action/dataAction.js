@@ -6,25 +6,25 @@ export const loadData = (flag) => {
     }
 };
 
-export const loadTeachers = (address) => {
+export const loadTeachers = (teachers) => {
   return {
-      type: "LOAD_TEACHERS", address
+      type: "LOAD_TEACHERS", teachers
   }
 };
 
 //получаем список учителей по текущему адресу
 //address = адрес, по которому получаем список пользователей
-export const getTeachersList = (address) => dispatch => {
+export const getTeachersList = (addressId) => dispatch => {
 
-    const link = ``;
+    const link = `http://localhost:8080/address/educators/${addressId}`;
     fetch(link, {
         method: "get",
-        body: JSON.stringify(address),
         headers: { "Content-Type": "application/json" }
     })
         .then(data =>
             data.json())
         .then(teachers => {
+       console.log(teachers);
             dispatch(loadTeachers(teachers))
         })
         .catch(e => console.log(e));
@@ -65,21 +65,6 @@ export const loadAddresses = (addresses) => {
     }
 };
 
-export const getAddresses = () => dispatch => {
-
-    const link = `http://localhost:8080/address`;
-    fetch(link, {
-        method: "get",
-        body: JSON.stringify(teacher),
-        headers: { "Content-Type": "application/json" }
-    })
-        .then(data =>
-            data.json())
-        .then(adresses => {
-            dispatch(loadAddresses(adresses))
-        })
-        .catch(e => console.log(e));
-};
 
 
 export const SET_FACULTY = (FACULTY) => {
@@ -104,7 +89,7 @@ export const getAddresses = () => dispatch => {
         headers: { "Content-Type": "application/json" }
     })
         .then(data =>
-            data.json())
+           data.json())
         .then(addresses => {
             dispatch(loadAddresses(addresses))
         })

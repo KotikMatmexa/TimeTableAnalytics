@@ -126,25 +126,23 @@ class TeacherTableComponent extends React.Component {
                         </div>
                     )
                 ) : (
-                    <div className="teacher-table">
+                    <>
+                        <div className="teachers--table">
                         <table className="table table-bordered">
                             <thead className="thead-dark">
                             <tr>
                                 <th scope="col">Фамилия</th>
-                                <th scope="col">Факультет</th>
-                                <th scope="col">Звание</th>
                                 <th scope="col">Занятость</th>
                             </tr>
                             </thead>
                             <tbody>
-                            {this.props.teachers.map(teacher => (
+                            {this.props.teachers.results.map(teacher => (
                                 <tr>
                                     <th scope="row">
-                                        {teacher.firstName} {teacher.patronymic} {teacher.sirName}
+                                        {teacher.name}
                                     </th>
-                                    <td>{teacher.faculty}</td>
-                                    <td>{teacher.level}</td>
-                                    <td>
+                                   <td>
+
                                         <button
                                             className="get-table-button"
                                             onClick={e => this.showTeacherInformation(e, teacher)}
@@ -156,11 +154,11 @@ class TeacherTableComponent extends React.Component {
                             ))}
                             </tbody>
                         </table>
-
-                        <div className="teacher--table" ref={this.teacherTable}>
-                            <TableComponent {...this.props} />
                         </div>
+                    <div className="teacher--table" ref={this.teacherTable}>
+                    <TableComponent {...this.props} />
                     </div>
+                    </>
                 )}
             </>
         );

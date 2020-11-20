@@ -1,19 +1,27 @@
 .table{
     height: 500px;
     background-color: antiquewhite;
-    overflow-x: auto;
-    overflow-y: auto;
 }
 
 .table--components{
     display: inline-flex;
 }
+
+.teachers--table{
+    max-height: 500px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
 .teacher--table{
     display: none;
+    max-height: 500px;
     overflow-x: auto;
+    overflow-y: auto;
 }
 .teacher--table-active{
     display: block;
+    margin-top: 20px;
 }
 
 .teachers--surname--letter{

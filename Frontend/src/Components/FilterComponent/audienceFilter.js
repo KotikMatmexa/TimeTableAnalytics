@@ -77,10 +77,11 @@ class AudienceFilterComponent extends React.Component{
             //&&(this._endDate.value)&&
             //(this._endTime.value)&&
         (this._selectedAddresses.children.length >0)){
+
             let addresses = [] ;
             let divs = this._selectedAddresses.children;
             for (let div of divs) {
-                let data = div.children[1].textContent;
+                let data = div.children[1].id;
                 addresses.push(data);
             }
 
@@ -89,14 +90,13 @@ class AudienceFilterComponent extends React.Component{
                 return false;
             }
 
+
+            this.props.setDateInterval(this.props.startDate, this.props.endDate);
+            this.props.loadFacultiesList(addresses,this.props.startDate, this.props.endDate);
             //загрузка таблиц
             this.props.loadData(true);
 
-            this.props.setDateInterval(this.props.startDate, this.props.endDate);
-            this.props.loadFacultiesList(addresses);
-
-            //this.props.loadFacultiesList(addresses,this.props.startDate, this.props.endDate);
-
+            //this.props.loadCat();
         }
         else {
             alert("Проверьте, что все данные заполнены корректно!");
@@ -130,8 +130,14 @@ class AudienceFilterComponent extends React.Component{
 
     setAddress = () => {
 
-        let selectedAddress = this._selectedAddress.value;
+       // let selectedAddress = this._selectedAddress.textContent;
+
         const index = this._selectedAddress.selectedIndex;
+        const id = document.getElementsByClassName("address--selection")[0]
+            .children[0].children[index].value;
+        let selectedAddress = document.getElementsByClassName("address--selection")[0]
+            .children[0].children[index].textContent;
+        console.log(selectedAddress)
         let divs = this._selectedAddresses.children;
 
 
@@ -145,8 +151,10 @@ class AudienceFilterComponent extends React.Component{
         div.className = "selected-address";
 
         let label = document.createElement("label");
-        label.id = index;
+        label.id = id;
         label.textContent = selectedAddress;
+
+
         let button = document.createElement("button");
         button.textContent = "X";
         button.className = "btn btn-outline-secondary";
@@ -164,7 +172,7 @@ class AudienceFilterComponent extends React.Component{
     render(){
 
             return(
-                <>
+                <div className="filter--menu">
                 <div className="audience--filter">
                     <div className="audience--address">
                         <b>Адрес:</b>
@@ -172,7 +180,13 @@ class AudienceFilterComponent extends React.Component{
                            <select onChange={this.setAddress} ref={this.selectedAddress} >
                                <option>Выбрать адрес...</option>
                                {this.props.addresses.map(faculty =>
-                                   <option key={faculty.oid} value={faculty}  title={faculty}>{faculty}</option>
+                                   <option key={faculty.oid} value= {faculty.oid}
+                                           data-id = {faculty.oid}
+                                           title={faculty.building_name}>
+                                       {faculty.street}, {faculty.house}
+                                       {faculty.korpus?(", "+faculty.korpus):(null)}
+
+                                       </option>
                                )}
                            </select>
 
@@ -182,7 +196,7 @@ class AudienceFilterComponent extends React.Component{
                     </div>
                     <div className="audience--start-period">
                         <b>Начало периода:</b>
-                        <input type="date" ref={this.startDate} onSelect={this.startTimeFocus}/>
+                        <input type="date" ref={this.startDate} onChange={this.startTimeFocus}/>
                         <input className="date--time"
                                type="text" placeholder="9:00"
                                ref={this.startTime}
@@ -190,7 +204,7 @@ class AudienceFilterComponent extends React.Component{
                     </div>
                     <div className="audience--end-period">
                         <b>Конец периода:</b>
-                        <input type="date" ref={this.endDate} onSelect={this.endTimeFocus}/>
+                        <input type="date" ref={this.endDate} onChange={this.endTimeFocus}/>
                         <input className="date--time"
                                type="text" placeholder="12:00"
                                ref={this.endTime}
@@ -198,7 +212,7 @@ class AudienceFilterComponent extends React.Component{
                     </div>
                 </div>
                     <button className="get--button" onClick={this.loadTables}>Получить</button>
-                    </>
+                </div>
             )
         }
 

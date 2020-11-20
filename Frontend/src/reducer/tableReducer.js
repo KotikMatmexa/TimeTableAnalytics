@@ -11,11 +11,11 @@ export const groupControlReducer = (state = table_example, action) => {
     }
 };
 
-export const facultyReducer = (state = [], action) => {
+export const facultyReducer = (state = null, action) => {
     switch (action.type){
         case "LOAD_FACULTIES_LIST":
-            return getFaculties(action.addresses);
-            //return action.addresses;
+           // return getFaculties(action.addresses);
+            return action.addresses;
         default:
             return state;
     }
@@ -24,7 +24,8 @@ export const facultyReducer = (state = [], action) => {
 export const currentFacultyReducer = (state = [], action) => {
     switch (action.type){
         case "LOAD_FACULTY_DATA":
-            return getFaculties(action.addresses);
+        //    return getFaculties(action.addresses);
+           return action.addresses
         default:
             return state;
     }

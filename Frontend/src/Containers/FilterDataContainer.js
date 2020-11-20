@@ -3,9 +3,9 @@ import {getFilterType, setFaculty, setFilteredTeachersListByLetter} from "../act
 import connect from "react-redux/es/connect/connect";
 import {loadGroups, setActiveGroup} from "../action/groupAction";
 import {loadFacultiesList, setActiveAudience, getFacultiesData} from "../action/tableAction";
-import {loadData,loadTeachers, setCurrentTeacher, loadAddresses,
+import {loadData,getTeachersList, setCurrentTeacher, loadAddresses,
     setActiveAddresses,
-    setEndDate, setStartDate, setDateInterval} from "../action/dataAction";
+    setEndDate, setStartDate, setDateInterval, getAddresses} from "../action/dataAction";
 import DataComponent from "../Components/DataComponent/data";
 import AudienceFilterComponent from "../Components/FilterComponent/audienceFilter";
 import TeachersFilterComponent from "../Components/FilterComponent/teachersFilter";
@@ -14,14 +14,14 @@ import FacultyDataComponent from "../Components/DataComponent/facultydata";
 import FacultyDataContainer from "./FacultyDataContainer";
 import {addressesList} from "../dataParser";
 
+
 class FilterDataContainer extends React.Component{
 
-    componentWillMount(){
-        let addresses = addressesList();
-        this.props.loadAddresses(addresses);
+    cat = (cat) => this._cat = cat;
 
+    componentWillMount(){
         //запрос к бэку
-        // this.props.getAddresses();
+         this.props.getAddresses();
     }
 
     changeType = (index) =>{
@@ -37,7 +37,33 @@ class FilterDataContainer extends React.Component{
               this.props.changeFilterType("group control");
               break;
       }
+
     };
+
+    draw = (timePassed) => {
+        this._cat.style.left = timePassed / 5 + 'px';
+    };
+
+    startLoaderCat = () => {
+        let start = Date.now(); // запомнить время начала
+
+        let timer = setInterval(()=> {
+            // сколько времени прошло с начала анимации?
+            let timePassed = Date.now() - start;
+
+            if (timePassed >= 2000) {
+                clearInterval(timer); // закончить анимацию через 2 секунды
+                return;
+            }
+
+            // отрисовать анимацию на момент timePassed, прошедший с начала анимации
+            this.draw(timePassed);
+
+        }, 20);
+    };
+
+
+
 
     render() {
         this.changeType(this.props.selectedLine);
@@ -45,20 +71,24 @@ class FilterDataContainer extends React.Component{
         if (this.props.filterType === "audience") {
             return (
                 <>
-                    <AudienceFilterComponent {...this.props}/>
+                    <AudienceFilterComponent {...this.props} loadCat={this.startLoaderCat}/>
                     {this.props.isLoadData ? (
-                            this.props.facultiesList.map(faculty =>
-                                <FacultyDataContainer key={faculty.address.oid}
-                                    type={this.props.filterType}
-                                               startDate={this.props.startDate}
-                                               endDate={this.props.endDate}
-                                               faculty = {faculty}
-                                               dateInterval = {this.props.dateInterval}
-                                />
+                            this.props.facultiesList  ? (
+                                this.props.facultiesList.count > 0  ?(
+                                    this.props.facultiesList.results.map(faculty =>
+                                    <FacultyDataContainer key={faculty.address.oid}
+                                                          type={this.props.filterType}
+                                                          startDate={this.props.startDate}
+                                                          endDate={this.props.endDate}
+                                                          faculty = {faculty}
+                                                          dateInterval = {this.props.dateInterval}
+                                    />
+                                )):(<h4>Нет данных</h4>)
 
-                            )
 
-                        ) :
+                        ):(<h4 ref={this.cat}>
+                                Загрузка данных...
+                            </h4>)) :
                         (null)
                     }
                 </>
@@ -69,13 +99,10 @@ class FilterDataContainer extends React.Component{
                 <>
                     <TeachersFilterComponent {...this.props}/>
                     {this.props.isLoadData ? (
-                            <DataComponent type={this.props.filterType} data={this.props.activeGroupData}
+                            <DataComponent type={this.props.filterType}
                                            teachers={this.props.teachers}
                                            addresses={this.props.addresses}
-                                           activeAddresses={this.props.activeAddresses}
                                            teacher={this.props.currentTeacher}
-                                           startDate={this.props.startDate}
-                                           endDate={this.props.endDate}
                                            filteredTeachersList = {this.props.filteredTeachersList}
                                            setCurrentTeacher={this.props.setCurrentTeacher}
                                            setFilteredTeachersList = {this.props.setFilteredTeachersList}
@@ -142,7 +169,7 @@ const mapDispatchToProps = dispatch => ({
     },
 
     loadTeachersList: (address) => {
-        dispatch(loadTeachers(address));
+        dispatch(getTeachersList(address));
     },
 
     loadAddresses: (addresses) =>{
@@ -161,6 +188,10 @@ const mapDispatchToProps = dispatch => ({
         dispatch(setCurrentTeacher(teacher))
     },
 
+    getAddresses: () => {
+        dispatch(getAddresses())
+    },
+
     setActiveAddresses: (addresses) => {
         dispatch(setActiveAddresses(addresses))
     },
@@ -168,12 +199,12 @@ const mapDispatchToProps = dispatch => ({
     setFilteredTeachersList: (letter, list) => {
         dispatch(setFilteredTeachersListByLetter(letter, list))
     },
-    loadFacultiesList: (addresses) => {
-        dispatch(loadFacultiesList(addresses))
+  //  loadFacultiesList: (addresses) => {
+    //    dispatch(loadFacultiesList(addresses))
+   // },
+   loadFacultiesList: (addresses,startDate, endDate) => {
+        dispatch(getFacultiesData(addresses,startDate, endDate))
     },
-   /// loadFacultiesList: (addresses,startDate, endDate) => {
-      //  dispatch(getFacultiesData(addresses,startDate, endDate))
-    //},
     setActiveAudience:(faculty, audience)=>{
         dispatch(setActiveAudience(faculty, audience))
     },

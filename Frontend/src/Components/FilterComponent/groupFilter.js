@@ -43,7 +43,7 @@ class GroupFilterComponent extends React.Component{
     render(){
 
             return (
-                <>
+                <div className="filter--menu">
                 <div className="group-control--filter">
                     <div className="group-control--faculty">
                         <b>Факультет:</b>
@@ -77,7 +77,8 @@ class GroupFilterComponent extends React.Component{
                 </div>
 
                     <button className="get--button" onClick={this.loadData}>Получить</button>
-                    </>
+                </div>
+
             )
         }
 

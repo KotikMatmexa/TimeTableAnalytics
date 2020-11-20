@@ -70,6 +70,9 @@
     background:#ff6600;
     margin:100px auto;
 }
+.filter--menu{
+    text-align: center;
+}
 .block{
     position:absolute;
     left:0;
@@ -84,6 +87,5 @@
     display:block;
 }
 .get--button{
-    position: absolute;
-    right: 1em;
+    position: relative;
 }
