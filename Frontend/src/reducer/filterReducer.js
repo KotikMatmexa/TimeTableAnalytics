@@ -31,8 +31,8 @@ export const teachersListReducer = (state = [], action) => {
 let getTeachersList = (letter, teachersList) => {
 
     let final_list = [];
-    for (let teacher of Object.values(teachersList)){
-        if (teacher.sirName.startsWith(letter))
+    for (let teacher of Object.values(teachersList.results)){
+        if ((teacher.name).toLowerCase().startsWith(letter.toLowerCase()))
             final_list.push(teacher)
 
     }

@@ -93,8 +93,6 @@ class TeacherTableComponent extends React.Component {
                                 <thead className="thead-dark">
                                 <tr>
                                     <th scope="col">Фамилия</th>
-                                    <th scope="col">Факультет</th>
-                                    <th scope="col">Звание</th>
                                     <th scope="col">Занятость</th>
                                 </tr>
                                 </thead>
@@ -102,11 +100,8 @@ class TeacherTableComponent extends React.Component {
                                 {this.props.filteredTeachersList.map(teacher => (
                                     <tr>
                                         <th scope="row">
-                                            {teacher.firstName} {teacher.patronymic}{" "}
-                                            {teacher.sirName}
+                                            {teacher.name}
                                         </th>
-                                        <td>{teacher.faculty}</td>
-                                        <td>{teacher.level}</td>
                                         <td>
                                             <button
                                                 className="get-table-button"
