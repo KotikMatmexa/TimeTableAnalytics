@@ -23,6 +23,7 @@ public class AddressController {
         return addressFullDto;
     }
 
+    //@CrossOrigin(origins = "http://localhost:3000")
     @GetMapping()
     public List<AddressIdDto> searchByStreet(@RequestParam(defaultValue = RequestInfo.DEFAULT_OFFSET) int offset,
                                              @RequestParam(defaultValue = RequestInfo.DEFAULT_LIMIT) int limit,
@@ -31,13 +32,14 @@ public class AddressController {
     }
 
     //@CrossOrigin(origins = "http://localhost:3000")
-    @GetMapping(RequestInfo.TIMETABLE)
+    @PostMapping(RequestInfo.TIMETABLE)
     public ListForDto<AddressWithLocationEventDto> findAllEventsForLocations(@RequestBody List<String> addressIds,
                                                                              @RequestParam(required = false) String start,
                                                                              @RequestParam(required = false) String end) {
         return addressService.findAllEventsForAddress(addressIds, start, end);
     }
 
+    //@CrossOrigin(origins = "http://localhost:3000")
     @GetMapping(RequestInfo.EDUCATORS+ RequestInfo.ADDRESS_ID )
     public ListForDto<EducatorsDto> getAllEducatorsByAddress(@RequestParam(defaultValue = RequestInfo.DEFAULT_OFFSET) int offset,
                                                              @RequestParam(defaultValue = RequestInfo.DEFAULT_LIMIT) int limit,
