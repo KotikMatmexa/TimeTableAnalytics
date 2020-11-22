@@ -14,6 +14,7 @@ import java.util.List;
 public interface EducatorEmploymentRepository extends JpaRepository<EducatorEmployment, String> {
 
     @Query("SELECT edEmp FROM EducatorEmployment edEmp " +
+            " join Position pos on edEmp.position.oid = pos.oid" +
             " join LocationEducator locEd on edEmp.oid = locEd.educatorEmployment.oid" +
             " join EventLocation el on locEd.eventLocation.oid = el.oid " +
             " join Location loc on el.location.oid = loc.oid " +

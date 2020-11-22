@@ -15,9 +15,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EducatorsDto {
-    @Id
-    @NotNull
-    @Column(name = "oid")
+
     private String oid;
 
     @JsonProperty("name")
@@ -31,5 +29,11 @@ public class EducatorsDto {
 
     @JsonProperty("short_name_english")
     private String shortDisplayNameEnglish;
+
+    @JsonProperty("position_name")
+    private String positionShortName;
+
+    @JsonProperty("position_name_english")
+    private String positionNameEnglish;
 
 }

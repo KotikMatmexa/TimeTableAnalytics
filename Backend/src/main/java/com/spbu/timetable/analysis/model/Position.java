@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "position")
+@Table(name = "educatoremploymentposition")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -19,13 +19,13 @@ public class Position {
     @Column(name = "oid")
     private String oid;
 
-    @Column(name = "shortName")
-    private String ShortName;
+    @Column(name = "shortname")
+    private String shortName;
 
-    @Column(name = "nameEnglish")
-    private String NameEnglish;
+    @Column(name = "nameenglish")
+    private String nameEnglish;
 
-//    @OneToMany(mappedBy = "position", fetch = FetchType.LAZY)
-//    List<EducatorEmployment> educatorEmployments;
+    @OneToMany(mappedBy = "position", fetch = FetchType.LAZY)
+    List<EducatorEmployment> educatorEmployments;
 
 }

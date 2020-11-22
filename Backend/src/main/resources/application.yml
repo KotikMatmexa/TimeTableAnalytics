@@ -2,9 +2,9 @@
 spring:
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://spbutimetable.database.windows.net;databaseName=table
-    username: spbutable
-    password: Timetable20
+    url: jdbc:sqlserver://localhost;databaseName=tt_analysis
+    username: tt_user
+    password: Tt_password1!
 
   jpa:
     properties:
