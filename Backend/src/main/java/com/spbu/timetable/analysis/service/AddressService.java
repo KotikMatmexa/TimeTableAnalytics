@@ -3,6 +3,7 @@ package com.spbu.timetable.analysis.service;
 import com.spbu.timetable.analysis.dto.*;
 import com.spbu.timetable.analysis.model.Address;
 import com.spbu.timetable.analysis.repository.AddressRepository;
+import com.spbu.timetable.analysis.utils.DateTimeFormatter;
 import com.spbu.timetable.analysis.utils.DtoMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -41,8 +41,8 @@ public class AddressService {
     }
 
     public ListForDto<AddressWithLocationEventDto> findAllEventsForAddress(List<String> addressIds, String start, String end) {
-        LocalDateTime from = parseDateTime(start);
-        LocalDateTime to = parseDateTime(end);
+        LocalDateTime from = DateTimeFormatter.parseDateTime(start);
+        LocalDateTime to = DateTimeFormatter.parseDateTime(end);
 
         List<AddressWithLocationEventDto> addressWithLocationEventDtos = addressIds
                 .stream()
@@ -69,10 +69,5 @@ public class AddressService {
                 .locationWithEventsDto(allEventsForLocationsInAddress)
                 .build();
 
-    }
-
-    public static LocalDateTime parseDateTime(String dateTime) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-        return LocalDateTime.parse(dateTime, formatter);
     }
 }

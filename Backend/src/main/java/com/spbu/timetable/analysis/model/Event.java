@@ -74,4 +74,12 @@ public class Event {
     @OneToMany(mappedBy = "event", fetch = FetchType.LAZY)
     private List<EventLocation> eventLocation;
 
+    @ManyToOne(cascade = javax.persistence.CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(
+            name = "contingentunit",
+            referencedColumnName = "oid",
+            insertable = false, updatable = false
+    )
+    private ContingentUnit contingentUnit;
+
 }

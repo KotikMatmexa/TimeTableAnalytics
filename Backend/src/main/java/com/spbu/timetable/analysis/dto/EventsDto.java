@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class EventLocationDto {
+public class EventsDto {
 
     private String oid;
 
@@ -43,4 +43,10 @@ public class EventLocationDto {
 
     @JsonProperty("description_long")
     private String eventDescriptionLong;
+
+    @JsonProperty("faculty")
+    private String contingentUnitFaculty;
+
+    @JsonProperty("student_group")
+    private String contingentUnitStudentGroup;
 }

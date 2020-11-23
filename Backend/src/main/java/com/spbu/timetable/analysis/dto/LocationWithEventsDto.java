@@ -9,5 +9,5 @@ import lombok.Setter;
 @Builder(toBuilder = true)
 public class LocationWithEventsDto {
     private LocationDtoShort location;
-    private ListForDto<EventLocationDto> events;
+    private ListForDto<EventsDto> events;
 }

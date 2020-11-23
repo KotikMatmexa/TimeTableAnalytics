@@ -2,11 +2,7 @@ package com.spbu.timetable.analysis.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sun.istack.NotNull;
 import lombok.*;
-
-import javax.persistence.Column;
-import javax.persistence.Id;
 
 @Getter
 @Setter

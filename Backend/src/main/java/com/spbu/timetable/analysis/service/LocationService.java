@@ -1,6 +1,6 @@
 package com.spbu.timetable.analysis.service;
 
-import com.spbu.timetable.analysis.dto.EventLocationDto;
+import com.spbu.timetable.analysis.dto.EventsDto;
 import com.spbu.timetable.analysis.dto.ListForDto;
 import com.spbu.timetable.analysis.dto.LocationDtoShort;
 import com.spbu.timetable.analysis.dto.LocationWithEventsDto;
@@ -39,11 +39,11 @@ public class LocationService {
             return null;
         }
 
-        List<EventLocationDto> eventLocationDtos = DtoMapper.convertList(eventByLocationIdBetweenDates, EventLocationDto.class);
+        List<EventsDto> eventsDtos = DtoMapper.convertList(eventByLocationIdBetweenDates, EventsDto.class);
 
         return LocationWithEventsDto.builder()
                 .location(location)
-                .events(new ListForDto<>(eventLocationDtos.size(), eventLocationDtos))
+                .events(new ListForDto<>(eventsDtos.size(), eventsDtos))
                 .build();
     }
 
