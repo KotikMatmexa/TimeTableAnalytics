@@ -1,5 +1,5 @@
 import React from 'react'
-import DataComponent from "../data";
+import {loadTeacherData} from '../../../dataParser'
 import DayComponent from "./DayComponent/day";
 import './table.css'
 
@@ -10,9 +10,17 @@ class TableComponent extends React.Component{
 
         if(this.props.type === "teachers"){
             return(
-                this.props.teacher?( <div className="table">
+                this.props.teacher.actualEvents ?( <div className="table">
                     <div className="table--components">
-                        <label title="имя преподавателя">{this.props.teacher.name}</label>
+                        <label title="имя преподавателя">{this.props.teacher.educator.name}</label>
+                        <div className="row">
+                            {this.props.teacher.actualEvents.map( day =>
+                                new Date(day.day).getDay() != 0 ? (
+                                    <div className="col-sm-6" key={day.oid}>
+                                        <DayComponent day = {day} variant="teacher"/>
+                                    </div>):(null)
+                            )}
+                        </div>
                     </div>
                 </div>):(null)
                )
@@ -30,7 +38,7 @@ class TableComponent extends React.Component{
                         {this.props.facultyData.activeAudience.events.results.map( day =>
                             new Date(day.day).getDay() != 0 ? (
                                 <div className="col-sm-6" key={day.oid}>
-                                    <DayComponent day = {day} />
+                                    <DayComponent day = {day} variant="audience" />
                                 </div>):(null)
                         )}
                         </div>

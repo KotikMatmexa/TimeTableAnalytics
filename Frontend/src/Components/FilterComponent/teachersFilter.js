@@ -57,15 +57,11 @@ class TeachersFilterComponent extends React.Component{
     setStartDateTime = () =>{
         let startDay = this._startDate.value;
         let startTime = this._startTime.value;
-        if (!startDay || !startTime) {
-            alert("Выберите дату и время начала!");
-            return false
-        }
         if(startTime.length > 5) {
             alert("Неверный формат времени начала");
             return false;
         }
-        if(startTime.indexOf(":") === -1){
+        if(startTime.length>0 &&startTime.indexOf(":") === -1){
             alert("Неверный формат времени начала");
             return false;
         }
@@ -79,22 +75,32 @@ class TeachersFilterComponent extends React.Component{
 
         let endDay = this._endDate.value;
         let endTime = this._endTime.value;
-        if (!endDay || !endTime) {
-            alert("Выберите дату и время окончания!");
-            return false
-        }
+
+
         if(endTime.length > 5) {
             alert("Неверный формат времени конца");
             return false;
         }
-        if(endTime.indexOf(":") === -1){
+        if(endTime.length >0 && endTime.indexOf(":") === -1){
             alert("Неверный формат времени конца");
             return false;
         }
+
         let dateEnd = this.setDateFormat(endDay, endTime);
 
         this.props.setEndDateTime(dateEnd);
 
+    };
+
+    clean = () =>{
+        this.props.setStartDateTime(null);
+        this.props.setEndDateTime(null);
+        this._startDate.value = '';
+        this._endDate.value = '';
+        this._startTime.value = '';
+        this._endTime.value = '';
+        this._selectedAddress.selectedIndex = 0;
+        this._selectedAddresses.innerHTML = '';
     };
 
 
@@ -136,6 +142,7 @@ class TeachersFilterComponent extends React.Component{
                     </div>
                 </div>
                     <button className="get--button" onClick={this.loadTeachers}>Получить</button>
+                    <button className="get--button" onClick={this.clean}>Очистить все</button>
 
 
                 </div>

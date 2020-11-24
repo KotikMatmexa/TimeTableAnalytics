@@ -67,6 +67,8 @@ export const audienceReducer = (state = null, action) => {
     }
 };
 
+
+
 export const setAudiences = (address, audience, dates) => {
     let finalData;
     finalData = JSON.parse(JSON.stringify(address));
@@ -98,7 +100,7 @@ export const setAudiences = (address, audience, dates) => {
     return finalData;
 };
 
-const createDay = (events, date) => {
+export const createDay = (events, date) => {
     let final_list = [];
     let currentDate = new Date(date);
 

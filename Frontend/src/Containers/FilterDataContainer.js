@@ -184,8 +184,8 @@ const mapDispatchToProps = dispatch => ({
         dispatch(setEndDate(endDate));
     },
 
-    setCurrentTeacher: (teacher) => {
-        dispatch(setCurrentTeacher(teacher))
+    setCurrentTeacher: (teacher, dateInterval) => {
+        dispatch(setCurrentTeacher(teacher,dateInterval))
     },
 
     getAddresses: () => {

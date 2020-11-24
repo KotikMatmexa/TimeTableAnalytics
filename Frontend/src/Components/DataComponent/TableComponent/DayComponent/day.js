@@ -22,12 +22,29 @@ class DayComponent extends React.Component{
                                 <li key={event.oid}>
                                     <span>{event.start.split("T")[1]}- {event.end.split("T")[1]}</span>
                                     <div className="lesson--info">
-                                        <span><b>Дисциплина:</b></span>
-                                        <div className="discipline--info">{event.eventSubject}</div>
-                                        <span><b>Преподаватель:</b></span>
-                                        <div className="teacher--info">-</div>
-                                        <span><b>Группа:</b></span>
-                                        <div className="group--info">-</div>
+                                        {this.props.variant == "teacher"?(
+                                            <>
+                                                <span><b>Дисциплина:</b></span>
+                                                <div className="discipline--info">{event.eventSubject}</div>
+                                                <span><b>Группа:</b></span>
+                                                <div className="group--info">-</div>
+                                                <span><b>Адрес:</b></span>
+                                                <div className="teacher--info">{event.address}</div>
+                                                <span><b>Аудитория:</b></span>
+                                                <div className="teacher--info">-</div>
+                                            </>
+
+
+                                        ):(
+                                            <>
+                                            <span><b>Дисциплина:</b></span>
+                                            <div className="discipline--info">{event.eventSubject}</div>
+                                                <span><b>Преподаватель:</b></span>
+                                                <div className="teacher--info">-</div>
+                                                <span><b>Группа:</b></span>
+                                                <div className="group--info">-</div>
+                                            </>
+                                        )}
                                     </div>
 
                                 </li>)

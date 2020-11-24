@@ -49,16 +49,12 @@ class AudienceFilterComponent extends React.Component{
     setStartDateTime = () =>{
         let startDay = this._startDate.value;
         let startTime = this._startTime.value;
-        if (!startDay || !startTime) {
-            alert("Выберите дату и время начала!");
-            return false
-        }
 
         if(startTime.length > 5) {
             alert("Неверный формат времени начала");
             return false;
         }
-        if(startTime.indexOf(":") === -1){
+        if(startTime.length>0 &&startTime.indexOf(":") === -1){
             alert("Неверный формат времени начала");
             return false;
         }
@@ -109,16 +105,12 @@ class AudienceFilterComponent extends React.Component{
 
         let endDay = this._endDate.value;
         let endTime = this._endTime.value;
-        if (!endDay || !endTime) {
-            alert("Выберите дату и время окончания!");
-            return false
-        }
 
         if(endTime.length > 5) {
             alert("Неверный формат времени конца");
             return false;
         }
-        if(endTime.indexOf(":") === -1){
+        if(endTime.length >0 && endTime.indexOf(":") === -1){
             alert("Неверный формат времени конца");
             return false;
         }
@@ -169,6 +161,17 @@ class AudienceFilterComponent extends React.Component{
         this._selectedAddresses.appendChild(div);
     };
 
+    clean = () =>{
+        this.props.setStartDateTime(null);
+        this.props.setEndDateTime(null);
+        this._startDate.value = '';
+        this._endDate.value = '';
+        this._startTime.value = '';
+        this._endTime.value = '';
+        this._selectedAddress.selectedIndex = 0;
+        this._selectedAddresses.innerHTML = '';
+    };
+
     render(){
 
             return(
@@ -179,6 +182,7 @@ class AudienceFilterComponent extends React.Component{
                         <div className="address--selection">
                            <select onChange={this.setAddress} ref={this.selectedAddress} >
                                <option>Выбрать адрес...</option>
+                               <option>1</option>
                                {this.props.addresses.map(faculty =>
                                    <option key={faculty.oid} value= {faculty.oid}
                                            data-id = {faculty.oid}
@@ -212,6 +216,7 @@ class AudienceFilterComponent extends React.Component{
                     </div>
                 </div>
                     <button className="get--button" onClick={this.loadTables}>Получить</button>
+                    <button className="clean--button" onClick={this.clean}>Очистить все</button>
                 </div>
             )
         }

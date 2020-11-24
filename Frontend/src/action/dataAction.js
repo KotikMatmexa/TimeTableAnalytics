@@ -31,9 +31,9 @@ export const getTeachersList = (addressId) => dispatch => {
 };
 
 
-export const setCurrentTeacher = (teacher) => {
+export const setCurrentTeacher = (teacher,dateInterval) => {
     return {
-        type: "SET_TEACHER", teacher
+        type: "SET_TEACHER", teacher,dateInterval
     }
 };
 
@@ -43,10 +43,12 @@ export const setCurrentTeacher = (teacher) => {
 //startDate, endDate - даты нагрузки
 export const getTeachersData = (teacher, startDate, endDate) => dispatch => {
     const formattedDates = datePreparation(startDate,endDate);
-    const link = ``;
+
+    let teacherId = teacher.oid;
+    const link = `http://localhost:8080/educators/events/${teacherId}?start=${formattedDates[0]}&end=${formattedDates[1]}`;
+
     fetch(link, {
         method: "get",
-        body: JSON.stringify(teacher),
         headers: { "Content-Type": "application/json" }
     })
         .then(data =>

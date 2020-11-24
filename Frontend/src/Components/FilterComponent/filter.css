@@ -86,6 +86,7 @@
 .holder:hover .block{
     display:block;
 }
-.get--button{
+.get--button, .clean--button{
     position: relative;
+    margin: 10px;
 }

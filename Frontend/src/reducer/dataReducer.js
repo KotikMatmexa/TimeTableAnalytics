@@ -1,9 +1,9 @@
 import {faculty_data,teachers,addresses} from "../testData";
 
-import {addressesList} from "../dataParser";
+import {createDay} from "./tableReducer";
 
 
-export const dataReducer = (state = false, action) => {
+export const dataReducer  = (state = false, action) => {
     switch (action.type){
         case "SET_VISIBILITY":
             return action.visibility;
@@ -45,10 +45,93 @@ export const teacherReducer =  (state = null, action) => {
 
     switch (action.type){
         case "SET_TEACHER":
-            return action.teacher;
+            return teacherData(action.teacher, action.dateInterval);
         default:
             return state
     }
+};
+
+const teacherData = (teacher, dates) => {
+    let days = setDays(teacher.events, dates);
+    teacher.actualEvents = days;
+    return teacher;
+};
+
+const setDays = (events, dates) =>{
+    let days = [];
+
+    const filteredEvents = preprocessing(events);
+
+    for (let date of dates){
+        let lessons = createLesson(filteredEvents, date);
+        let data = {
+            day: date,
+            data: lessons
+        };
+        days.push(data);
+    }
+    return days;
+};
+
+const preprocessing = (events) =>{
+
+    const startDay = events[0].start;
+    let startDate = new Date(startDay);
+    let filteredEvents = [];
+
+    startDate.setHours(startDay.getHours());
+    startDate.setMinutes(startDay.getMinutes());
+    startDate.setSeconds(startDay.getSeconds());
+    let data = events[0];
+    let current_group = data.student_group;
+
+    for (let i = 1; i< events.length; i++){
+
+        let currentDate = events[i].start;
+        if(new Date(currentDate).toString() == new Date(startDate).toString()){
+            data.student_group = [];
+            data.student_group.push(current_group);
+            data.student_group.push(events[i].student_group);
+            current_group = data.student_group;
+        }
+        else{
+            filteredEvents.push(data);
+            data = events[i];
+        }
+
+    }
+    return filteredEvents;
+
+};
+
+const createLesson = (events, date) => {
+    let final_list = [];
+    let currentDate = new Date(date);
+
+    for (let event of events){
+        const startDay = event.start;
+        let start_date = new Date(startDay);
+
+        start_date.setHours(startDay.getHours());
+        start_date.setMinutes(startDay.getMinutes());
+        start_date.setSeconds(startDay.getSeconds());
+
+        const endTime = event.end;
+        let end_date = new Date(endTime);
+
+        end_date.setHours(endTime.getHours());
+        end_date.setMinutes(endTime.getMinutes());
+        end_date.setSeconds(endTime.getSeconds());
+
+        //console.log(final_date.toString(),new Date(currentDate).toString());
+        // console.log(new Date(final_date).toString() == new Date(currentDate).toString());
+
+        if (new Date(start_date).toString() == new Date(currentDate).toString())
+            final_list.push(event);
+    }
+    final_list = final_list.sort((a, b) => new Date(a.start) > new Date(b.start) ? 1 : -1);
+
+    return final_list;
 };
 
 export const addressesReducer =  (state = [], action) => {
