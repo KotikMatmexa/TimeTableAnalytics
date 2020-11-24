@@ -7,6 +7,7 @@ import com.spbu.timetable.analysis.utils.DateTimeFormatter;
 import com.spbu.timetable.analysis.utils.DtoMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -34,10 +35,11 @@ public class AddressService {
         return address;//.orElseThrow(()->new Exception("Entity not found"));
     }
 
-    public List<Address> findAll(int offset, int limit, String searchText) {
+    public ListForDto<AddressIdDto> findAll(int offset, int limit, String searchText) {
         Pageable pageable = PageRequest.of(offset / limit, limit);
-        List<Address> allByGCRecordIsNotNull = addressRepository.findAllByGCRecordIsNotNullAndStreetLike(pageable, searchText);
-        return allByGCRecordIsNotNull;
+        Page<Address> allByGCRecordIsNotNull = addressRepository.findAllByGCRecordIsNotNullAndStreetLike(pageable, searchText);
+        List<AddressIdDto> addressIdDtos = DtoMapper.convertList(allByGCRecordIsNotNull.getContent(), AddressIdDto.class);
+        return new ListForDto<>(allByGCRecordIsNotNull.getTotalElements(),addressIdDtos);
     }
 
     public ListForDto<AddressWithLocationEventDto> findAllEventsForAddress(List<String> addressIds, String start, String end) {

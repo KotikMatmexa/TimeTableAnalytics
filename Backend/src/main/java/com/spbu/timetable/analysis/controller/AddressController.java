@@ -25,10 +25,10 @@ public class AddressController {
 
     //@CrossOrigin(origins = "http://localhost:3000")
     @GetMapping()
-    public List<AddressIdDto> searchByStreet(@RequestParam(defaultValue = RequestInfo.DEFAULT_OFFSET) int offset,
+    public ListForDto<AddressIdDto> searchByStreet(@RequestParam(defaultValue = RequestInfo.DEFAULT_OFFSET) int offset,
                                              @RequestParam(defaultValue = RequestInfo.DEFAULT_LIMIT) int limit,
                                              @RequestParam(defaultValue = RequestInfo.DEFAULT_SEARCH_VALUE) String searchText) {
-        return DtoMapper.convertList(addressService.findAll(offset, limit, searchText), AddressIdDto.class);
+        return addressService.findAll(offset, limit, searchText);
     }
 
     //@CrossOrigin(origins = "http://localhost:3000")
