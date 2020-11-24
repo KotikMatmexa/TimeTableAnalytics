@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.Column;
+
 @Getter
 @Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -21,32 +23,35 @@ public class EventsDto {
     private String eventEndDate;
 
     @JsonProperty("educators_Display_Text")
-    private String eventEducatorsDisplayText;
+    private String educatorsDisplayText;
 
     @JsonProperty("internal_description")
-    private String eventInternalDescription;
+    private String internalDescription;
 
     @JsonProperty("subject_english")
-    private String eventSubjectEnglish;
+    private String subjectEnglish;
 
     @JsonProperty("educators_display_text_english")
-    private String eventEducatorsDisplayTextEnglish;
+    private String educatorsDisplayTextEnglish;
 
     @JsonProperty("educators_short_display_text")
-    private String eventEducatorsShortDisplayText;
+    private String educatorsShortDisplayText;
 
     @JsonProperty("educators_short_display_text_english")
-    private String eventEducatorsShortDisplayTextEnglish;
+    private String educatorsShortDisplayTextEnglish;
 
     @JsonProperty("description_short")
-    private String eventDescriptionShort;
+    private String descriptionShort;
 
     @JsonProperty("description_long")
-    private String eventDescriptionLong;
+    private String descriptionLong;
 
     @JsonProperty("faculty")
     private String contingentUnitFaculty;
 
     @JsonProperty("student_group")
     private String contingentUnitStudentGroup;
+
+    @JsonProperty("locations_display_text")
+    private String locationsDisplayText;
 }

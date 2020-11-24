@@ -48,16 +48,16 @@ public class Event {
     private String subjectEnglish;
 
     @Column(name = "locationsdisplaytextenglish")
-    private String LocationsDisplayTextEnglish;
+    private String locationsDisplayTextEnglish;
 
     @Column(name = "educatorsdisplaytextenglish")
-    private String EducatorsDisplayTextEnglish;
+    private String educatorsDisplayTextEnglish;
 
     @Column(name = "educatorsshortdisplaytext")
-    private String EducatorsShortDisplayText;
+    private String educatorsShortDisplayText;
 
     @Column(name = "educatorsshortdisplaytextenglish")
-    private String EducatorsShortDisplayTextEnglish;
+    private String educatorsShortDisplayTextEnglish;
 
     //private  TimeTable timeTable;
 
