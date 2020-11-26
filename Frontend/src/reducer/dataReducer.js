@@ -52,6 +52,7 @@ export const teacherReducer =  (state = null, action) => {
 };
 
 const teacherData = (teacher, dates) => {
+    console.log(teacher)
     let days = setDays(teacher.events, dates);
     teacher.actualEvents = days;
     return teacher;

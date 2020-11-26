@@ -42,6 +42,8 @@ export const setCurrentTeacher = (teacher,dateInterval) => {
 //teacher = учитель, о нагрузке которого хотим узнать
 //startDate, endDate - даты нагрузки
 export const getTeachersData = (teacher, startDate, endDate) => dispatch => {
+
+    console.log(startDate,endDate)
     const formattedDates = datePreparation(startDate,endDate);
 
     let teacherId = teacher.oid;
@@ -93,7 +95,7 @@ export const getAddresses = () => dispatch => {
         .then(data =>
            data.json())
         .then(addresses => {
-            dispatch(loadAddresses(addresses))
+            dispatch(loadAddresses(addresses.results))
         })
         .catch(e => console.log(e));
 };

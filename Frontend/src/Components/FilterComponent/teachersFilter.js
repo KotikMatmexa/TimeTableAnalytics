@@ -141,8 +141,8 @@ class TeachersFilterComponent extends React.Component{
                                onBlur={this.setEndDateTime}/>
                     </div>
                 </div>
-                    <button className="get--button" onClick={this.loadTeachers}>Получить</button>
-                    <button className="get--button" onClick={this.clean}>Очистить все</button>
+                    <button className="get--button btn btn-secondary" onClick={this.loadTeachers}>Получить</button>
+                    <button className="get--button btn btn-light" onClick={this.clean}>Очистить все</button>
 
 
                 </div>

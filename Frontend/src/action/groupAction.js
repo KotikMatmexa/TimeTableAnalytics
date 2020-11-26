@@ -1,5 +1,6 @@
 
 export const loadGroups = (faculty) => {
+    console.log(faculty)
     return{
         type: "LOAD_GROUPS_LIST", faculty
     }

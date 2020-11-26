@@ -16,6 +16,7 @@ class GroupFilterComponent extends React.Component{
         let faculty = this._faculty.value;
 
         this.props.setFaculty(faculty);
+
         this.props.loadGroups(faculty);
 
         this._group.selectedIndex = 0;
@@ -26,9 +27,10 @@ class GroupFilterComponent extends React.Component{
         let index = this._group.selectedIndex;
 
         if(index === 0) {
-            alert("Выберите группу!")
+            alert("Выберите группу!");
             return false;
         }
+
 
         let group = this._group.value;
         let faculty = this._faculty.value;
@@ -76,7 +78,7 @@ class GroupFilterComponent extends React.Component{
                     </div>
                 </div>
 
-                    <button className="get--button" onClick={this.loadData}>Получить</button>
+                    <button className="get--button btn btn-secondary" onClick={this.loadData}>Получить</button>
                 </div>
 
             )

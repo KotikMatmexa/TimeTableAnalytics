@@ -3,7 +3,7 @@ import {getFilterType, setFaculty, setFilteredTeachersListByLetter} from "../act
 import connect from "react-redux/es/connect/connect";
 import {loadGroups, setActiveGroup} from "../action/groupAction";
 import {loadFacultiesList, setActiveAudience, getFacultiesData} from "../action/tableAction";
-import {loadData,getTeachersList, setCurrentTeacher, loadAddresses,
+import {loadData,getTeachersList, getTeachersData, loadAddresses,
     setActiveAddresses,
     setEndDate, setStartDate, setDateInterval, getAddresses} from "../action/dataAction";
 import DataComponent from "../Components/DataComponent/data";
@@ -29,9 +29,11 @@ class FilterDataContainer extends React.Component{
       switch (Number(index)) {
           case 0:
               this.props.changeFilterType("audience");
+              this.props.loadGroups(null);
               break;
           case 1:
               this.props.changeFilterType("teachers");
+              this.props.loadGroups(null);
               break;
           case 2:
               this.props.changeFilterType("group control");
@@ -66,6 +68,7 @@ class FilterDataContainer extends React.Component{
 
 
     render() {
+
         this.changeType(this.props.selectedLine);
 
         if (this.props.filterType === "audience") {
@@ -86,8 +89,13 @@ class FilterDataContainer extends React.Component{
                                 )):(<h4>Нет данных</h4>)
 
 
-                        ):(<h4 ref={this.cat}>
-                                Загрузка данных...
+                        ):(
+                            <h4 ref={this.cat}>
+                                <div className="d-flex justify-content-center">
+                                <div className="spinner-border text-warnin" role="status">
+                                    <span className="sr-only">Loading...</span>
+                                </div>
+                                </div>
                             </h4>)) :
                         (null)
                     }
@@ -101,6 +109,8 @@ class FilterDataContainer extends React.Component{
                     {this.props.isLoadData ? (
                             <DataComponent type={this.props.filterType}
                                            teachers={this.props.teachers}
+                                           startDate = {this.props.startDate}
+                                           endDate = {this.props.endDate}
                                            addresses={this.props.addresses}
                                            teacher={this.props.currentTeacher}
                                            filteredTeachersList = {this.props.filteredTeachersList}
@@ -184,8 +194,8 @@ const mapDispatchToProps = dispatch => ({
         dispatch(setEndDate(endDate));
     },
 
-    setCurrentTeacher: (teacher, dateInterval) => {
-        dispatch(setCurrentTeacher(teacher,dateInterval))
+    setCurrentTeacher: (teacher, startDate, endDate) => {
+        dispatch(getTeachersData(teacher,startDate,endDate))
     },
 
     getAddresses: () => {
@@ -199,9 +209,7 @@ const mapDispatchToProps = dispatch => ({
     setFilteredTeachersList: (letter, list) => {
         dispatch(setFilteredTeachersListByLetter(letter, list))
     },
-  //  loadFacultiesList: (addresses) => {
-    //    dispatch(loadFacultiesList(addresses))
-   // },
+
    loadFacultiesList: (addresses,startDate, endDate) => {
         dispatch(getFacultiesData(addresses,startDate, endDate))
     },

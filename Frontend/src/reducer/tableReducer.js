@@ -25,7 +25,7 @@ export const currentFacultyReducer = (state = [], action) => {
     switch (action.type){
         case "LOAD_FACULTY_DATA":
         //    return getFaculties(action.addresses);
-           return action.addresses
+           return action.addresses;
         default:
             return state;
     }

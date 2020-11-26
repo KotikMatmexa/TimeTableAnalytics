@@ -37,10 +37,10 @@ class MenuComponent extends React.Component{
         return(
            <div className="menu">
                <div className="btn-group-vertical" onClick={this.changeIndex}>
-                   <button data-index="0" ref={this.audiences}>
+                   <button className="btn btn-light" data-index="0" ref={this.audiences}>
                        Занятость аудиторий</button>
-                   <button data-index="1" ref={this.teachers}>Занятость преподавателей</button>
-                   <button data-index="2" ref={this.groups}>Контроль группы</button>
+                   <button className="btn btn-light" data-index="1" ref={this.teachers}>Занятость преподавателей</button>
+                   <button className="btn btn-light" data-index="2" ref={this.groups}>Контроль группы</button>
                </div>
            </div>
 

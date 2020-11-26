@@ -13,7 +13,11 @@ export const groupsReducer = (state = null, action) => {
 
 let getGroups = (faculty) => {
     let obj = Object.values(table_example).find(item => item.faculty == faculty);
-    return obj.groups;
+    console.log(faculty)
+    if(obj) {
+        return obj.groups;
+    }
+    return null;
 };
 
 

@@ -47,7 +47,7 @@ class TeacherTableComponent extends React.Component {
         if (this._teacherTable.className === "teacher--table")
             this._teacherTable.className = "teacher--table-active";
 
-        this.props.setCurrentTeacher(teacher, this.props.dateInterval);
+        this.props.setCurrentTeacher(teacher, this.props.startDate, this.props.endDate);
         //this.props.downloadTeacherData(teacher);
     };
 
@@ -131,6 +131,7 @@ class TeacherTableComponent extends React.Component {
                             <thead className="thead-dark">
                             <tr>
                                 <th scope="col">Фамилия</th>
+                                <th scope="col">Звание</th>
                                 <th scope="col">Занятость</th>
                             </tr>
                             </thead>
@@ -139,6 +140,9 @@ class TeacherTableComponent extends React.Component {
                                 <tr>
                                     <th scope="row">
                                         {teacher.name}
+                                    </th>
+                                    <th scope="row">
+                                        {teacher.position_name}
                                     </th>
                                    <td>
 

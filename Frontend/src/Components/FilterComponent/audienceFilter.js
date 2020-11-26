@@ -173,7 +173,7 @@ class AudienceFilterComponent extends React.Component{
     };
 
     render(){
-
+            console.log(this.props.addresses)
             return(
                 <div className="filter--menu">
                 <div className="audience--filter">
@@ -182,7 +182,6 @@ class AudienceFilterComponent extends React.Component{
                         <div className="address--selection">
                            <select onChange={this.setAddress} ref={this.selectedAddress} >
                                <option>Выбрать адрес...</option>
-                               <option>1</option>
                                {this.props.addresses.map(faculty =>
                                    <option key={faculty.oid} value= {faculty.oid}
                                            data-id = {faculty.oid}
@@ -215,8 +214,8 @@ class AudienceFilterComponent extends React.Component{
                                onBlur={this.setEndDateTime}/>
                     </div>
                 </div>
-                    <button className="get--button" onClick={this.loadTables}>Получить</button>
-                    <button className="clean--button" onClick={this.clean}>Очистить все</button>
+                    <button className="get--button btn btn-secondary" onClick={this.loadTables}>Получить</button>
+                    <button className="clean--button btn btn-light" onClick={this.clean}>Очистить все</button>
                 </div>
             )
         }

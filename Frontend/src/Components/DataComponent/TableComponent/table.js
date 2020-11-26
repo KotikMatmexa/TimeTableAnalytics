@@ -10,7 +10,7 @@ class TableComponent extends React.Component{
 
         if(this.props.type === "teachers"){
             return(
-                this.props.teacher.actualEvents ?( <div className="table">
+                this.props.teacher ?( <div className="table">
                     <div className="table--components">
                         <label title="имя преподавателя">{this.props.teacher.educator.name}</label>
                         <div className="row">
