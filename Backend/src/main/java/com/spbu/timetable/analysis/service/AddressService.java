@@ -12,7 +12,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -39,7 +38,7 @@ public class AddressService {
         Pageable pageable = PageRequest.of(offset / limit, limit);
         Page<Address> allByGCRecordIsNotNull = addressRepository.findAllByGCRecordIsNotNullAndStreetLike(pageable, searchText);
         List<AddressIdDto> addressIdDtos = DtoMapper.convertList(allByGCRecordIsNotNull.getContent(), AddressIdDto.class);
-        return new ListForDto<>(allByGCRecordIsNotNull.getTotalElements(),addressIdDtos);
+        return new ListForDto<>(allByGCRecordIsNotNull.getTotalElements(), addressIdDtos);
     }
 
     public ListForDto<AddressWithLocationEventDto> findAllEventsForAddress(List<String> addressIds, String start, String end) {
@@ -54,7 +53,7 @@ public class AddressService {
         return new ListForDto<>(addressWithLocationEventDtos.size(), addressWithLocationEventDtos);
     }
 
-    public ListForDto<EducatorsDto> getAllEducatorsByAddress(int offset, int limit, String addressId){
+    public ListForDto<EducatorsDto> getAllEducatorsByAddress(int offset, int limit, String addressId) {
         return educatorEmploymentService.getAllEducatorsByAddress(offset, limit, addressId);
     }
 

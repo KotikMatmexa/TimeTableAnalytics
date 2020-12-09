@@ -21,7 +21,13 @@ public class ContingentUnit {
 
     private String course;
 
-    //private CurrentStudyYear currentStudyYear;
+    @ManyToOne(cascade = javax.persistence.CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(
+            name = "currentstudyyear",
+            referencedColumnName = "oid",
+            insertable = false, updatable = false
+    )
+    private StudyYear currentStudyYear;
 
     private String name;
 
@@ -37,9 +43,7 @@ public class ContingentUnit {
     @OneToMany(mappedBy = "contingentUnit", fetch = FetchType.LAZY)
     private List<Event> events;
 
-//            ,[AdmissionYear]
-//            ,[Division]
-//            ,[TermStart]
-//            ,[TermEnd]
+    @OneToMany(mappedBy = "division")
+    private List<DivisionsUnits> divisionsUnits;
 
 }
