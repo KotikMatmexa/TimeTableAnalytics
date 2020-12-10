@@ -37,3 +37,16 @@
 .day--timetable ul li:hover .lesson--info{
     display:block;
 }
+@media (max-width: 376px) {
+    .day--component{
+        width: 80%;
+        margin: 10px auto;
+    }
+    .day--timetable ul li {
+        width: inherit;
+    }
+
+    .lesson--info {
+        height: 125px;
+    }
+}

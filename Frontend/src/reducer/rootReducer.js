@@ -6,7 +6,7 @@ import {groupControlReducer, audiencesReducer,facultyyReducer, audienceReducer} 
 import {filterTypeReducer, teachersListReducer} from "./filterReducer";
 import {facultyReducer} from "./filterReducer";
 import {facultyReducer as facultiesReducer}  from "./tableReducer";
-import {groupsReducer, groupReducer} from "./groupReducer";
+import {groupsReducer, groupReducer,facultiesListReducer} from "./groupReducer";
 
 
 export const rootReducer = combineReducers({
@@ -25,5 +25,6 @@ export const rootReducer = combineReducers({
     dateReducer,
     daysReducer,
     facultyyReducer,
+    facultiesListReducer,
     audienceReducer
 });

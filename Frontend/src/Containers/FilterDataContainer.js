@@ -1,7 +1,7 @@
 import React from 'react'
 import {getFilterType, setFaculty, setFilteredTeachersListByLetter} from "../action/filterAction";
 import connect from "react-redux/es/connect/connect";
-import {loadGroups, setActiveGroup} from "../action/groupAction";
+import {getFacultiesList, getGroupData, getGroupsList, loadGroups, setActiveGroup} from "../action/groupAction";
 import {loadFacultiesList, setActiveAudience, getFacultiesData} from "../action/tableAction";
 import {loadData,getTeachersList, getTeachersData, loadAddresses,
     setActiveAddresses,
@@ -13,9 +13,11 @@ import GroupFilterComponent from "../Components/FilterComponent/groupFilter";
 import FacultyDataComponent from "../Components/DataComponent/facultydata";
 import FacultyDataContainer from "./FacultyDataContainer";
 import {addressesList} from "../dataParser";
+import ErrorComponent from "../Components/ErrorComponent/error";
 
 
 class FilterDataContainer extends React.Component{
+
 
     cat = (cat) => this._cat = cat;
 
@@ -29,11 +31,11 @@ class FilterDataContainer extends React.Component{
       switch (Number(index)) {
           case 0:
               this.props.changeFilterType("audience");
-              this.props.loadGroups(null);
+             // this.props.loadGroups(null);
               break;
           case 1:
               this.props.changeFilterType("teachers");
-              this.props.loadGroups(null);
+             // this.props.loadGroups(null);
               break;
           case 2:
               this.props.changeFilterType("group control");
@@ -70,13 +72,13 @@ class FilterDataContainer extends React.Component{
     render() {
 
         this.changeType(this.props.selectedLine);
-
+        console.log(this.props)
         if (this.props.filterType === "audience") {
             return (
                 <>
                     <AudienceFilterComponent {...this.props} loadCat={this.startLoaderCat}/>
                     {this.props.isLoadData ? (
-                            this.props.facultiesList  ? (
+                            this.props.facultiesList ? (
                                 this.props.facultiesList.count > 0  ?(
                                     this.props.facultiesList.results.map(faculty =>
                                     <FacultyDataContainer key={faculty.address.oid}
@@ -86,17 +88,16 @@ class FilterDataContainer extends React.Component{
                                                           faculty = {faculty}
                                                           dateInterval = {this.props.dateInterval}
                                     />
-                                )):(<h4>Нет данных</h4>)
+                                )):(<ErrorComponent data = "Нет данных"/>))
 
-
-                        ):(
-                            <h4 ref={this.cat}>
-                                <div className="d-flex justify-content-center">
-                                <div className="spinner-border text-warnin" role="status">
-                                    <span className="sr-only">Loading...</span>
-                                </div>
-                                </div>
-                            </h4>)) :
+                                    :(
+                                    <h4>
+                                        <div className="d-flex justify-content-center">
+                                            <div className="spinner-border text-warnin" role="status">
+                                                <span className="sr-only">Loading...</span>
+                                            </div>
+                                        </div>
+                                    </h4>)) :
                         (null)
                     }
                 </>
@@ -127,7 +128,16 @@ class FilterDataContainer extends React.Component{
         else if (this.props.filterType === "group control") {
             return (
                 <>
-                    <GroupFilterComponent {...this.props}/>
+                    <GroupFilterComponent  data = {this.props.data}
+                                           faculties = {this.props.faculties}
+                                           groupsList = {this.props.groupsList}
+                                           isLoadData = {this.props.isLoadData}
+                                           loadData = {this.props.loadData}
+                                           getFacultiesList = {this.props.getFacultiesList}
+                                           getGroupsList = {this.props.getGroupsList}
+                                           getGroupData = {this.props.getGroupData}
+
+                        />
                     {this.props.isLoadData ? (
                             <DataComponent type={this.props.filterType} data={this.props.activeGroupData}
                             />
@@ -141,9 +151,10 @@ class FilterDataContainer extends React.Component{
 }
 const mapStateToProps = state => ({
     filterType:state.filterTypeReducer,
-    groupsList: state.groupsReducer,
     isLoadData: state.loadDataReducer,
     activeGroupData: state.groupReducer,
+    groupsList: state.groupsReducer,
+    faculties: state.facultiesListReducer,
     teachers: state.teachersReducer,
     addresses: state.addressesReducer,
     startDate: state.startDateReducer,
@@ -166,8 +177,14 @@ const mapDispatchToProps = dispatch => ({
         dispatch(setFaculty(faculty))
     },
 
-    loadGroups:(groups) => {
-        dispatch(loadGroups(groups))
+    getFacultiesList: () =>{
+        dispatch(getFacultiesList())
+    },
+    getGroupsList:(facultyId) => {
+        dispatch(getGroupsList(facultyId))
+    },
+    getGroupData:(groupId) => {
+        dispatch(getGroupData(groupId))
     },
 
     loadData:(flag) =>{

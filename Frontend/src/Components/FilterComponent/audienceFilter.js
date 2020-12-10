@@ -11,6 +11,7 @@ class AudienceFilterComponent extends React.Component{
     selectedAddresses = (selectedAddresses) => {this._selectedAddresses = selectedAddresses};
 
 
+
     componentWillMount(){
         this.props.setDateInterval(null, null);
     }
@@ -31,6 +32,7 @@ class AudienceFilterComponent extends React.Component{
 
         let group = e.target.children[index].text;
         this.props.loadData(true);
+
         this.props.setActiveGroup(this.props.currentFaculty, group);
     };
 
@@ -86,11 +88,11 @@ class AudienceFilterComponent extends React.Component{
                 return false;
             }
 
-
+            this.props.loadData(true);
             this.props.setDateInterval(this.props.startDate, this.props.endDate);
             this.props.loadFacultiesList(addresses,this.props.startDate, this.props.endDate);
             //загрузка таблиц
-            this.props.loadData(true);
+
 
             //this.props.loadCat();
         }
@@ -173,8 +175,10 @@ class AudienceFilterComponent extends React.Component{
     };
 
     render(){
-            console.log(this.props.addresses)
+
+
             return(
+
                 <div className="filter--menu">
                 <div className="audience--filter">
                     <div className="audience--address">
@@ -217,6 +221,8 @@ class AudienceFilterComponent extends React.Component{
                     <button className="get--button btn btn-secondary" onClick={this.loadTables}>Получить</button>
                     <button className="clean--button btn btn-light" onClick={this.clean}>Очистить все</button>
                 </div>
+
+
             )
         }
 

@@ -6,6 +6,8 @@
     position: fixed;
 }
 .menu button{
+     background-color: #f5f5f5;
+    border-color: #ddd;
     width: 200px;
     margin-bottom: 5px;
 }

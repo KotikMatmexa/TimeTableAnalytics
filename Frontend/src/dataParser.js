@@ -2,11 +2,16 @@ import jsonData1 from './TestData/audience_1'
 import jsonData2 from './TestData/audiences_2'
 import jsonData3 from './TestData/audience_big_data'
 import jsonData4 from './TestData/sorted_data'
+import teacher from './TestData/teacher data'
 
 const data1 = jsonData1.results;
 const data2 = jsonData2.results;
 const data3 = jsonData3.results;
 const data4 = jsonData4.results;
+
+export const loadTeacherData = () =>{
+  return teacher;
+};
 
 //получить список всех адресов спбгу
 export const addressesList = () =>{

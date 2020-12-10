@@ -6,6 +6,10 @@
     margin-bottom: 10px;
     padding-top: 6px;
     padding-bottom: 12px;
+    font-weight: 700;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    color: black;
 }
 .audience--filter, .teachers--filter{
     overflow-x: auto;
@@ -19,9 +23,12 @@
 
 .address--selection, .address--selection select, .date--section,
 .teachers--selection, .teachers--selection select, .group-control--selection select{
-    width: inherit;
+    width: 200px;
 }
-
+.teachers--surname--filter{
+    width: 100%;
+    text-align: center;
+}
 .date--time{
     margin-top: 6px;
     margin-bottom: 6px;
@@ -37,13 +44,13 @@
 
 .selected--addresses{
     margin-top: 12px;
-    max-height: 89px;
+    max-height: 200px;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .selected-address{
     display: flex;
-    border-bottom: 1px solid black;
     margin: 3px;
     padding: 2px;
     font-size: 12px;
@@ -89,4 +96,33 @@
 .get--button, .clean--button{
     position: relative;
     margin: 10px;
+    background-color: #f5f5f5 ;
+    border-color: #ddd
+}
+.get--button{
+    background-color: #e95420;
+}
+
+@media (max-width: 376px) {
+    .filter--menu{
+        margin-top: 20px;
+    }
+    .audience--filter, .teachers--filter, .group-control--filter{
+        flex-direction: column;
+        align-items: center;
+    }
+    .selected--addresses{
+        max-height: 100px;
+    }
+    .audience--start-period, .teachers--start-period{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .group-control--faculty{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .group-control--group{
+        margin-bottom: 20px;
+    }
 }

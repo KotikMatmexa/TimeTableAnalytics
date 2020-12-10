@@ -7,17 +7,22 @@ class GroupFilterComponent extends React.Component{
     group = (group) => {this._group = group};
     faculty = (faculty) => {this._faculty = faculty};
 
+
+    componentDidMount(){
+        this.props.getFacultiesList();
+    }
+
     loadGroups = () =>{
         let index = this._faculty.selectedIndex;
 
         if(index === 0)
             return false;
 
-        let faculty = this._faculty.value;
+        let facultyId = this._faculty.value;
 
-        this.props.setFaculty(faculty);
+      //  this.props.setFaculty(faculty);
 
-        this.props.loadGroups(faculty);
+        this.props.getGroupsList(facultyId);
 
         this._group.selectedIndex = 0;
         this.props.loadData(false);
@@ -32,12 +37,12 @@ class GroupFilterComponent extends React.Component{
         }
 
 
-        let group = this._group.value;
+        let groupId = this._group.value;
         let faculty = this._faculty.value;
 
 
         this.props.loadData(true);
-        this.props.setActiveGroup(faculty, group);
+        this.props.getGroupData(groupId);
     };
 
 
@@ -52,9 +57,13 @@ class GroupFilterComponent extends React.Component{
                         <div className="group-control--selection">
                             <select onChange={this.loadGroups} ref={this.faculty}>
                                 <option selected>Выбрать факультет...</option>
-                                {this.props.faculties.map(faculty =>
-                                    <option>{faculty}</option>
-                                )}
+
+                                {this.props.faculties?(
+                                    this.props.faculties.map(faculty =>
+                                        <option value={faculty.oid}>{faculty.name}</option>
+                                    )
+                                ):(null)
+                                   }
 
                             </select>
                         </div>
@@ -66,7 +75,7 @@ class GroupFilterComponent extends React.Component{
                                 <option selected>Выбрать группу...</option>
                                 {this.props.groupsList ? (
                                     Object.values(this.props.groupsList).map(group =>
-                                        <option>{group.name}</option>
+                                        <option value={group.oid}>{group.name}</option>
                                     )
                                 ):
                                     (

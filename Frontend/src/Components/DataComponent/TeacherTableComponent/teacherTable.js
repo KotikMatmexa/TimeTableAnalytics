@@ -42,7 +42,7 @@ class TeacherTableComponent extends React.Component {
         for (let button of buttons) {
             button.style.backgroundColor = "";
         }
-        e.target.style.backgroundColor = "red";
+        e.target.style.backgroundColor = "#e95420";
 
         if (this._teacherTable.className === "teacher--table")
             this._teacherTable.className = "teacher--table-active";
@@ -88,7 +88,7 @@ class TeacherTableComponent extends React.Component {
                             <h5>{this.props.filteredTeachersList}</h5>
                         </div>
                     ) : (
-                        <div className="teacher-table">
+                        <div className="teacher--table--active">
                             <table className="table table-bordered">
                                 <thead className="thead-dark">
                                 <tr>

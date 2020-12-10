@@ -106,6 +106,7 @@ class TeachersFilterComponent extends React.Component{
 
 
     render(){
+
             return (
                 <div className="filter--menu">
                 <div className="teachers--filter">
@@ -142,7 +143,7 @@ class TeachersFilterComponent extends React.Component{
                     </div>
                 </div>
                     <button className="get--button btn btn-secondary" onClick={this.loadTeachers}>Получить</button>
-                    <button className="get--button btn btn-light" onClick={this.clean}>Очистить все</button>
+                    <button className="clean--button btn btn-light" onClick={this.clean}>Очистить все</button>
 
 
                 </div>

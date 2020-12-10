@@ -10,18 +10,22 @@
 .teachers--table{
     max-height: 500px;
     overflow-x: auto;
+    text-align: center;
     overflow-y: auto;
 }
-
-.teacher--table{
-    display: none;
+.teacher--table, .teacher--table--active{
+    width: auto;
     max-height: 500px;
     overflow-x: auto;
     overflow-y: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.teacher--table{
+    display: none;
 }
 .teacher--table-active{
     display: block;
-    margin-top: 20px;
 }
 
 .teachers--surname--letter{

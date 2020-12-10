@@ -2,8 +2,15 @@
     position: relative;
     background-color: #e95420;
     text-align: center;
+    font-weight:800;
 }
-
+h6{
+    margin-top: 20px;
+    font-weight: 800;
+}
+table{
+    background-color:#ff420040;
+}
 .data--header select{
     position: absolute;
     right: 6px;
@@ -13,4 +20,16 @@
 
 .data--section{
     margin: 20px 2px;
+}
+
+@media (max-width: 376px) {
+    .data--header{
+        padding: 15px;
+    }
+    .data--header select{
+        position:relative;
+        right:0;
+    }
+    
+
 }

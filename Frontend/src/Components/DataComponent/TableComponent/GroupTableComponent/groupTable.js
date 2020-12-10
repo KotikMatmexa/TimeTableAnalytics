@@ -7,8 +7,9 @@ class GroupTableComponent extends React.Component{
 
 
     render(){
+        const group = this.props.group;
         return(
-           this.props.data ? (
+           group ? (
            <div className="teacher-table">
                <table className="table table-bordered">
                    <thead className="thead-dark">
