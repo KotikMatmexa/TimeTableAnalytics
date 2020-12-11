@@ -1,20 +1,45 @@
 import {datePreparation, loadFacultiesList} from "./tableAction";
 
-export const loadData = (flag) => {
+export const loadAudienceData = (flag) => {
     return{
-        type: "LOAD_DATA", flag
+        type: "LOAD_AUDIENCE_DATA", flag
+    }
+};
+export const loadTeachersData = (flag) => {
+    return{
+        type: "LOAD_TEACHERS_DATA", flag
+    }
+};
+export const loadGroupsData = (flag) => {
+    return{
+        type: "LOAD_GROUPS_DATA", flag
     }
 };
 
 export const loadTeachers = (teachers) => {
-  return {
-      type: "LOAD_TEACHERS", teachers
-  }
+    console.log(teachers)
+    if(teachers) {
+        return {
+            type: "LOAD_TEACHERS", teachers
+        }
+    }
+    else {
+        console.log("here")
+        return {
+            type: "CLEAR_TEACHERS"
+        }
+    }
 };
 
 //получаем список учителей по текущему адресу
 //address = адрес, по которому получаем список пользователей
 export const getTeachersList = (addressId) => dispatch => {
+
+    console.log(addressId)
+    if (!addressId){
+        loadTeachers(null);
+        return false;
+    }
 
     const link = `http://localhost:8080/address/educators/${addressId}`;
     fetch(link, {

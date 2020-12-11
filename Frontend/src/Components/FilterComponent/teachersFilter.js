@@ -13,7 +13,7 @@ class TeachersFilterComponent extends React.Component{
 
 
     componentWillMount(){
-        this.props.setDateInterval(null, null);
+       // this.props.setDateInterval(null, null);
     }
     startTimeFocus = () => {
         this._startTime.focus();
@@ -24,6 +24,9 @@ class TeachersFilterComponent extends React.Component{
     };
 
     loadTeachers = () => {
+
+        this.props.loadTeachersList(null);
+
         let index = this._address.selectedIndex;
 
         if ((this._startDate.value)&&
@@ -39,8 +42,8 @@ class TeachersFilterComponent extends React.Component{
             let addressId = this._address.value;
 
             this.props.setDateInterval(this.props.startDate, this.props.endDate);
-            this.props.loadData(true);
             this.props.loadTeachersList(addressId);
+            this.props.loadTeachersData(true);
         }
         else alert("Проверьте, что все данные заполнены корректно!");
     };
@@ -115,12 +118,13 @@ class TeachersFilterComponent extends React.Component{
                         <div className="teachers--selection">
                             <select ref={this.address}>
                                 <option defaultValue>Выбрать адрес...</option>
-                                {this.props.addresses.map(faculty =>
+                                {this.props.addresses?( this.props.addresses.map(faculty =>
                                     <option key={faculty.oid} value={faculty.oid}  title={faculty.building_name}>
                                         {faculty.street}, {faculty.house}
                                         {faculty.korpus?(", "+faculty.korpus):(null)}
-                                        </option>
-                                )}
+                                    </option>
+                                )):(null)
+                                   }
 
                             </select>
                         </div>

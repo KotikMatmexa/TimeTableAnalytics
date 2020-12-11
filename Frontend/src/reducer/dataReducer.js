@@ -12,9 +12,25 @@ export const dataReducer  = (state = false, action) => {
     }
 };
 
-export const loadDataReducer = (state = false, action) => {
+export const loadAudienceDataReducer = (state = false, action) => {
     switch (action.type){
-        case "LOAD_DATA":
+        case "LOAD_AUDIENCE_DATA":
+            return action.flag;
+        default:
+            return state
+    }
+};
+export const loadTeachersDataReducer = (state = false, action) => {
+    switch (action.type){
+        case "LOAD_TEACHERS_DATA":
+            return action.flag;
+        default:
+            return state
+    }
+};
+export const loadGroupDataReducer = (state = false, action) => {
+    switch (action.type){
+        case "LOAD_GROUPS_DATA":
             return action.flag;
         default:
             return state
@@ -22,9 +38,14 @@ export const loadDataReducer = (state = false, action) => {
 };
 
 export const teachersReducer =  (state = null, action) => {
+    console.log(action.type)
     switch (action.type){
         case "LOAD_TEACHERS":
             return action.teachers;
+        case "SET_DATE_ARRAY":
+            return null;
+        case "CLEAR_TEACHERS":
+            return null;
         default:
             return state
     }
@@ -135,7 +156,7 @@ const createLesson = (events, date) => {
     return final_list;
 };
 
-export const addressesReducer =  (state = [], action) => {
+export const addressesReducer =  (state = null, action) => {
     switch (action.type){
         case "LOAD_ADDRESSES":
             return action.addresses;
@@ -183,6 +204,7 @@ export const endDateReducer =  (state = null, action) => {
 };
 
 export const dateReducer =  (state = [], action) => {
+   // console.log(action)
     switch (action.type){
         case "SET_DATE_ARRAY":
             return datesList(action.startDate, action.endDate);

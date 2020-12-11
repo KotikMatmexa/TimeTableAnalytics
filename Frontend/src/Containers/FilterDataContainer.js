@@ -2,8 +2,8 @@ import React from 'react'
 import {getFilterType, setFaculty, setFilteredTeachersListByLetter} from "../action/filterAction";
 import connect from "react-redux/es/connect/connect";
 import {getFacultiesList, getGroupData, getGroupsList, loadGroups, setActiveGroup} from "../action/groupAction";
-import {loadFacultiesList, setActiveAudience, getFacultiesData} from "../action/tableAction";
-import {loadData,getTeachersList, getTeachersData, loadAddresses,
+import {loadFacultiesList, setActiveAudience, getFacultiesData,clearFacultiesList} from "../action/tableAction";
+import { loadAudienceData, loadGroupsData,getTeachersList, getTeachersData, loadAddresses,
     setActiveAddresses,
     setEndDate, setStartDate, setDateInterval, getAddresses} from "../action/dataAction";
 import DataComponent from "../Components/DataComponent/data";
@@ -23,26 +23,11 @@ class FilterDataContainer extends React.Component{
 
     componentWillMount(){
         //запрос к бэку
-         this.props.getAddresses();
+        if(!this.props.addresses)
+            this.props.getAddresses();
     }
 
-    changeType = (index) =>{
 
-      switch (Number(index)) {
-          case 0:
-              this.props.changeFilterType("audience");
-             // this.props.loadGroups(null);
-              break;
-          case 1:
-              this.props.changeFilterType("teachers");
-             // this.props.loadGroups(null);
-              break;
-          case 2:
-              this.props.changeFilterType("group control");
-              break;
-      }
-
-    };
 
     draw = (timePassed) => {
         this._cat.style.left = timePassed / 5 + 'px';
@@ -70,18 +55,18 @@ class FilterDataContainer extends React.Component{
 
 
     render() {
-
-        this.changeType(this.props.selectedLine);
-        console.log(this.props)
+    console.log(this.props.teachers);
         if (this.props.filterType === "audience") {
             return (
                 <>
                     <AudienceFilterComponent {...this.props} loadCat={this.startLoaderCat}/>
-                    {this.props.isLoadData ? (
+                    {this.props.isLoadAudienceData ? (
                             this.props.facultiesList ? (
                                 this.props.facultiesList.count > 0  ?(
                                     this.props.facultiesList.results.map(faculty =>
-                                    <FacultyDataContainer key={faculty.address.oid}
+                                    <FacultyDataContainer
+                                        isLoadAudienceData = {this.props.isLoadAudienceData}
+                                        key={faculty.address.oid}
                                                           type={this.props.filterType}
                                                           startDate={this.props.startDate}
                                                           endDate={this.props.endDate}
@@ -107,7 +92,7 @@ class FilterDataContainer extends React.Component{
             return (
                 <>
                     <TeachersFilterComponent {...this.props}/>
-                    {this.props.isLoadData ? (
+                    {this.props.isLoadTeachersData ? (
                             <DataComponent type={this.props.filterType}
                                            teachers={this.props.teachers}
                                            startDate = {this.props.startDate}
@@ -138,7 +123,7 @@ class FilterDataContainer extends React.Component{
                                            getGroupData = {this.props.getGroupData}
 
                         />
-                    {this.props.isLoadData ? (
+                    {this.props.isLoadGroupData ? (
                             <DataComponent type={this.props.filterType} data={this.props.activeGroupData}
                             />
                         ) :
@@ -150,8 +135,7 @@ class FilterDataContainer extends React.Component{
     }
 }
 const mapStateToProps = state => ({
-    filterType:state.filterTypeReducer,
-    isLoadData: state.loadDataReducer,
+
     activeGroupData: state.groupReducer,
     groupsList: state.groupsReducer,
     faculties: state.facultiesListReducer,
@@ -162,17 +146,17 @@ const mapStateToProps = state => ({
     currentTeacher: state.teacherReducer,
     activeAddresses: state.activeAddressesReducer,
     filteredTeachersList: state.teachersListReducer,
-    facultiesList: state.facultiesReducer,
+    facultiesList: state.facultyReducer,
     activeAudiences: state.audiencesReducer,
     dateInterval: state.dateReducer
 });
 
 const mapDispatchToProps = dispatch => ({
 
-    changeFilterType: (type) => {
+  /*  changeFilterType: (type) => {
         dispatch(getFilterType(type))
     },
-
+*/
     setFaculty: (faculty) => {
         dispatch(setFaculty(faculty))
     },
@@ -185,10 +169,6 @@ const mapDispatchToProps = dispatch => ({
     },
     getGroupData:(groupId) => {
         dispatch(getGroupData(groupId))
-    },
-
-    loadData:(flag) =>{
-        dispatch(loadData(flag))
     },
 
     setActiveGroup:(faculty,group) => {
@@ -230,6 +210,7 @@ const mapDispatchToProps = dispatch => ({
    loadFacultiesList: (addresses,startDate, endDate) => {
         dispatch(getFacultiesData(addresses,startDate, endDate))
     },
+
     setActiveAudience:(faculty, audience)=>{
         dispatch(setActiveAudience(faculty, audience))
     },

@@ -1,4 +1,4 @@
-import {loadTeachers} from "./dataAction";
+
 
 export const loadFaculties = (faculties) => {
     console.log(faculties)

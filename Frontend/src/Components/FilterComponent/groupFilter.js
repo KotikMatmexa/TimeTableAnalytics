@@ -25,7 +25,7 @@ class GroupFilterComponent extends React.Component{
         this.props.getGroupsList(facultyId);
 
         this._group.selectedIndex = 0;
-        this.props.loadData(false);
+      //  this.props.loadData(false);
     };
 
     loadData = () => {
@@ -41,7 +41,7 @@ class GroupFilterComponent extends React.Component{
         let faculty = this._faculty.value;
 
 
-        this.props.loadData(true);
+        this.props.loadGroupsData(true);
         this.props.getGroupData(groupId);
     };
 

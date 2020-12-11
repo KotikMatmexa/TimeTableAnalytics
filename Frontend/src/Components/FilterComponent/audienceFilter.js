@@ -13,7 +13,7 @@ class AudienceFilterComponent extends React.Component{
 
 
     componentWillMount(){
-        this.props.setDateInterval(null, null);
+
     }
 
     startTimeFocus = () => {
@@ -70,6 +70,7 @@ class AudienceFilterComponent extends React.Component{
 
     loadTables = () => {
 
+        this.props.loadFacultiesList(null,null,null);
         if ((this.props.startDate)&&
             (this.props.endDate)&&
             //&&(this._endDate.value)&&
@@ -88,9 +89,10 @@ class AudienceFilterComponent extends React.Component{
                 return false;
             }
 
-            this.props.loadData(true);
+
             this.props.setDateInterval(this.props.startDate, this.props.endDate);
             this.props.loadFacultiesList(addresses,this.props.startDate, this.props.endDate);
+            this.props.loadAudienceData(true);
             //загрузка таблиц
 
 
@@ -164,6 +166,7 @@ class AudienceFilterComponent extends React.Component{
     };
 
     clean = () =>{
+
         this.props.setStartDateTime(null);
         this.props.setEndDateTime(null);
         this._startDate.value = '';
@@ -186,15 +189,16 @@ class AudienceFilterComponent extends React.Component{
                         <div className="address--selection">
                            <select onChange={this.setAddress} ref={this.selectedAddress} >
                                <option>Выбрать адрес...</option>
-                               {this.props.addresses.map(faculty =>
+                               {this.props.addresses?( this.props.addresses.map(faculty =>
                                    <option key={faculty.oid} value= {faculty.oid}
                                            data-id = {faculty.oid}
                                            title={faculty.building_name}>
                                        {faculty.street}, {faculty.house}
                                        {faculty.korpus?(", "+faculty.korpus):(null)}
 
-                                       </option>
-                               )}
+                                   </option>
+                               )):(null)
+                                  }
                            </select>
 
                             <div className="selected--addresses" ref={this.selectedAddresses}>

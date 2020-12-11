@@ -30,7 +30,8 @@ class MenuComponent extends React.Component{
         e.target.style.backgroundColor = "#e95420";
 
         this.props.getPrevIndex(currentIndex);
-        this.props.changeLineIndex(currentIndex);
+    //    this.props.changeLineIndex(currentIndex);
+        this.props.changeType(currentIndex);
     };
 
     render(){

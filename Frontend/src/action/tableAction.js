@@ -8,8 +8,20 @@ export const getTable = (table) =>{
 };
 
 export const loadFacultiesList = (addresses) =>{
+    console.log(addresses)
+    if(addresses) {
+        return {
+            type: "LOAD_FACULTIES_LIST", addresses
+        }
+    }
+    else return {
+        type: "CLEAR_FACULTIES_LIST"
+    }
+};
+
+export const clearFacultiesList = (flag) =>{
     return {
-        type: "LOAD_FACULTIES_LIST", addresses
+        type: "CLEAR_FACULTIES_LIST", flag
     }
 };
 
@@ -28,6 +40,12 @@ export const datePreparation = (startDate, endDate) => {
 //addresses = список oid выбранных адресов
 //startDate, endDate = параметры времени начала и окончания (String)
 export const getFacultiesData = (addresses,startDate,endDate) => dispatch => {
+
+    console.log(addresses)
+    if(!addresses){
+        dispatch(loadFacultiesList(addresses));
+        return false;
+    }
 
     const formattedDates = datePreparation(startDate,endDate);
 

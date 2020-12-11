@@ -8,21 +8,30 @@ class FacultyDataContainer extends React.Component {
 
 
     constructor(props){
-        super(props);
+        super();
         this.state = {
-            facultyData: this.props.faculty,
+            facultyData: props.faculty,
             loadData:false
         }
 
     }
 
     componentDidMount(){
-        if(this.props.faculty.locationWithEventsDto.count > 0) {
-            this.setThisAudience(
-                this.props.faculty,
-                this.props.faculty.locationWithEventsDto.results[0].location.number_actual,
-                this.props.dateInterval)
-        }
+        let faculty;
+
+     //   if(!localStorage.getItem("faculties_data")){
+       //     localStorage.setItem("faculties_data", JSON.stringify(this.state.facultyData));
+            faculty =  this.props.faculty
+        //}
+       // else {
+         //   faculty =  JSON.parse(localStorage.getItem("faculties_data"));
+       // }
+            if(faculty.locationWithEventsDto.count > 0) {
+                this.setThisAudience(
+                    faculty,
+                    faculty.locationWithEventsDto.results[0].location.number_actual,
+                    this.props.dateInterval);
+            }
 
     }
 
@@ -34,7 +43,7 @@ class FacultyDataContainer extends React.Component {
     };
 
     render() {
-
+        console.log(this.props)
         return (
             this.state.loadData ?(
 
