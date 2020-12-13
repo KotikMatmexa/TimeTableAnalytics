@@ -14,6 +14,7 @@ public class EducatorController {
 
     private final EducatorEmploymentService educatorEmploymentService;
 
+    //@CrossOrigin(origins = "http://localhost:3000")
     @GetMapping(RequestInfo.EVENTS + RequestInfo.EDUCATOR_ID)
     public EducatorsWithEventsDto findAllEventsForEducator(@PathVariable String educatorId,
                                                            @RequestParam String start,

@@ -17,6 +17,7 @@ public class AddressController {
 
     private final AddressService addressService;
 
+    //@CrossOrigin(origins = "http://localhost:3000")
     @GetMapping(RequestInfo.ID)
     public AddressFullDto getById(@PathVariable String id) {
         AddressFullDto addressFullDto = DtoMapper.convertToClass(addressService.getById(id), AddressFullDto.class);

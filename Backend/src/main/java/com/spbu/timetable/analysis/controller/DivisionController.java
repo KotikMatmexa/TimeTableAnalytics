@@ -18,12 +18,14 @@ import java.util.List;
 public class DivisionController {
     private final DivisionService divisionService;
 
+    //@CrossOrigin(origins = "http://localhost:3000")
     @GetMapping()
     public List<DivisionDto> getAllDivisions() {
         return DtoMapper.convertList(divisionService.getAll(), DivisionDto.class);
     }
 
 
+    //@CrossOrigin(origins = "http://localhost:3000")
     @GetMapping(RequestInfo.DIVISION_ID)
     public List<ContingentUnitDto> getGroupsByDivisionAndStudyYear(@PathVariable String divisionId,
                                                                    @RequestParam(defaultValue = CommonConsts.CURRENT_STUDY_YEAR) String studyYear) {
