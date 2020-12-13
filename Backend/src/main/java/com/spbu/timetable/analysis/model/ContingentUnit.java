@@ -46,4 +46,10 @@ public class ContingentUnit {
     @OneToMany(mappedBy = "division")
     private List<DivisionsUnits> divisionsUnits;
 
+    @Column(name = "division")
+    private String divisionId;
+
+    @Column(name = "objecttype")
+    private int objectType;
+
 }

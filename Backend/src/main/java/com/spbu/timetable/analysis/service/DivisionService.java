@@ -2,9 +2,9 @@ package com.spbu.timetable.analysis.service;
 
 import com.spbu.timetable.analysis.model.ContingentUnit;
 import com.spbu.timetable.analysis.model.Division;
-import com.spbu.timetable.analysis.model.DivisionsUnits;
 import com.spbu.timetable.analysis.repository.DivisionRepository;
 import com.spbu.timetable.analysis.repository.DivisionUnitRepository;
+import com.spbu.timetable.analysis.utils.CommonConsts;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,8 +32,8 @@ public class DivisionService {
     }
 
     public List<ContingentUnit> getAllGroupsByDivisionAndStudyYear(String divisionId, String yearId){
-        //return divisionRepository.findAll(divisionId, yearId);
-        List<ContingentUnit> allBy = divisionUnitRepository.findAllByDivisionOidAndContingentUnitCurrentStudyYearOid(divisionId, yearId);
+        List<ContingentUnit> allBy = divisionUnitRepository.findAllByDivisionOid
+                (divisionId, yearId, CommonConsts.objectType);
         return allBy;
     }
 }

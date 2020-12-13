@@ -12,8 +12,13 @@ import java.util.List;
 @Repository
 public interface DivisionUnitRepository extends JpaRepository<DivisionsUnits, DivisionsUnitsKey> {
 
-    @Query("select cu From ContingentUnit cu JOIN DivisionsUnits du on" +
-            " cu.oid = du.contingentUnit.oid join Division div on" +
-            " du.division.oid = div.oid where div.oid =?1 and cu.currentStudyYear.oid =?2")
-    List<ContingentUnit> findAllByDivisionOidAndContingentUnitCurrentStudyYearOid(String divisionOid, String yearOid);
+    @Query("select cu From ContingentUnit cu  where cu.divisionId =?1 and cu.currentStudyYear.oid =?2" +
+           " and cu.objectType = ?3 order by cu.name")
+    List<ContingentUnit> findAllByDivisionOid(String divisionOid, String yearOid, int objectType);
+
+    @Query("select distinct cu.objectType From ContingentUnit cu where cu.divisionId =?1 " +
+            "and cu.currentStudyYear.oid =?2")
+        // " and cu.objectType = ?3 ")
+    List<Object> findAllByDivisiOid(String divisionOid, String yearOid, int objectType);
+
 }
