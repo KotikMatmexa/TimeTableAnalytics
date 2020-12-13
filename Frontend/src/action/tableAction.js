@@ -41,7 +41,6 @@ export const datePreparation = (startDate, endDate) => {
 //startDate, endDate = параметры времени начала и окончания (String)
 export const getFacultiesData = (addresses,startDate,endDate) => dispatch => {
 
-    console.log(addresses)
     if(!addresses){
         dispatch(loadFacultiesList(addresses));
         return false;
@@ -58,7 +57,7 @@ export const getFacultiesData = (addresses,startDate,endDate) => dispatch => {
         .then(data =>
             data.json())
         .then(addresses => {
-            console.log(addresses);
+        //    console.log(addresses);
             dispatch(loadFacultiesList(addresses))
         })
         .catch(e => console.log(e));

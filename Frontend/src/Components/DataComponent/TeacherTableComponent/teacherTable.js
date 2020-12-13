@@ -47,15 +47,18 @@ class TeacherTableComponent extends React.Component {
         if (this._teacherTable.className === "teacher--table")
             this._teacherTable.className = "teacher--table-active";
 
-        this.props.setCurrentTeacher(teacher, this.props.startDate, this.props.endDate);
+        this.props.setCurrentTeacher(
+            teacher,
+            this.props.dateInterval
+        );
         //this.props.downloadTeacherData(teacher);
     };
 
     selectLetter = e => {
-      e.target.style.backgroundColor = "#e95420";
+        e.target.style.backgroundColor = "#e95420";
     };
 
-    cancelLetter = e =>{
+    cancelLetter = e => {
         e.target.style.backgroundColor = "";
     };
     //
@@ -65,7 +68,6 @@ class TeacherTableComponent extends React.Component {
         this.props.setFilteredTeachersList(letter, this.props.teachers);
     };
     render() {
-
         return (
             <>
                 <div className="teachers--surname--filter">
@@ -82,7 +84,7 @@ class TeacherTableComponent extends React.Component {
                 </div>
 
                 {this.props.filteredTeachersList.length > 0 ? (
-                    this.props.filteredTeachersList == "Нет фамилий с такой буквы" ? (
+                    this.props.filteredTeachersList.equals("Нет фамилий с такой буквы") ? (
                         <div>
                             {" "}
                             <h5>{this.props.filteredTeachersList}</h5>
@@ -100,12 +102,8 @@ class TeacherTableComponent extends React.Component {
                                 <tbody>
                                 {this.props.filteredTeachersList.map(teacher => (
                                     <tr>
-                                        <th scope="row">
-                                            {teacher.name}
-                                        </th>
-                                        <th scope="row">
-                                            {teacher.position_name}
-                                        </th>
+                                        <th scope="row">{teacher.name}</th>
+                                        <th scope="row">{teacher.position_name}</th>
                                         <td>
                                             <button
                                                 className="get-table-button"
@@ -127,40 +125,35 @@ class TeacherTableComponent extends React.Component {
                 ) : (
                     <>
                         <div className="teachers--table">
-                        <table className="table table-bordered">
-                            <thead className="thead-dark">
-                            <tr>
-                                <th scope="col">Фамилия</th>
-                                <th scope="col">Звание</th>
-                                <th scope="col">Занятость</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {this.props.teachers.results.map(teacher => (
+                            <table className="table table-bordered">
+                                <thead className="thead-dark">
                                 <tr>
-                                    <th scope="row">
-                                        {teacher.name}
-                                    </th>
-                                    <th scope="row">
-                                        {teacher.position_name}
-                                    </th>
-                                   <td>
-
-                                        <button
-                                            className="get-table-button"
-                                            onClick={e => this.showTeacherInformation(e, teacher)}
-                                        >
-                                            Посмотреть занятость
-                                        </button>
-                                    </td>
+                                    <th scope="col">Фамилия</th>
+                                    <th scope="col">Звание</th>
+                                    <th scope="col">Занятость</th>
                                 </tr>
-                            ))}
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                {this.props.teachers.results.map(teacher => (
+                                    <tr>
+                                        <th scope="row">{teacher.name}</th>
+                                        <th scope="row">{teacher.position_name}</th>
+                                        <td>
+                                            <button
+                                                className="get-table-button"
+                                                onClick={e => this.showTeacherInformation(e, teacher)}
+                                            >
+                                                Посмотреть занятость
+                                            </button>
+                                        </td>
+                                    </tr>
+                                ))}
+                                </tbody>
+                            </table>
                         </div>
-                    <div className="teacher--table" ref={this.teacherTable}>
-                    <TableComponent {...this.props} />
-                    </div>
+                        <div className="teacher--table" ref={this.teacherTable}>
+                            <TableComponent {...this.props} />
+                        </div>
                     </>
                 )}
             </>

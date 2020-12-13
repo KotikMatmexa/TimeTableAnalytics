@@ -1,18 +1,17 @@
 import React from 'react'
-import {getFilterType, setFaculty, setFilteredTeachersListByLetter} from "../action/filterAction";
+import { setFaculty, setFilteredTeachersListByLetter} from "../action/filterAction";
 import connect from "react-redux/es/connect/connect";
-import {getFacultiesList, getGroupData, getGroupsList, loadGroups, setActiveGroup} from "../action/groupAction";
-import {loadFacultiesList, setActiveAudience, getFacultiesData,clearFacultiesList} from "../action/tableAction";
-import { loadAudienceData, loadGroupsData,getTeachersList, getTeachersData, loadAddresses,
-    setActiveAddresses,
+import {getFacultiesList, getGroupData, getGroupsList,getTestGroupData,getTestGroupsList,
+    setActiveGroup} from "../action/groupAction";
+import { setActiveAudience, getFacultiesData} from "../action/tableAction";
+import { getTeachersList, getTeachersData, loadAddresses,
+    setActiveAddresses,getTeachersDataTest,
     setEndDate, setStartDate, setDateInterval, getAddresses} from "../action/dataAction";
 import DataComponent from "../Components/DataComponent/data";
 import AudienceFilterComponent from "../Components/FilterComponent/audienceFilter";
 import TeachersFilterComponent from "../Components/FilterComponent/teachersFilter";
 import GroupFilterComponent from "../Components/FilterComponent/groupFilter";
-import FacultyDataComponent from "../Components/DataComponent/facultydata";
 import FacultyDataContainer from "./FacultyDataContainer";
-import {addressesList} from "../dataParser";
 import ErrorComponent from "../Components/ErrorComponent/error";
 
 
@@ -55,7 +54,7 @@ class FilterDataContainer extends React.Component{
 
 
     render() {
-    console.log(this.props.teachers);
+        console.log(this.props.groupsList)
         if (this.props.filterType === "audience") {
             return (
                 <>
@@ -116,8 +115,8 @@ class FilterDataContainer extends React.Component{
                     <GroupFilterComponent  data = {this.props.data}
                                            faculties = {this.props.faculties}
                                            groupsList = {this.props.groupsList}
-                                           isLoadData = {this.props.isLoadData}
-                                           loadData = {this.props.loadData}
+                                           isLoadData = {this.props.isLoadGroupData}
+                                           loadData = {this.props.loadGroupsData}
                                            getFacultiesList = {this.props.getFacultiesList}
                                            getGroupsList = {this.props.getGroupsList}
                                            getGroupData = {this.props.getGroupData}
@@ -166,9 +165,11 @@ const mapDispatchToProps = dispatch => ({
     },
     getGroupsList:(facultyId) => {
         dispatch(getGroupsList(facultyId))
+   //     dispatch(getTestGroupsList(facultyId))
     },
-    getGroupData:(groupId) => {
-        dispatch(getGroupData(groupId))
+    getGroupData:(faculty,groupId) => {
+        dispatch(getTestGroupData(faculty,groupId))
+   //     dispatch(getGroupData(groupId))
     },
 
     setActiveGroup:(faculty,group) => {
@@ -191,8 +192,9 @@ const mapDispatchToProps = dispatch => ({
         dispatch(setEndDate(endDate));
     },
 
-    setCurrentTeacher: (teacher, startDate, endDate) => {
-        dispatch(getTeachersData(teacher,startDate,endDate))
+    setCurrentTeacher: (teacher, dateInterval) => {
+        dispatch(getTeachersDataTest(teacher,dateInterval))
+      //  dispatch(getTeachersData(teacher,startDate,endDate))
     },
 
     getAddresses: () => {

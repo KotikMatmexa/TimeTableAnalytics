@@ -1,4 +1,4 @@
-import {faculty_data,teachers,addresses} from "../testData";
+import {faculty_data,teachers} from "../testData";
 
 import {createDay} from "./tableReducer";
 
@@ -38,7 +38,7 @@ export const loadGroupDataReducer = (state = false, action) => {
 };
 
 export const teachersReducer =  (state = null, action) => {
-    console.log(action.type)
+
     switch (action.type){
         case "LOAD_TEACHERS":
             return action.teachers;
@@ -72,8 +72,9 @@ export const teacherReducer =  (state = null, action) => {
     }
 };
 
-const teacherData = (teacher, dates) => {
-    console.log(teacher)
+export const teacherData = (teacher, dates) => {
+
+    console.log(teacher);
     let days = setDays(teacher.events, dates);
     teacher.actualEvents = days;
     return teacher;
@@ -97,13 +98,15 @@ const setDays = (events, dates) =>{
 
 const preprocessing = (events) =>{
 
-    const startDay = events[0].start;
+
+    let startDay = events[0].start;
     let startDate = new Date(startDay);
     let filteredEvents = [];
 
-    startDate.setHours(startDay.getHours());
-    startDate.setMinutes(startDay.getMinutes());
-    startDate.setSeconds(startDay.getSeconds());
+    //console.log(startDate);
+   // startDate.setHours(startDay.getHours());
+   // startDate.setMinutes(startDay.getMinutes());
+   // startDate.setSeconds(startDay.getSeconds());
     let data = events[0];
     let current_group = data.student_group;
 
@@ -130,27 +133,30 @@ const createLesson = (events, date) => {
     let final_list = [];
     let currentDate = new Date(date);
 
+  //  console.log(events)
     for (let event of events){
         const startDay = event.start;
         let start_date = new Date(startDay);
 
-        start_date.setHours(startDay.getHours());
-        start_date.setMinutes(startDay.getMinutes());
-        start_date.setSeconds(startDay.getSeconds());
+        start_date.setHours(0);
+        start_date.setMinutes(0);
+        start_date.setSeconds(0);
 
         const endTime = event.end;
         let end_date = new Date(endTime);
 
-        end_date.setHours(endTime.getHours());
-        end_date.setMinutes(endTime.getMinutes());
-        end_date.setSeconds(endTime.getSeconds());
+        //end_date.setHours(endTime.getHours());
+        //end_date.setMinutes(endTime.getMinutes());
+        //end_date.setSeconds(endTime.getSeconds());
 
         //console.log(final_date.toString(),new Date(currentDate).toString());
         // console.log(new Date(final_date).toString() == new Date(currentDate).toString());
-
-        if (new Date(start_date).toString() == new Date(currentDate).toString())
+     //   console.log(new Date(start_date).toISOString() == new Date(currentDate).toISOString())
+      //  if (new Date(start_date).toString() == new Date(currentDate).toString())
+        if (new Date(start_date).toISOString() == new Date(currentDate).toISOString())
             final_list.push(event);
     }
+ //   console.log(final_list)
     final_list = final_list.sort((a, b) => new Date(a.start) > new Date(b.start) ? 1 : -1);
 
     return final_list;

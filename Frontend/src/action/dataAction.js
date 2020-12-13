@@ -1,4 +1,5 @@
 import {datePreparation, loadFacultiesList} from "./tableAction";
+import teachers from "../TestData/teacher data";
 
 export const loadAudienceData = (flag) => {
     return{
@@ -17,14 +18,12 @@ export const loadGroupsData = (flag) => {
 };
 
 export const loadTeachers = (teachers) => {
-    console.log(teachers)
     if(teachers) {
         return {
             type: "LOAD_TEACHERS", teachers
         }
     }
     else {
-        console.log("here")
         return {
             type: "CLEAR_TEACHERS"
         }
@@ -35,7 +34,6 @@ export const loadTeachers = (teachers) => {
 //address = адрес, по которому получаем список пользователей
 export const getTeachersList = (addressId) => dispatch => {
 
-    console.log(addressId)
     if (!addressId){
         loadTeachers(null);
         return false;
@@ -49,7 +47,7 @@ export const getTeachersList = (addressId) => dispatch => {
         .then(data =>
             data.json())
         .then(teachers => {
-       console.log(teachers);
+      // console.log(teachers);
             dispatch(loadTeachers(teachers))
         })
         .catch(e => console.log(e));
@@ -63,12 +61,24 @@ export const setCurrentTeacher = (teacher,dateInterval) => {
 };
 
 
+export const getTeachersDataTest = (teacher, dateInterval) => dispatch => {
+    let final_data = {};
+
+    for (let data of teachers.teachers){
+        let name = teacher.name.toString();
+
+        if (data.educator.name == name.substr(0, name.length-1)){
+            final_data = data;
+        }
+    }
+    console.log(dateInterval)
+    dispatch(setCurrentTeacher(final_data,dateInterval))
+};
 //получаем список пар для конкретного учителя
 //teacher = учитель, о нагрузке которого хотим узнать
 //startDate, endDate - даты нагрузки
 export const getTeachersData = (teacher, startDate, endDate) => dispatch => {
 
-    console.log(startDate,endDate)
     const formattedDates = datePreparation(startDate,endDate);
 
     let teacherId = teacher.oid;

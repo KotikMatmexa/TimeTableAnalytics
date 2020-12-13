@@ -4,7 +4,7 @@
 }
 
 .table--components{
-    display: inline-flex;
+    display: block !important;
 }
 
 .teachers--table{
@@ -25,9 +25,19 @@
     display: none;
 }
 .teacher--table-active{
+    margin-top: 20px;
     display: block;
 }
 
 .teachers--surname--letter{
     margin-bottom: 10px;
+}
+label{
+    font-weight:800;
+}
+@media (max-width: 769px) {
+    .teacher-table{
+    overflow-x: auto
+    }
+
 }

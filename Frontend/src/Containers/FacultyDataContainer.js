@@ -21,7 +21,7 @@ class FacultyDataContainer extends React.Component {
 
      //   if(!localStorage.getItem("faculties_data")){
        //     localStorage.setItem("faculties_data", JSON.stringify(this.state.facultyData));
-            faculty =  this.props.faculty
+            faculty =  this.props.faculty;
         //}
        // else {
          //   faculty =  JSON.parse(localStorage.getItem("faculties_data"));
@@ -43,7 +43,7 @@ class FacultyDataContainer extends React.Component {
     };
 
     render() {
-        console.log(this.props)
+
         return (
             this.state.loadData ?(
 

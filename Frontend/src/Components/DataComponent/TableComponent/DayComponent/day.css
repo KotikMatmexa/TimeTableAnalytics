@@ -37,7 +37,7 @@
 .day--timetable ul li:hover .lesson--info{
     display:block;
 }
-@media (max-width: 376px) {
+@media (max-width: 714px) {
     .day--component{
         width: 80%;
         margin: 10px auto;

@@ -9,8 +9,8 @@ const data2 = jsonData2.results;
 const data3 = jsonData3.results;
 const data4 = jsonData4.results;
 
-export const loadTeacherData = () =>{
-  return teacher;
+export const loadTeacherData = (id) =>{
+  return teacher[id];
 };
 
 //получить список всех адресов спбгу

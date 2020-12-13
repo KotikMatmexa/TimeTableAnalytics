@@ -1,56 +1,52 @@
-import React from 'react'
-import './filter.css'
-import DataComponent from "../DataComponent/data";
+import React from "react";
+import "./filter.css";
 
-class GroupFilterComponent extends React.Component{
+class GroupFilterComponent extends React.Component {
+    group = group => {
+        this._group = group;
+    };
+    faculty = faculty => {
+        this._faculty = faculty;
+    };
 
-    group = (group) => {this._group = group};
-    faculty = (faculty) => {this._faculty = faculty};
-
-
-    componentDidMount(){
+    componentDidMount() {
         this.props.getFacultiesList();
     }
 
-    loadGroups = () =>{
+    loadGroups = () => {
         let index = this._faculty.selectedIndex;
 
-        if(index === 0)
-            return false;
+        if (index === 0) return false;
 
         let facultyId = this._faculty.value;
 
-      //  this.props.setFaculty(faculty);
+        //  this.props.setFaculty(faculty);
 
         this.props.getGroupsList(facultyId);
 
         this._group.selectedIndex = 0;
-      //  this.props.loadData(false);
+        //  this.props.loadData(false);
     };
 
     loadData = () => {
         let index = this._group.selectedIndex;
 
-        if(index === 0) {
+        if (index === 0) {
             alert("Выберите группу!");
             return false;
         }
 
-
         let groupId = this._group.value;
-        let faculty = this._faculty.value;
+    //    let faculty = this._faculty.value;
 
-
-        this.props.loadGroupsData(true);
-        this.props.getGroupData(groupId);
+        this.props.loadData(true);
+        this.props.getGroupData(this._faculty.value,groupId);
     };
 
-
-
-    render(){
-
-            return (
-                <div className="filter--menu">
+    render() {
+        console.log(this.props)
+        return (
+            <div className="filter--menu">
                 <div className="group-control--filter">
                     <div className="group-control--faculty">
                         <b>Факультет:</b>
@@ -58,13 +54,11 @@ class GroupFilterComponent extends React.Component{
                             <select onChange={this.loadGroups} ref={this.faculty}>
                                 <option selected>Выбрать факультет...</option>
 
-                                {this.props.faculties?(
-                                    this.props.faculties.map(faculty =>
+                                {this.props.faculties
+                                    ? this.props.faculties.map(faculty => (
                                         <option value={faculty.oid}>{faculty.name}</option>
-                                    )
-                                ):(null)
-                                   }
-
+                                    ))
+                                    : null}
                             </select>
                         </div>
                     </div>
@@ -73,26 +67,25 @@ class GroupFilterComponent extends React.Component{
                         <div className="group-control--selection">
                             <select ref={this.group}>
                                 <option selected>Выбрать группу...</option>
-                                {this.props.groupsList ? (
-                                    Object.values(this.props.groupsList).map(group =>
-                                        <option value={group.oid}>{group.name}</option>
-                                    )
-                                ):
-                                    (
-                                    null
-                                )}
-
+                                {this.props.groupsList
+                                    ? Object.values(this.props.groupsList).map(group => (
+                                        <option value={group.id}>{group.name}</option>
+                                    ))
+                                    : null}
                             </select>
                         </div>
                     </div>
                 </div>
 
-                    <button className="get--button btn btn-secondary" onClick={this.loadData}>Получить</button>
-                </div>
-
-            )
-        }
-
+                <button
+                    className="get--button btn btn-secondary"
+                    onClick={this.loadData}
+                >
+                    Получить
+                </button>
+            </div>
+        );
+    }
 }
 
 export default GroupFilterComponent;
