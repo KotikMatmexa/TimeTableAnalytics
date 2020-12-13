@@ -1,0 +1,27 @@
+
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost;databaseName=tt_analysis
+    username: tt_user
+    password: Tt_password1!
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+        current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+        default_schema: dbo
+        ddl-auto: none
+        temp:
+          use_jdbc_metadata_defaults: false
+    show-sql: true
+    generate-ddl: false
+
+logging:
+  level:
+    org.springframework.web: debug
+server:
+  port: 8080
+  error:
+    include-stacktrace: never
